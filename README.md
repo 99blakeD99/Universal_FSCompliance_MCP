@@ -29,7 +29,6 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture
 - **[LLMChoice.md](LLMChoice.md)**: AI model selection, Claude 3.5 Sonnet rationale, and multi-model strategy
 - **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
-- **[DEMO_SETUP.md](DEMO_SETUP.md)**: Complete setup guide for running the connected demo with MCP server integration
 - **[Rules.md](Rules.md)**: Development standards, coding conventions, and quality assurance requirements
 - **[CLAUDE.md](CLAUDE.md)**: AI development guidance, quality standards, and strategic-to-implementation translation
 - **[OutlineOfManagementImpacts.md](OutlineOfManagementImpacts.md)**: Executive thought leadership, financial services expertise, and management impact analysis by Blake Dempster Founder, CEO, Principal Architect.
