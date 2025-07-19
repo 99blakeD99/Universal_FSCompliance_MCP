@@ -19,10 +19,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Documentation & Brand Materials
 - **`FAQ.md`**: User-facing project information and comprehensive capability descriptions
-- **`internal/Brand.md`**: Brand positioning, competitive differentiation, and market strategy
-- **`internal/DatabaseStrategy.md`**: Database architecture evaluation and migration planning
-- **`internal/FCAsandbox.md`**: FCA Sandbox application strategy and regulatory validation timeline
-- **`internal/UserInterface.md`**: UI/UX design specifications and presentation prototypes
+- **`DatabaseStrategy.md`**: Database architecture evaluation and migration planning
+- **`StandardImplementMCP.md`**: Systematic methodology for implementing new regulatory standards
 
 ## Development Commands
 
@@ -64,19 +62,19 @@ poetry run python -m fscompliance.test_client
 
 ## Architecture
 
-The Universal_FSCompliance_MCP Project follows a layered architecture as the first MCP-integrated compliance platform:
+The Universal_FSCompliance_MCP Project follows an AI Agent Oriented multi-server architecture as the first MCP-integrated compliance platform:
 
-1. **MCP Server Layer**: Protocol-compliant JSON-RPC 2.0 server
-2. **Knowledge Management Layer**: LightRAG-powered FCA Handbook processing
-3. **Compliance Intelligence Layer**: AI-powered requirement analysis and gap detection
-4. **Memory and Learning Layer**: Long-term memory with privacy controls
-5. **LLM Abstraction Layer**: Multi-model support with Claude 3.5 Sonnet default (LLaMA 3, Falcon, Mistral Medium alternatives). **Architectural Independence**: Our MCP server operates independently from enterprise AI agent LLM choices
+1. **Multi-Server MCP Layer**: Standard-specific protocol-compliant JSON-RPC 2.0 servers (FCA_Compliance_MCP, MiFID_Compliance_MCP, etc.)
+2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
+3. **Compliance Intelligence Layer**: 7 focused tools for daily compliance officer work with standard-specific prefixing
+4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure (table prefix approach)
+5. **LLM Integration Layer**: Multi-model support with Claude 3.5 Sonnet default. **Architectural Independence**: Our MCP servers operate independently from enterprise AI agent LLM choices
 
 ### Strategic Architecture Decisions
 - **LLM Strategy**: Claude 3.5 Sonnet selected as default based on extensive real-world validation through the Universal_FSCompliance_MCP Project development; no fine-tuning architectural decision per `LLMChoice.md`
 - **LLM Independence**: Our MCP server runs its own LLM completely separately from enterprise AI agent LLM choices, eliminating adoption barriers from corporate LLM standardization decisions
 - **Database Evolution**: Migrating to Supabase (PostgreSQL + PGVector) per `DatabaseStrategy.md` for simplified architecture and real-time capabilities
-- **MCP Tool Priority**: 9 priority tools identified in `ComplianceTools.md` for Phase 3 implementation
+- **MCP Tool Priority**: 7 core tools identified in `ComplianceTools.md` with standard-specific prefixing (removed map_relationships as not aligned with daily compliance work)
 - **Brand Positioning**: Positioned as first MCP-integrated compliance platform per `Brand.md` competitive analysis
 - **UI/UX Design**: Professional financial services interface specifications detailed in `UserInterface.md`
 
@@ -102,19 +100,23 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 
 ## Development Guidelines
 
-**Consult `Rules.md` for development standards and `Planning.md` for architecture decisions before starting development work.** In case of conflicts, this document hierarchy applies: 1) CLAUDE.md, 2) Rules.md, 3) Planning.md, 4) Other strategic documents.
+**This document provides comprehensive implementation guidance. Also consult `Rules.md` for granular coding conventions, `Planning.md` for essential constraints, and `StandardImplementMCP.md` for new standard methodology.** Document hierarchy: 1) CLAUDE.md (primary), 2) Rules.md (coding), 3) Planning.md (constraints), 4) StandardImplementMCP.md (expansion), 5) Other strategic documents.
 
 **Key principles:**
 
-- Follow layered architecture from `Planning.md`
-- Maintain MCP protocol compliance
-- Create comprehensive Pytest unit tests
+- Follow AI Agent Oriented multi-server architecture from `TechnicalArchitecture.md`
+- Implement standard-specific MCP servers following methodology in `StandardImplementMCP.md`
+- Use database table prefix approach per `DatabaseStrategy.md`
+- Maintain MCP protocol compliance across all servers
+- Create comprehensive Pytest unit tests (90%+ coverage for core compliance logic)
+- **AI Agent Oriented Principle**: Optimize tool names and server architecture for AI agent semantic matching
 - **Pragmatic Excellence**: Balance quality with practical implementation - focus on core compliance functionality first, then optimize
 - **Iterative Development**: Implement minimum viable functionality first, then enhance based on validation results
 - Follow file size guidelines per Rules.md (500 lines preferred, 1000 lines maximum for complex tools)
 - Include regulatory source citations in compliance logic
 - Implement privacy controls for all memory features
 - Validate all inputs, especially financial/customer data
+- **Universal Standards Engine**: Design for systematic expansion to new regulatory frameworks
 
 ## Quality Standards (from TechnicalArchitecture.md)
 
@@ -149,10 +151,24 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 - **Standard Models + RAG**: No fine-tuning infrastructure - use standard LLMs with advanced retrieval
 
 ### From ComplianceTools.md:
-- **MCP Tool Priority**: Implement 9 priority tools (quickly_check_compliance, systematically_analyse_compliance_implications, identify_compliance_requirements_in_specific_case, prepare_draft_compliance_audit_report, map_relationships, validate_ground_truth, ingest_new_identified_standard, update_identified_standard, suggest_remediation)
+- **MCP Tool Priority**: Implement 7 core tools with standard-specific prefixing (FCA_quickly_check_compliance, FCA_systematically_analyse_compliance_implications, FCA_identify_compliance_requirements_in_specific_case, FCA_prepare_draft_compliance_audit_report, FCA_validate_ground_truth, FCA_suggest_remediation, FCA_status_of_standard_ingestion). Removed map_relationships as not aligned with daily compliance officer work.
+- **AI Agent Oriented Design**: Tool names include regulatory context to optimize AI agent semantic matching (e.g., "Does this comply with FCA requirements?" → `FCA_quickly_check_compliance`)
+- **Multi-Server Architecture**: Each regulatory standard receives dedicated MCP server following methodology in `StandardImplementMCP.md`
+- **Database Table Prefixes**: Single database with standard-specific table prefixes (fca_, mifid_, sec_) per `DatabaseStrategy.md`
 - **Tool Specifications**: Each tool requires specific schemas, validation, and response formats
-- **Tool Naming Convention**: Use lowercase format for tool names (e.g., `quickly_check_compliance`, not `quickly_check_Compliance`)
-- **Ground Truth Validation**: Implement `validate_ground_truth` tool for enterprise accuracy benchmarking with confidential testing environment
+- **Tool Naming Convention**: Use standard-specific lowercase format (e.g., `FCA_quickly_check_compliance`, not `quickly_check_Compliance`)
+- **Ground Truth Validation**: Implement standard-specific `validate_ground_truth` tools for enterprise accuracy benchmarking
+
+### From StandardImplementMCP.md:
+- **Systematic Standard Implementation**: Follow 4-phase methodology (Standard Assessment → Technical Implementation → Data Infrastructure → Validation & Deployment) for all new regulatory frameworks
+- **AI Agent Oriented Design**: Each standard gets dedicated MCP server with semantic anchoring (FCA_Compliance_MCP, MiFID_Compliance_MCP, etc.)
+- **Template-Based Expansion**: Use FCA_Compliance_MCP as proven template for new standard implementations
+- **Database Table Prefixes**: Implement standard-specific tables within unified database (fca_documents, mifid_documents, etc.)
+- **Two-Layer Semantic Matching**: Apply semantic anchors + vector similarity search for structured regulatory content
+- **Unified but Efficient Ingestion**: Full content for high-value sections, heading-only for comprehensive coverage with boundary messaging
+- **Ground Truth Integration**: Design for future regulatory Q&A datasets with user-specific access controls
+- **Quality Assurance**: Conduct systematic testing against known compliance scenarios before production deployment
+- **Documentation Updates**: Update CLAUDE.md and technical documentation to reflect new standard implementations
 
 ### From LegalLiability.md:
 - **Liability Framework Integration**: Implement user interface components that integrate liability reminders and warnings
@@ -164,9 +180,8 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 - **Emergency Procedures**: Implement system limitation warnings and alternative compliance verification prompts during errors/outages
 - **User Responsibility Reinforcement**: All tool outputs must include disclaimers that AI-generated content requires human review and validation
 
-### Project vs Product Naming:
-- **The Universal_FSCompliance_MCP Project**: Refers to project, codebase, development initiative - use in technical documentation, git commits, code comments
-- **The Universal_FSCompliance_MCP Product**: Refers to deployed product - use in user-facing interfaces, API responses, configuration
+### Project Terminology:
+- **The Universal_FSCompliance_MCP Project**: Refers to the comprehensive development initiative creating a suite of specialist Compliance MCP servers - use consistently across all documentation, git commits, code comments, and user-facing interfaces
 
 ### Documentation Standards:
 - **UK Date Format**: Use "DD Month YYYY" format (e.g., "25 December 2024") in all documentation
@@ -176,49 +191,22 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 
 ## Target Users
 
-- Compliance Officers
-- Risk Managers  
-- Regulatory Inspectors
-- Professional Advisers
+Primary users: Compliance Officers in financial institutions requiring AI-native regulatory intelligence for daily compliance tasks.
 
-## Use Cases
+## Core Tool Implementation
 
-Based on ComplianceTools.md analysis and current MCP tool roadmap:
+The 7 core tools with standard-specific prefixing (e.g., `FCA_quickly_check_compliance`) cover:
+1. Quick compliance assessment
+2. Context-specific requirement identification  
+3. Systematic compliance analysis
+4. Gap remediation recommendations
+5. Audit report preparation
+6. Ground truth validation
+7. System status and coverage visibility
 
-### Primary Use Cases (Phase 2 Complete)
-1. **Compliance Gap Analysis**: AI agents analyze policies to identify the ten most salient requirements and flag compliance gaps using `analyze_compliance` and `detect_gaps` tools
-2. **Regulatory Intelligence**: AI agents extract relevant requirements from FCA Handbook using `extract_requirements` for specific policy or scenario analysis
-3. **Compliance Assessment**: AI agents provide comprehensive policy analysis against regulatory requirements with confidence scoring
+## Document Quality
 
-### Advanced Use Cases (Core Tool Implementation)
-4. **Quick Compliance Assessment**: AI agents perform rapid compliance checking using `quickly_check_compliance` for policy conceptualization assistance
-5. **Systematic Compliance Analysis**: AI agents conduct detailed strategic analysis using `systematically_analyse_compliance_implications` with risk scoring and remediation guidance
-6. **Requirement Identification**: AI agents extract context-specific regulatory requirements using `identify_compliance_requirements_in_specific_case`
-7. **Audit Preparation**: AI agents compile compliance evidence and prepare draft audit reports using `prepare_draft_compliance_audit_report`
-8. **Relationship Mapping**: AI agents visualize regulatory connections and business impact using `map_relationships`
-9. **Ground Truth Validation**: AI agents enable enterprise accuracy benchmarking using `validate_ground_truth` for confidential testing of system performance on real compliance data
-10. **Standard Ingestion**: AI agents enable user-driven expansion using `ingest_new_identified_standard` for platform growth (requires liability framework integration)
-11. **Standard Updates**: AI agents maintain system currency using `update_identified_standard` for automatic regulatory change monitoring
-12. **Gap Remediation**: AI agents provide actionable compliance solutions using `suggest_remediation` for gap resolution
-
-### Future Use Cases (Phase 4+)
-13. **Automated Regulatory Reporting**: AI agents generate draft regulatory reports and submissions using `generate_compliance_reports`
-14. **Additional Capabilities**: Future tools based on user feedback and market validation
-
-## Strategic Document Review Process
-
-When reviewing any .md file, follow the systematic methodology in MDqualityCheck.md:
-1. **Content Quality**: Check professional tone, avoid repetition, ensure internal consistency
-2. **Touchstones Alignment**: Verify consistency with Touchstones.md principles
-3. **CLAUDE.md Impact**: Assess whether changes require updates to implementation guidance
-4. **Multi-Perspective Review**: Evaluate from stakeholder viewpoints (CEO, CCO, CTO, CISO, CRO, IT Director, Purchasing Director, Head of AI, Operational Director, Regulatory Affairs Director)
-
-**Coding-Relevant Documents** that may require CLAUDE.md updates:
-- Planning.md, LLMChoice.md, Rules.md, ComplianceTools.md, Tasks.md (direct coding impact)
-- FAQ.md, Brand.md, UserInterface.md, LegalLiability.md (UI/UX and user-facing elements)
-
-**Strategic-Only Documents** (no CLAUDE.md impact):
-- FCAsandbox.md, TakeToMarket.md, DatabaseStrategy.md, MgmtImpactRules.md, UpdateCheck.md, Touchstones.md, MDqualityCheck.md
+Follow MDqualityCheck.md methodology for systematic document reviews. Update this file when strategic documents change coding requirements.
 
 ---
 
@@ -228,7 +216,7 @@ When reviewing any .md file, follow the systematic methodology in MDqualityCheck
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 25 December 2024  
 **Last Updated**: 15 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
 **Status**: (okay)
 **Purpose**: Guidance for Claude Code when working with the Universal_FSCompliance_MCP Project code, including strategic-to-implementation translation and systematic review processes.
 

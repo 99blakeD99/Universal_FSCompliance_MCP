@@ -8,7 +8,7 @@ At the start of the Universal_FSCompliance_MCP Project, we set out with half an 
 
 ### Overview
 
-We have provisionally selected **Claude 3.5 Sonnet as the default LLM** for the Universal_FSCompliance_MCP product, with multi-LLM support, preserving enterprise flexibility. 
+We have provisionally selected **Claude 3.5 Sonnet as the default LLM** for the Universal_FSCompliance_MCP Project, with multi-LLM support, preserving enterprise flexibility. 
 
 ### Rationale
 
@@ -20,11 +20,11 @@ Our provisional selection is on the following basis:
 
 - It has also included extensive strategic planning, task management, quality vetting, technical architecture, researching, and problem-solving functions.
  
-- These functions are not the same as, but are very analogous to, what the Universal_FSCompliance_MCP Product will be asked to do. 
+- These functions are not the same as, but are very analogous to, what the Universal_FSCompliance_MCP Project will be asked to do. 
  
-- It is essential that the LLM inside the Universal_FSCompliance_MCP Product has the power and intelligence to make available the requisite tools, meeting our aim of turbocharging AI effectiveness in the Compliance context. Claude 3.5 Sonnet has shown such power and capability during the Universal_FSCompliance_MCP Project.
+- It is essential that the LLMs inside the Universal_FSCompliance_MCP Project's standard-specific MCP servers have the power and intelligence to make available the requisite tools, meeting our aim of turbocharging AI effectiveness in the Compliance context. Claude 3.5 Sonnet has shown such power and capability during the Universal_FSCompliance_MCP Project development.
 
-- The Universal_FSCompliance_MCP Product runs its own LLM completely independently from whatever LLM the enterprise chooses for their AI agents. This is a fundamental architectural separation.
+- The Universal_FSCompliance_MCP Project's MCP servers run their own LLMs completely independently from whatever LLM the enterprise chooses for their AI agents. This is a fundamental architectural separation that enables the AI Agent Oriented design.
 
 ## Fuller Analysis
 
@@ -63,7 +63,7 @@ This decision is foundational and fuller analysis was carried out:
 
 **Real-World Validation:**
 - **Extensive development testing**: Claude 3.5 Sonnet has undergone a comprehensive and sustained evaluation through the complete development of the Universal_FSCompliance_MCP Project - from initial regulatory analysis through strategic planning, technical architecture, and complex compliance reasoning tasks
-- **Proven performance in compliance contexts**: The substantial project work represents hundreds of hours of testing on functions directly analogous to the Universal_FSCompliance_MCP Product's requirements.
+- **Proven performance in compliance contexts**: The substantial project work represents hundreds of hours of testing on functions directly analogous to the Universal_FSCompliance_MCP Project's requirements.
 - **Demonstrated consistency**: Maintained high-quality output across diverse compliance tasks including regulatory interpretation, risk assessment, strategic analysis, and technical documentation
 
 **Strengths:**
@@ -79,11 +79,13 @@ This decision is foundational and fuller analysis was carried out:
 - **API dependency**: Reliance on Anthropic's infrastructure and availability
 
 **Use Cases:**
-- Comprehensive policy analysis (analyze_compliance)
-- Complex gap detection with risk prioritization (detect_gaps)
-- Consultation document analysis transforming regulatory uncertainty to strategic planning (analyze_consultation_impact)
-- Multi-factor compliance risk scoring (score_compliance_risk)
-- Regulatory relationship mapping (map_regulatory_relationships)
+- Quick compliance assessment (FCA_quickly_check_compliance)
+- Context-specific regulatory requirement extraction (FCA_identify_compliance_requirements_in_specific_case)
+- Comprehensive strategic compliance analysis (FCA_systematically_analyse_compliance_implications)
+- Gap-specific remediation recommendations (FCA_suggest_remediation)
+- Professional audit documentation preparation (FCA_prepare_draft_compliance_audit_report)
+- Enterprise-grade validation and benchmarking (FCA_validate_ground_truth)
+- System status and coverage visibility (FCA_status_of_standard_ingestion)
 
 #### LLaMA 3 (8B/70B)
 
@@ -157,7 +159,7 @@ The cost differential between LLMs is insignificant compared to these compliance
 
 #### Strategic Positioning
 
-The Universal_FSCompliance_MCP Product's LLM costs represent a small fraction of total compliance spend while providing significant competitive differentiation through proven quality and expert-level reasoning capabilities that align with our AI-compliance interface expertise-backed positioning.
+The Universal_FSCompliance_MCP Project's LLM costs represent a small fraction of total compliance spend while providing significant competitive differentiation through proven quality and expert-level reasoning capabilities that align with our AI-compliance interface expertise-backed positioning.
 
 #### Separate Architectures
 
@@ -176,9 +178,9 @@ A major advantage of the MCP protocol is that general enterprise LLM use is sepa
 - Alternative LLMs if Enterprise chooses
 - Completely separate infrastructure and API calls
 
-#### Strategic Implications for the Universal_FSCompliance_MCP Product.
+#### Strategic Implications for the Universal_FSCompliance_MCP Project.
 
-The separation of the enterprise's LLM use from specialised MCPs' LLM use frees up th Universal_FSCompliance_MCP Product to make optimal choices within its proper purview, and this will not validly impede enterprise adoption. 
+The separation of the enterprise's LLM use from specialised MCPs' LLM use frees up the Universal_FSCompliance_MCP Project to make optimal choices within its proper purview, and this will not validly impede enterprise adoption. 
 
 Enterprises are thus presented with the best of both worlds.
 
@@ -186,7 +188,7 @@ Enterprises are thus presented with the best of both worlds.
 
 This is a theoretical possibility which may become important in the future.
 
-For the time being, in order to avoid complexity, we have adopted the simplifying assumption that one LLM will be used throughout the Universal_FSCompliance_MCP Product.
+For the time being, in order to avoid complexity, we have adopted the simplifying assumption that one LLM will be used throughout each standard-specific MCP server in the Universal_FSCompliance_MCP Project.
 
 This architectural decision can be revisited in future releases if the need arises.
 
@@ -225,10 +227,10 @@ Claude 3.5 Sonnet default leverages Anthropic's enterprise API with comprehensiv
 **Cloud-First with Local Options:**
 - **Standard Operations**: Cloud Claude 3.5 Sonnet with enterprise data protections
 - **Enhanced Privacy**: Zero Data Retention agreements for immediate deletion
-- **Maximum Control**: Enterprises can choose to run the Universal_FSCompliance_MCP Product locally on their own infrastructure
+- **Maximum Control**: Enterprises can choose to run the Universal_FSCompliance_MCP Project locally on their own infrastructure
 - **Hybrid Approach**: Combination of cloud intelligence with local data processing when required
 
-## Fine-Tuning Position: Not Justified for the Universal_FSCompliance_MCP Product
+## Fine-Tuning Position: Not Justified for the Universal_FSCompliance_MCP Project
 
 ### Strategic Decision Against Fine-Tuning
 
@@ -237,14 +239,14 @@ We have adopted a deliberate architectural decision to **avoid LLM fine-tuning**
 ### Rationale Against Fine-Tuning
 
 **1. RAG Superior to Fine-Tuning for Regulatory Knowledge**
-The Universal_FSCompliance_MCP Product uses LightRAG for regulatory knowledge injection, which provides significant advantages over fine-tuning:
+The Universal_FSCompliance_MCP Project uses two-layer semantic matching for regulatory knowledge injection, which provides significant advantages over fine-tuning:
 - **Real-time updatability**: Regulations change frequently; RAG data can be updated immediately while fine-tuned LLMs become stale
 - **Auditability and explainability**: RAG sources are transparent and traceable, crucial for compliance contexts
 - **Flexibility**: The same LLM can access multiple regulatory frameworks without retraining
 - **Cost effectiveness**: No need for laborious and expensive retraining cycles
 
 **2. Multi-Model Strategy Conflicts**
-The Universal_FSCompliance_MCP Product's architecture supports multiple LLMs (Claude, LLaMA, Mistral). Fine-tuning would require:
+The Universal_FSCompliance_MCP Project's architecture supports multiple LLMs (Claude, LLaMA, Mistral). Fine-tuning would require:
 - Tuning multiple different LLM architectures consistently
 - Maintaining separate fine-tuned versions as base LLMs evolve
 - Massive resource commitment that scales poorly
@@ -261,7 +263,7 @@ The substantial effort required for fine-tuning is better invested in:
 - Building more sophisticated MCP compliance tools
 - Enhancing compliance analysis algorithms and workflows
 - Developing better integration with existing enterprise systems
-- Using ground truth data not to train but to validate quality of the Universal_FSCompliance_MCP Product's responses.
+- Using ground truth data not to train but to validate quality of the Universal_FSCompliance_MCP Project's responses.
 
 **5. Enterprise Trust**
 Standard LLMs provide:

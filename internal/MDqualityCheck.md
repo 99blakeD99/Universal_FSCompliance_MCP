@@ -52,10 +52,9 @@ Read the .md being reviewed in complete sweeps beginning-to-end sweeps from each
 ## Naming Conventions
 
 **Reserved Usage of "MCP":**
-- **The Universal_FSCompliance_MCP Project** - refers to the overall project, codebase, and development initiative
-- **The Universal_FSCompliance_MCP Product** - refers to the product that enterprises deploy and use
+- **The Universal_FSCompliance_MCP Project** - refers to the comprehensive development initiative creating a suite of specialist Compliance MCP servers for enterprise deployment and use
 - **Any other use of "MCP"** - is fine, for example when referring to the Model Context Protocol itself
-- Maintain this distinction consistently across all documentation to make sure meaning is unambiguous.
+- Maintain this consistent Project terminology across all documentation.
 
 ## Governance Support
 

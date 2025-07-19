@@ -1,4 +1,4 @@
-# Method for implenting an MCP Server covering a new Standard
+# Method for implementing an MCP Server covering a new Standard
 
 ## AI Agent Orientation
 
@@ -18,9 +18,9 @@ Consider the prompt: "Does [situation] comply with the requirements of the FCA?"
 
 Our MCP Server is currently called universal-fscompliance-mcp, with the vague starting intention that it would contain all implemented Identified Standards. 
 
-It contains tools called quickly_check_compliance, identify_compliance_requirements_in_specific_case, systematically_analyse_compliance_implications, suggest_remediation, prepare_draft_compliance_audit_report, map_relationships, validate_ground_truth, status_of_standard_ingestion. 
+It contains tools called quickly_check_compliance, identify_compliance_requirements_in_specific_case, systematically_analyse_compliance_implications, suggest_remediation, prepare_draft_compliance_audit_report, validate_ground_truth, status_of_standard_ingestion. 
 
-These names are good semantic anchors but it feels unlikely that the AI Agent will ever consider using them. What good will they seem if the AI Agent's primary concern is to respond to a prompt whose most important word is "FCA"?
+These names are good semantic anchors but it feels unlikely that the AI Agent will ever consider using them. How would they help if the AI Agent's primary concern is to respond to a prompt whose most important word is "FCA"?
 
 ### Proposed New Design.
 
@@ -34,7 +34,7 @@ This would then give the AI Agent a specific match on the most important word in
 
 ## Ingestion - Pareto Issues.
 
-Ingestion of the FCA Handbook raised immediate and interesting issues. First, size. In total it is large. Moreover a lot of the size consists of detail which may not suit vectorising, being abstruse in nature and footnote-like in character. It is likely that most of it will never be needed by the User of the AI Agent. Including it will be cumbersome to implement and slow down performance of the Tool. This is a classic Pareto problem, but more so: 99.99% of the value is in about 30% of the content, as an intuitive guess.
+Ingestion of the FCA Handbook raised immediate and interesting issues. First, size. In total it is large. Moreover a lot of the size consists of detail which may not suit vectorising, being abstruse in nature and footnote-like in character. It is likely that most of it will never be needed by the User of the AI Agent. Including it will be cumbersome to implement and slow down performance of the Tool. This represents a classic Pareto distribution challenge: approximately 90% of the regulatory value is concentrated in 30% of the content, requiring selective ingestion strategies to optimize performance while maintaining comprehensive coverage.
 
 ## Structure
 
@@ -106,3 +106,17 @@ In addition we should give consideration to running our MCP Server against the Q
 ## Database Strategy Reference
 
 The technical database architecture supporting this methodology is detailed in `DatabaseStrategy.md`, which specifies the single database with table prefixes approach optimized for AI Agent Oriented tool design.
+
+---
+
+## About This Document
+
+**Author**: Blake Dempster, Founder, CEO, Principal Architect  
+**Co-Authored by**: Claude Code (claude.ai/code)  
+**Created**: 19 July 2025  
+**Last Updated**: 19 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
+**Status**: (okay)  
+**Purpose**: Systematic methodology for implementing new regulatory standards as standard-specific MCP servers, ensuring consistent AI Agent Oriented architecture and quality across Universal Standards Engine expansion.
+
+---

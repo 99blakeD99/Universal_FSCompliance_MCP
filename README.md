@@ -6,11 +6,11 @@ This project is still in its early stages, but it has taken a sufficiently well-
 
 ## Vision and Mission.
 
-The Universal_FSCompliance_MCP Product's mission to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application like The Universal_FSCompliance_MCP Product. 
+The Universal_FSCompliance_MCP Project's mission to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application like The Universal_FSCompliance_MCP Project. 
 
 ## Identity.
 
-We set out to be **The open-source universal compliance intelligence platform built exclusively for financial services.** Structured as an MCP, we will rapidly ingest any Identified Standard to make the appropriate Tools accessible to any AI agent. This will free up significant time for users, typically compliance officers and other professionals working in financial institutions, to carry out senior executive tasks rather than get entangled in small-print. 
+We set out to be **The open-source universal compliance intelligence platform built exclusively for financial services.** Structured as a suite of specialist MCP servers, we will rapidly ingest any Identified Standard to make the appropriate Tools accessible to any AI agent. This will free up significant time for users, typically compliance officers and other professionals working in financial institutions, to carry out senior executive tasks rather than get entangled in small-print. 
 
 ## Market Opportunity
 
@@ -27,6 +27,8 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 - **[Tasks.md](Tasks.md)**: Development phases, technical deliverables, and completion tracking with success criteria
 - **[OurStory.md](OurStory.md)**: Founder narrative, development journey, and strategic insights from 8-day sprint
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture
+- **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization
+- **[StandardImplementMCP.md](StandardImplementMCP.md)**: Systematic methodology for implementing new regulatory standards as standard-specific MCP servers with proven template approach
 - **[LLMChoice.md](LLMChoice.md)**: AI model selection, Claude 3.5 Sonnet rationale, and multi-model strategy
 - **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
 - **[Rules.md](Rules.md)**: Development standards, coding conventions, and quality assurance requirements
@@ -42,7 +44,7 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 
 # Notes.
 
-**License**: The Universal_FSCompliance_MCP Product is opensource, licensed under the MIT License. The MIT License is a permissive license that allows free use, copy, modification, and distribution of software without restriction.
+**License**: The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT License. The MIT License is a permissive license that allows free use, copy, modification, and distribution of software without restriction.
 
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  

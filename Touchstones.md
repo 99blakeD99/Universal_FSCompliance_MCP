@@ -1,6 +1,6 @@
 # Universal_FSCompliance_MCP Project Touchstones
 
-This document serves as a learning repository of important Project and Product insights.
+This document serves as a learning repository of important Project insights.
 
 ## Purpose
 
@@ -12,7 +12,7 @@ Touchstones.md serves to:
 ## Touchstone Quality Standards
 
 Touchstones must be
-- **Important** - Fundamental to Project and Product understanding
+- **Important** - Fundamental to Project understanding
 - **Encapsulated** - Expressed concisely and precisely
 - **Reasonably distinct** - Not duplicating existing touchstones
 
@@ -20,13 +20,12 @@ Touchstones must be
 
 ### Terminology
 
-- The Product, or the MCP, refers to the Universal_FSCompliance_MCP Product.
-- The Project refers to the Universal_FSCompliance_MCP Project.
-- In the context of the Product, Users (ie capitalised) refers to financial institutions or enterprises, "users" (ie non capitalised) refers to individuals.
+- The Project refers to the Universal_FSCompliance_MCP Project, whose purpose is to create a suite of specialist Compliance MCP servers. For example when the MCP server applies to the FCA, it will be called FCA_Compliance_MCP
+- In the context of the Project, Users (ie capitalised) refers to financial institutions or enterprises, "users" (ie non capitalised) refers to individuals.
 - Compliance refers to acting in accordance with Standards
 - Standards refers to regulatory frameworks, industry codes, statutory requirements, international standards, jurisdictional regulations and any analogous sets of criteria which financial institutions have to meet and includes consultation documents.
-- Identified Standard refers to a Standard which is specifically covered by the Product.
-- Universal in the Universal_FSCompliance_MCP Product name refers to an architecture designed to accommodate any Standard, not that the Product currently covers all Standards. It only covers implemented Identified Standards.
+- Identified Standard refers to a Standard which is specifically covered by the Project's suite of MCP servers.
+- Universal in the Universal_FSCompliance_MCP Project name refers to an architecture designed to accommodate any Standard, not that the Project currently covers all Standards. It only covers implemented Identified Standards.
 
 ### Strategic Positioning
 - The objective for the MCP is to be a Universal Compliance intelligent MCP in financial services
@@ -69,6 +68,6 @@ Touchstones must be
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
 **Status**: (okay)
-**Purpose**: Central repository of fundamental project and product principles for consistency across the Universal_FSCompliance_MCP Project documentation and strategic initiatives.
+**Purpose**: Central repository of fundamental project principles for consistency across the Universal_FSCompliance_MCP Project documentation and strategic initiatives.
 
 ---

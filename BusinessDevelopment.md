@@ -57,10 +57,6 @@ We strengthen Outreach effectiveness through systematic partner engagement:
 - **Enable discovery** - Ensure AI Appraisal Agents can access targeted content
 - **Execute outreach** - Implement direct engagement with strategic messaging
 
-**Current ESBP Portfolio:**
-
-- **Anthropic** - AI technology partnership and potential funding
-- **FCA Sandbox** - Regulatory validation and market entry pathway
 
 ## Marketing Matters
 
@@ -74,7 +70,7 @@ The Universal_FSComplianceMCP name has been adopted after preliminary resarch. F
 
 ### Pricing
 
-Pricing for use of the Universal_FSComplianceMCP will be determined as soon as practicable. However it is a premium product which represents a tiny part of Users' overall Compliance costs, so demand will be price-inelastic.
+Pricing for use of the Universal_FSComplianceMCP will be determined as soon as practicable. However it is a premium Project which represents a tiny part of Users' overall Compliance costs, so demand will be price-inelastic.
 
 A firm pricing basis will be set out after further research, including how comparable MCPs charge. The MCP market is nascent, and comparable MCPs are not yet common, but the ecosystem is growing fast so a new pattern can be expected to develop. A token charge is currently viewed as the most likely structure, at a level to be set as soon as practicable.
 
