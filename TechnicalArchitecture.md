@@ -359,18 +359,19 @@ class ComplianceResponse(BaseModel):
 
 **Development Setup:**
 ```bash
-# Clone and setup universal standards engine
-git clone https://github.com/99blakeD99/universal-fscompliance-mcp.git
-cd universal-fscompliance-mcp
+# Clone and setup Universal_FSCompliance_MCP Project
+git clone https://github.com/99blakeD99/Universal_FSCompliance_MCP.git
+cd Universal_FSCompliance_MCP/fca_compliance_mcp
 
 # Install dependencies
 poetry install
 
 # Start FCA compliance server
-poetry run python -m fca_compliance.server --port 8001
+poetry run python -m fca_compliance.server
 
 # Start MiFID compliance server (when implemented)
-poetry run python -m mifid_compliance.server --port 8002
+cd ../mifid_compliance_mcp
+poetry run python -m mifid_compliance.server
 ```
 
 **Testing Strategy:**

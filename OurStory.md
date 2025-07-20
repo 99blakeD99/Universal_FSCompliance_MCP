@@ -223,7 +223,7 @@ Touchstones established at centre of review method.
 
 Market research showing $13B to $82B growth by 2033
 
-Product architecture expanded: 3 to 10 comprehensive compliance tools based on market research
+Product architecture standardized: 7 comprehensive compliance tools based on market research and daily compliance officer workflows
 
 Touchstones used for establishing strategic positioning.
 

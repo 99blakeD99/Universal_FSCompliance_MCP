@@ -48,16 +48,17 @@ poetry run ruff check .
 poetry run pytest
 
 # Run with coverage
-poetry run pytest --cov=fscompliance
+poetry run pytest --cov=fca_compliance
 ```
 
 ### MCP Server
 ```bash
-# Start MCP server
-poetry run python -m fscompliance.server
+# Start FCA Compliance MCP server
+cd fca_compliance_mcp
+poetry run python -m fca_compliance.server
 
-# Test MCP server
-poetry run python -m fscompliance.test_client
+# Test FCA Compliance MCP server
+poetry run python -m fca_compliance.test_client
 ```
 
 ## Architecture

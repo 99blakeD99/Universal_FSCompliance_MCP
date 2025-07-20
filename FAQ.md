@@ -8,7 +8,7 @@ The mission is to slice through red tape and make it easier to bring the right f
 
 ### Overview
 
-The Universal_FSCompliance_MCP Project is a suite of MCP servers available to any AI agent through Model Context Protocol (MCP) integration. It starts with the FCA Handbook to create the FCA_Compliance_MCP server, containing tools such as FCA_quickly_check_compliance. Other MCPs will follow using similar methods and using similar architectures. 
+The Universal_FSCompliance_MCP Project is a suite of MCP servers available to any AI agent through Model Context Protocol (MCP) integration. It starts with the FCA Handbook to create the FCA_Compliance_MCP server, containing tools such as FCA_quickly_check_compliance. Other MCP servers will follow, using similar methods and using similar architectures. 
 
 The Project is structured in this way because AI Agents will use MCP servers and Tools which are semantically weighted in accordance with the originating prompt, which in this example would feature both "FCA" and "Compliance", e.g. "Does the attached policy wording comply with FCA requirements?".
 
@@ -29,11 +29,17 @@ Any Standard which is sufficiently structured (i.e. with coherent headings) will
 
 At present Identified Standards are limited to the **FCA Handbook** - which is being used as a proof of concept. The architectures thus developed will then be replicated in ingesting other Standards.
 
+## What is the market size?
+
+The "RegTech" market in financial services is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) - Allied Market Research, 2025. The Universal_FSCompliance_MCP Project is positioning to be essential support for this market.
+
 ## What is the current Project stage?
 
 This Project is in its early stages but has taken sufficiently well-delineated form to be appropriate for this GitHub repository. Many capabilities described are under development. However, the pace of development assisted by AI supports firm belief that capabilities will be quickly implemented.
 
-The "RegTech" market in financial services is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) - Allied Market Research, 2025. The Universal_FSCompliance_MCP Project is positioning to be essential support for this market.
+The state of the Project after less than one month is that the first MCP server, the FCA_Compliance_MCP, is functionally complete with all 7 core tools and ready for enterprise testing, with deployment optimization in progress.
+
+The Project is thus a test case of ultra-rapid large-scale development using new AI tools.
 
 ## Why is README.md on GitHub so important?
 
@@ -64,7 +70,7 @@ All of our markdown documents have been separately and specifically screened to 
 - We are easily discoverable.
 - We are easily appraised.
 - We don't waste time with protracted discussions with enterprises (which essentially cover the same ground, but much more slowly and much more painfully). A win for them and a win for us.
-- No more .pdfs, no more powerpoint presentations, no more website management, no more human salesforce: all these are legacy technologies.
+- No more .pdfs, no more powerpoint presentations, no more pitchdecks, no more website management, no more human salesforce: all these are legacy technologies.
 - Rapid weeding out of unsuitable matches
 - For suitable partners, a sharp concertina-ing of the sales process - the buyer already has all the needed information.
 - Internally, this context means that we have a serious interest in maintaining document quality. The .mds referred to in README.md no longer represent a back-office chore, they are a front-line priority. (We have put in place a permanent rolling .md cleansing human-eyeball system.)

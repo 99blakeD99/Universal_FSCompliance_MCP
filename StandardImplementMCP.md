@@ -16,7 +16,7 @@ Consider the prompt: "Does [situation] comply with the requirements of the FCA?"
 
 ### As Initially Designed.
 
-Our MCP Server is currently called universal-fscompliance-mcp, with the vague starting intention that it would contain all implemented Identified Standards. 
+Our original MCP Server was called universal-fscompliance-mcp (now renamed to fca_compliance_mcp), with the vague starting intention that it would contain all implemented Identified Standards. 
 
 It contains tools called quickly_check_compliance, identify_compliance_requirements_in_specific_case, systematically_analyse_compliance_implications, suggest_remediation, prepare_draft_compliance_audit_report, validate_ground_truth, status_of_standard_ingestion. 
 
