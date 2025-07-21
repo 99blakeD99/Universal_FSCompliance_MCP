@@ -203,6 +203,83 @@ This document tracks development phases for the Universal_FSCompliance_MCP Proje
 - ⏳ Create streamlined compliance checking for routine queries
 - ⏳ Enable instant compliance guidance for business operations
 
+### LLM-Open Architecture Implementation
+**Objective**: Future-proof LLM flexibility while maintaining Claude 3.5 Sonnet as proven default
+**Success Metric**: Abstract interface deployed with configuration-driven LLM selection
+**Business Value**: Enterprise adoption flexibility without vendor lock-in concerns
+**Timeline**: Current sprint (1-2 days)
+
+#### Abstract LLM Interface Design (High Priority)
+- ⏳ Design abstract LLMProvider interface for compliance analysis operations
+- ⏳ Create standardized methods: analyze_compliance(), generate_embeddings(), format_audit_report()
+- ⏳ Ensure interface supports current Claude functionality without changes
+- ⏳ Document interface contracts for future LLM provider implementations
+
+#### Configuration System Implementation (High Priority)  
+- ⏳ Create environment variable configuration for LLM provider selection
+- ⏳ Implement LLM_PROVIDER setting with "claude-3.5-sonnet" as default
+- ⏳ Add API key management for current and future LLM providers
+- ⏳ Design configuration validation and error handling
+
+#### Existing Code Refactoring (High Priority)
+- ⏳ Refactor existing Claude API calls to use abstract interface
+- ⏳ Wrap current openai.chat.completions.create() calls in LLMProvider methods
+- ⏳ Ensure zero functional changes to existing compliance analysis
+- ⏳ Maintain all current performance characteristics and response quality
+
+#### Strategic Positioning Updates (Medium Priority)
+- ⏳ Update user-facing messages to reflect "LLM-open" capability
+- ⏳ Create messaging for Claude recommendation with alternative options
+- ⏳ Document future multi-LLM roadmap in technical documentation
+- ⏳ Prepare enterprise communication about LLM flexibility
+
+### Interaction Analytics & Dashboard Infrastructure
+**Objective**: Comprehensive interaction logging for operational visibility and strategic analytics
+**Success Metric**: Real-time dashboard with multi-stakeholder insights operational
+**Business Value**: Regulatory intelligence, research capabilities, and marketing insights
+**Timeline**: Current sprint integration with Phase 3 dashboard delivery
+
+#### Database Schema Design (High Priority)
+- ⏳ Design fca_tool_usage table with comprehensive interaction logging
+- ⏳ Implement user identification and multi-tenant organization support
+- ⏳ Add strategic analytics fields: query complexity, business context, industry sector
+- ⏳ Include operational metrics: processing time, confidence scores, boundary messages
+- ⏳ Design temporal and regulatory calendar context tracking
+- ⏳ Create anonymized organizational categorization for research insights
+
+#### Automatic Logging Implementation (High Priority)
+- ⏳ Integrate interaction logging into all 7 MCP tools automatically
+- ⏳ Implement user context capture from MCP session or environment variables
+- ⏳ Add real-time Supabase logging with minimal performance impact
+- ⏳ Create query complexity scoring and business context classification
+- ⏳ Implement session tracking and follow-up query correlation
+- ⏳ Add boundary message detection and content coverage tracking
+
+#### Dashboard Architecture Planning (Medium Priority)
+- ⏳ Design multi-stakeholder dashboard access (users, organizations, regulators, researchers)
+- ⏳ Plan integration with multiple visualization platforms (Supabase, Grafana, Power BI)
+- ⏳ Create row-level security for user-specific and organizational data isolation
+- ⏳ Design aggregated analytics views for regulatory and research insights
+- ⏳ Plan real-time monitoring capabilities for operational visibility
+- ⏳ Document privacy and anonymization requirements for public research data
+
+#### Strategic Analytics Features (Medium Priority)
+- ⏳ Design regulatory usage pattern analysis for FCA stakeholder insights
+- ⏳ Create compliance pain point identification and trend analysis
+- ⏳ Build academic research data export capabilities with anonymization
+- ⏳ Implement marketing analytics for thought leadership and press insights
+- ⏳ Add regulatory complexity measurement through AI interaction patterns
+- ⏳ Create competitive intelligence gathering from usage behavior analysis
+
+#### GDPR and Financial Services Compliance (High Priority)
+- ⏳ Implement automated data retention policies with configurable periods (7yr/3yr/1yr)
+- ⏳ Build data subject rights API endpoints for export, rectification, and erasure
+- ⏳ Create data classification system (personal, business confidential, aggregated, public)
+- ⏳ Implement geographic data residency controls for EU compliance
+- ⏳ Build automated compliance reporting for data processing activities
+- ⏳ Add k-anonymity enforcement (k≥5) for research dataset publication
+- ⏳ Create lawful basis tracking and consent management for research participation
+
 #### Tool 2: systematically_analyse_compliance_implications (Very High Priority)
 - ⏳ Implement detailed analysis for policies, procedures, and business activities
 - ⏳ Build comprehensive compliance assessment capabilities

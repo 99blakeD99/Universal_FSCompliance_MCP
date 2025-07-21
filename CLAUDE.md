@@ -73,8 +73,9 @@ The Universal_FSCompliance_MCP Project follows an AI Agent Oriented multi-server
 
 ### Strategic Architecture Decisions
 - **LLM Strategy**: Claude 3.5 Sonnet selected as default based on extensive real-world validation through the Universal_FSCompliance_MCP Project development; no fine-tuning architectural decision per `LLMChoice.md`
-- **LLM Independence**: Our MCP server runs its own LLM completely separately from enterprise AI agent LLM choices, eliminating adoption barriers from corporate LLM standardization decisions
-- **Database Evolution**: Migrating to Supabase (PostgreSQL + PGVector) per `DatabaseStrategy.md` for simplified architecture and real-time capabilities
+- **LLM Independence**: Our MCP server runs its own LLM completely separately from enterprise AI agent LLM choices, eliminating adoption barriers from corporate LLM standardization decisions  
+- **LLM-Open Architecture**: Phased implementation with Claude-first optimization while maintaining abstract interfaces for future multi-LLM expansion per `LLMChoice.md`
+- **Database Architecture**: Unified Supabase (PostgreSQL + PGVector) with standard-specific table prefixes per `DatabaseStrategy.md` for simplified architecture and real-time capabilities
 - **MCP Tool Priority**: 7 core tools identified in `ComplianceTools.md` with standard-specific prefixing (removed map_relationships as not aligned with daily compliance work)
 - **Brand Positioning**: Positioned as first MCP-integrated compliance platform per `Brand.md` competitive analysis
 - **UI/UX Design**: Professional financial services interface specifications detailed in `UserInterface.md`
@@ -84,7 +85,7 @@ The Universal_FSCompliance_MCP Project follows an AI Agent Oriented multi-server
 - **Pydantic v2** for data validation and serialization
 - **LightRAG** for knowledge retrieval and graph processing
 - **FastAPI** for web framework and MCP server implementation
-- **Supabase** for unified database with real-time capabilities (migration planned Q3 2025)
+- **Supabase** for unified database with real-time capabilities and comprehensive interaction analytics
 - **OAuth 2.1** for authentication and security
 
 ## Universal Standards Definition
@@ -145,6 +146,9 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 - **Default LLM Configuration**: Claude 3.5 Sonnet must be default in config files/environment variables
 - **Multi-Model Architecture**: Code must support configurable LLM providers (Claude, LLaMA 3, Mistral, user-defined)
 - **Architectural Independence**: The MCP server LLM choice operates completely independently from AI agent LLM choices
+- **Abstract Interface Design**: Implement LLMProvider class with future-ready interface even if only Claude path implemented initially
+- **Configuration-Driven LLM Selection**: Environment variables `LLM_PROVIDER="claude-3.5-sonnet"` with provider-specific API keys
+- **Phased Implementation**: Claude-first implementation with abstract architecture ready for multi-LLM expansion
 
 ### From Touchstones.md:
 - **Universal Standards Engine**: Code must support rapid ingestion of new regulatory frameworks beyond FCA Handbook
@@ -204,6 +208,18 @@ The 7 core tools with standard-specific prefixing (e.g., `FCA_quickly_check_comp
 5. Audit report preparation
 6. Ground truth validation
 7. System status and coverage visibility
+
+## Interaction Analytics Requirements
+
+All MCP tools must implement automatic interaction logging per `DatabaseStrategy.md`:
+
+- **Mandatory Logging**: Every tool includes `await self._log_interaction(data)` 
+- **Performance**: Asynchronous, <5ms overhead, never blocks tool execution
+- **Data Capture**: User context, tool usage, regulatory navigation, response metrics
+- **Privacy**: Row-level security, anonymization support, configurable participation
+- **Dashboard Support**: Multi-platform integration (Supabase, Grafana, Power BI, custom)
+- **Data Retention**: Automated deletion (7yr compliance audit, 3yr operational, 1yr research)
+- **GDPR Compliance**: Data subject rights API endpoints (export, rectify, erase)
 
 ## Document Quality
 

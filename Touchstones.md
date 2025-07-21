@@ -43,8 +43,9 @@ Touchstones must be
 - The MCP transforms consultation document analysis from reactive scrambling to proactive strategic planning
   
 ### Use of MCP Protocol
-- The MCP internally allows use of any LLM within the MCP
-- The external LLM calling the MCP is a matter of user choice and has no bearing on use of the MCP
+- The MCP server runs its own LLM completely independently from enterprise AI agent LLM choices, eliminating adoption barriers
+- The external LLM calling the MCP is a matter of user choice and has no bearing on MCP server operation
+- This architectural separation allows enterprises to use any AI agent while accessing specialized compliance intelligence
 - The MCP is open-source and transparent for trust and auditability
 - Model Context Protocol (MCP) integration makes the platform AI-agent native
 - Enterprise-grade data protection addresses financial services privacy requirements.
