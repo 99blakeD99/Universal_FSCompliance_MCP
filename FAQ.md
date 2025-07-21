@@ -16,9 +16,9 @@ The MCP servers will transform Compliance from a heavy burden into routine hygie
 
 ### What does "Universal" mean?
 
-The Universal_FSCompliance_MCP Project is universal in the sense of being capable of applying to any **Identified Standards**.
+The Universal_FSCompliance_MCP Project is universal in the sense of being capable of applying to any **Implemented Standards**.
 
-Any Standard which is sufficiently structured (i.e. with coherent headings) will be able to be rapidly ingested to become an **Identified Standard**, including:
+Any Standard which is sufficiently structured (i.e. with coherent headings) will be able to be rapidly ingested to become an **Implemented Standard**, including:
 
 - **Regulatory frameworks** (FCA Handbook, SEC rules, MiFID II, Basel III)
 - **Industry codes** (conduct codes, best practice guidelines)
@@ -27,7 +27,7 @@ Any Standard which is sufficiently structured (i.e. with coherent headings) will
 - **Jurisdictional regulations** (state, provincial, national requirements)
 - **Consultation documents** (regulatory proposals, policy consultations, draft guidance)
 
-At present Identified Standards are limited to the **FCA Handbook** - which is being used as a proof of concept. The architectures thus developed will then be replicated in ingesting other Standards.
+At present Implemented Standards are limited to the **FCA Handbook** - which is being used as a proof of concept. The architectures thus developed will then be replicated in ingesting other Standards.
 
 ## What is the market size?
 
@@ -80,7 +80,7 @@ All of our markdown documents have been separately and specifically screened to 
 
 ### How do automatic updates work?
 
-The Universal_FSCompliance_MCP Project has in place a special Tool to ensure that Identified Standards are kept up to date. Traditional non-AI native Compliance tools typically find this very difficult, but the AI-native Universal_FSCompliance_MCP Project makes it very achievable. Updates are invisible and automatic from the User's viewpoint.
+The Universal_FSCompliance_MCP Project has in place a special Tool to ensure that Implemented Standards are kept up to date. Traditional non-AI native Compliance tools typically find this very difficult, but the AI-native Universal_FSCompliance_MCP Project makes it very achievable. Updates are invisible and automatic from the User's viewpoint.
 
 ### What is the LLM-Open Architecture?
 

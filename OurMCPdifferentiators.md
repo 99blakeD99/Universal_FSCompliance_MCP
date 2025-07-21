@@ -11,7 +11,7 @@ It is intended to be helpful to financial institutions interested in using the U
 
 - The Universal_FSCompliance_MCP Product when mature will be a UNIVERSAL compliance engine, ie be capable of covering ANY identified Standard. Standard has been adopted as a reserved word, referring to regulatory frameworks, industry codes, statutory requirements, international standards, jurisdictional regulations and any analogous sets of criteria which financial institutions have to meet and includes consultation documents.
 
-- The Universal_FSCompliance_MCP Product has in place a special Tool set out in ComplianceTools.md to ensure that the Identified Standards ingested into the Universal_FSCompliance_MCP Product are kept up to date. Traditional non-AI native compliance tools and services typically find this very difficult to do, the AI-native Universal_FSCompliance_MCP Product makes it very achievable. The Tool will be invoked systematically as a hygiene measure. From the User's viewpoint the updating will be invisible and automatic.
+- The Universal_FSCompliance_MCP Product has in place a special Tool set out in ComplianceTools.md to ensure that the Implemented Standards in the Universal_FSCompliance_MCP Product are kept up to date. Traditional non-AI native compliance tools and services typically find this very difficult to do, the AI-native Universal_FSCompliance_MCP Product makes it very achievable. The Tool will be invoked systematically as a hygiene measure. From the User's viewpoint the updating will be invisible and automatic.
 
 - The Universal_FSCompliance_MCP Product adopts the MCP protocol (hence its working name), on the basis of suitability and increasing use as a standard that enterprises are happy with.
 

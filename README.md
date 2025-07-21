@@ -10,7 +10,7 @@ The Universal_FSCompliance_MCP Project's mission to slice through red tape and m
 
 ## Identity.
 
-We set out to be **The open-source universal compliance intelligence platform built exclusively for financial services.** Structured as a suite of specialist MCP servers, we will rapidly ingest any Identified Standard to make the appropriate Tools accessible to any AI agent. This will free up significant time for users, typically compliance officers and other professionals working in financial institutions, to carry out senior executive tasks rather than get entangled in small-print. 
+We set out to be **The open-source universal compliance intelligence platform built exclusively for financial services.** Structured as a suite of specialist MCP servers, we will rapidly ingest any Standard to create Implemented Standards that make the appropriate Tools accessible to any AI agent. This will free up significant time for users, typically compliance officers and other professionals working in financial institutions, to carry out senior executive tasks rather than get entangled in small-print. 
 
 ## Market Opportunity
 

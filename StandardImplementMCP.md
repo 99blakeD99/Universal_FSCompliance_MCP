@@ -10,13 +10,13 @@ Our MCP Server is designed for use as an MCP server available to AI Agents. Dire
 
 In our context, The AI Agent will be responding directly or indirectly to a prompt about Compliance for a Financial Institution. But this implies a structure. The prompt cannot meaningfully just say "Does [situation] comply?". Comply with what? The prompt only becomes meaningful if it says "Does [situation] comply with the requirements of [Standard]?". In this situation the [Standard] assumes maximum semantic significance for the AI Agent.
 
-### Example: the FCA Handbook, our first Identified Standard.
+### Example: the FCA Handbook, our first Implemented Standard.
 
 Consider the prompt: "Does [situation] comply with the requirements of the FCA?". It can be assumed that our User, a financial institution, will have constructed the AI agent in the expectation that this sort of prompt will arise, and incorporated into the AI agent access to our MCP server. The question is what would make the AI Agent use the Tools provided in our MCP server.
 
 ### As Initially Designed.
 
-Our original MCP Server was called universal-fscompliance-mcp (now renamed to fca_compliance_mcp), with the vague starting intention that it would contain all implemented Identified Standards. 
+Our original MCP Server was called universal-fscompliance-mcp (now renamed to fca_compliance_mcp), with the vague starting intention that it would contain all Implemented Standards. 
 
 It contains tools called quickly_check_compliance, identify_compliance_requirements_in_specific_case, systematically_analyse_compliance_implications, suggest_remediation, prepare_draft_compliance_audit_report, validate_ground_truth, status_of_standard_ingestion. 
 
@@ -24,7 +24,7 @@ These names are good semantic anchors but it feels unlikely that the AI Agent wi
 
 ### Proposed New Design.
 
-It is proposed that each new Identified Standard is structured as a separate MCP server with the name [Standard_Tag]_Compliance_MCP. Our first one would thus be FCA_Compliance_MCP.
+It is proposed that each new Implemented Standard is structured as a separate MCP server with the name [Standard_Tag]_Compliance_MCP. Our first one would thus be FCA_Compliance_MCP.
 
 Inside it the tools need to include the [Standard_Tag] prepend, eg FCA_quickly_check_compliance, FCA_identify_compliance_requirements_in_specific_case etc.
 
@@ -48,7 +48,7 @@ The headings in the FCA Handbook clearly set out to communicate maximum meaning 
 
 This suggests an optimum approach: make the same decision identifying the important headings and vectorising them together with the content beneath them, but also ingesting the less important headings *without* the content beneath them. This will mean that if it turns out that the less important heading did in the event turn out to be relevant, through use of the 2-Layer Semantic Matching, the Tool could return a message saying: "It looks like the [less important heading] may be relevant but we do not have full information of what lies beneath it." 
 
-## Future Identified Standards Implementation Methodology
+## Future Implemented Standards Implementation Methodology
 
 ### Phase 1: Standard Assessment and Feasibility
 1. **Structure Analysis**: Evaluate the regulatory standard to ensure it utilizes well-organized hierarchical headings suitable for semantic anchor extraction. Standards lacking clear structural organization should be considered for deferral as they may be unsuitable for AI-powered analysis.

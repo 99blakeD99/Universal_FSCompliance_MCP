@@ -24,12 +24,12 @@ Touchstones must be
 - In the context of the Project, Users (ie capitalised) refers to financial institutions or enterprises, "users" (ie non capitalised) refers to individuals.
 - Compliance refers to acting in accordance with Standards
 - Standards refers to regulatory frameworks, industry codes, statutory requirements, international standards, jurisdictional regulations and any analogous sets of criteria which financial institutions have to meet and includes consultation documents.
-- Identified Standard refers to a Standard which is specifically covered by the Project's suite of MCP servers.
-- Universal in the Universal_FSCompliance_MCP Project name refers to an architecture designed to accommodate any Standard, not that the Project currently covers all Standards. It only covers implemented Identified Standards.
+- Implemented Standard refers to a Standard which is specifically covered by the Project's suite of MCP servers.
+- Universal in the Universal_FSCompliance_MCP Project name refers to an architecture designed to accommodate any Standard, not that the Project currently covers all Standards. It only covers Implemented Standards.
 
 ### Strategic Positioning
 - The objective for the MCP is to be a Universal Compliance intelligent MCP in financial services
-- The FCA Handbook is the first Identified Standard: a proof of concept
+- The FCA Handbook is the first Implemented Standard: a proof of concept
 - Other standards will be processed using the architectures established through the FCA Handbook exercise
 
 ### Value Proposition  
@@ -37,7 +37,7 @@ Touchstones must be
 - Using the MCP will make it easier to bring the right product safely to consumers
 - Using the MCP will help deal with the knotweed nature of rules and regulations.
 - Using the MCP will enable compliance professionals to carry out senior executive tasks rather than get entangled in small-print
-- Compliance with Identified Standards is impossible without AI tools.
+- Compliance with Implemented Standards is impossible without AI tools.
 - Human effectiveness is transformationally enhanced
 - Humans still have final responsibility, the MCP's role is to make that responsibility manageable
 - The MCP transforms consultation document analysis from reactive scrambling to proactive strategic planning
@@ -55,7 +55,7 @@ Touchstones must be
 - These Touchstones are systematically applied in reviewing all components to ensure strategic alignment
 - To achieve permanent integrity of the MCP, a review process covers content quality, alignment, multi-perspective validity, and effective implementation into programming code
 - The standard format for Project documentation is the AI-friendly markdown format.
-- A formal process is regularly applied to ensure that Identified Standards once implemented are updated as needed..
+- A formal process is regularly applied to ensure that Implemented Standards are updated as needed.
 
 ### Development Methodology
 - Prompt engineering for ultra-rapid ultra-strong product development
