@@ -49,17 +49,28 @@ This document provides a comprehensive guide to the Universal_FSCompliance_MCP P
 ## **Multi-Server MCP Architecture**
 
 ### **🏗️ MCP Servers Directory**
+
+**Current Implementation**: FCA Compliance server operates as a **standalone repository** for MCP ecosystem integration:
+
+**Active Repository**: `github.com/99blakeD99/mcp-server-fca-compliance`
+
+**Planned Architecture** (Future expansion):
 ```
 mcp-servers/
-├── fca-compliance/           # FCA Handbook compliance server (PRODUCTION)
-└── [future standards]/      # MiFID, SEC, Basel servers (PLANNED)
+├── fca-compliance/           # FCA Handbook compliance server (PLANNED CONSOLIDATION)
+├── mifid-compliance/         # MiFID II compliance server (PLANNED)
+├── sec-compliance/           # SEC Rules compliance server (PLANNED)
+└── basel-compliance/         # Basel III compliance server (PLANNED)
 ```
 
 **Purpose**: AI Agent Oriented multi-server architecture where each regulatory standard receives its own dedicated MCP server for optimal semantic matching and tool discovery.
 
 ### **📋 FCA Compliance Server Structure**
+
+**Current Location**: Standalone repository `mcp-server-fca-compliance`
+
 ```
-mcp-servers/fca-compliance/
+mcp-server-fca-compliance/     # Standalone repository (CURRENT)
 ├── Dockerfile                # Container deployment configuration
 ├── LICENSE                   # Open source license
 ├── README.md                 # MCP server documentation
@@ -239,63 +250,61 @@ The Universal_FSCompliance_MCP Project transitioned from separate repositories t
 
 ### **MCP Ecosystem Integration Resolution**
 
-**Critical Issue Identified**: After repository consolidation, the MCP ecosystem PR #2394 referenced an outdated repository URL that no longer contained the current implementation.
+**Critical Issue Identified**: The MCP ecosystem PR #2394 was incorrectly referencing a planned monorepo consolidation that had not been implemented.
 
 **Resolution Applied**:
-- **Updated URL**: From `github.com/99blakeD99/mcp-server-fca-compliance`
-- **To Correct Path**: `github.com/99blakeD99/Universal_FSCompliance_MCP/tree/main/mcp-servers/fca-compliance`
-- **Result**: MCP ecosystem submission now points to active, Stage 2-capable implementation
+- **Corrected Approach**: Maintain FCA server in standalone repository for MCP ecosystem integration
+- **Active Repository**: `github.com/99blakeD99/mcp-server-fca-compliance` (working implementation)
+- **Result**: Fresh PR submission references stable, accessible repository location
 
-### **GitHub Tree URL Pattern**
+### **Repository Strategy: Standalone vs Monorepo**
 
-GitHub's `/tree/main/path` URL structure enables **monorepo subdirectory referencing**, supporting:
+**Current Approach**: **Standalone repositories** for MCP ecosystem integration:
 
-**Advantages**:
-- **Single Source of Truth**: All implementations in one repository
-- **Systematic Expansion**: Consistent pattern for new standards (`/mcp-servers/[standard]-compliance/`)
-- **Integrated Development**: Shared infrastructure, testing, and documentation
-- **Version Synchronization**: All servers versioned together
+**Advantages of Standalone Approach**:
+- **Simple URLs**: Direct repository access without subdirectory paths
+- **MCP Ecosystem Standard**: Aligns with typical MCP server distribution pattern
+- **Clear Focus**: Each regulatory standard has dedicated repository and development cycle
+- **Stable References**: Repository URLs won't change, ensuring reliable external links
 
-**URL Structure for Future Standards**:
-```
-- FCA: /tree/main/mcp-servers/fca-compliance
-- MiFID: /tree/main/mcp-servers/mifid-compliance (planned)
-- SEC: /tree/main/mcp-servers/sec-compliance (planned)
-- Basel: /tree/main/mcp-servers/basel-compliance (planned)
-```
+**Future Monorepo Consideration**:
+Monorepo consolidation remains an option for future development efficiency, but current standalone approach provides:
+- **Immediate MCP ecosystem compatibility**
+- **Clear separation of concerns**
+- **Standard industry practice alignment**
 
 ### **External Reference Management**
 
 **MCP Ecosystem Submission**:
 - **Repository**: `github.com/99blakeD99/servers` (fork of modelcontextprotocol/servers)
-- **PR Status**: #2394 - Updated to reference consolidated repository
-- **Entry Format**: Standard MCP ecosystem listing with correct subdirectory URL
+- **PR Status**: Fresh submission after closing #2394 due to GitHub caching issues
+- **Entry Format**: Standard MCP ecosystem listing with standalone repository URL
 
 **Strategic Implications**:
-- **Professional Presentation**: Monorepo structure demonstrates enterprise architecture
-- **Scalability Evidence**: Multi-server organization shows systematic expansion capability
-- **Development Maturity**: Consolidated structure indicates beyond-prototype status
+- **Professional Presentation**: Standalone repository demonstrates production-ready MCP server
+- **Scalability Evidence**: Template approach enables rapid expansion to additional regulatory standards
+- **Development Maturity**: Full-featured implementation with comprehensive testing and documentation
 
 ### **Repository Backup and Recovery Alignment**
 
-**Current Status**: All implementations are **fully protected** in the main repository:
-- **Strategic Documentation**: 20+ .md files with comprehensive project guidance
-- **MCP Server Implementation**: 202KB server.py with Stage 2 functionality complete
+**Current Status**: Implementations are **fully protected** across dedicated repositories:
+- **Strategic Documentation**: 20+ .md files in main Universal_FSCompliance_MCP repository
+- **MCP Server Implementation**: 202KB server.py in standalone mcp-server-fca-compliance repository
 - **LLM Abstraction Layer**: New config.py and llm_provider.py for multi-model support
 - **Testing Infrastructure**: Comprehensive test suite with 90%+ coverage targets
 - **Development Tools**: Database management, ingestion utilities, deployment configs
 
-**Recovery Capability**: **100% recovery possible** from GitHub - all critical files committed and synchronized.
+**Recovery Capability**: **100% recovery possible** from GitHub - all critical files committed across repositories.
 
 ### **Alignment with Strategic Architecture**
 
 This repository structure directly supports:
 - **AI Agent Oriented Design**: Clear semantic separation by regulatory standard
 - **Universal Standards Engine**: Systematic expansion methodology proven through FCA implementation
-- **Enterprise Deployment**: Professional monorepo structure suitable for corporate evaluation
-- **MCP Ecosystem Integration**: Proper URL referencing for official Anthropic ecosystem inclusion
+- **Enterprise Deployment**: Professional standalone repositories suitable for corporate evaluation
+- **MCP Ecosystem Integration**: Standard repository pattern for official Anthropic ecosystem inclusion
 
-The consolidated repository structure maintains all strategic objectives while providing improved development efficiency and external reference accuracy.
+The standalone repository approach maintains all strategic objectives while providing MCP ecosystem compatibility and stable external references.
 
 ---
 
