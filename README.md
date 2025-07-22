@@ -24,6 +24,7 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 - **[BusinessDevelopment.md](BusinessDevelopment.md)**: Enterprise sales strategy, pricing model, market research, and partnership development
 - **[ChargingModels.md](ChargingModels.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing models
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
+- **[FolderOrganization.md](FolderOrganization.md)**: Repository structure guide, multi-server architecture overview, and development navigation for contributors and enterprise evaluators
 - **[MinimumViableProposition.md](MinimumViableProposition.md)**: Strategic deployment approach for maximum ecosystem impact with minimal resource commitment through staged development model
 - **[Planning.md](Planning.md)**: Project timeline, resource allocation, risk management, and delivery milestones
 - **[Tasks.md](Tasks.md)**: Development phases, technical deliverables, and completion tracking with success criteria
