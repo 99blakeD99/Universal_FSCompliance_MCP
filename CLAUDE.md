@@ -54,18 +54,18 @@ poetry run pytest --cov=fca_compliance
 ### MCP Server
 ```bash
 # Start FCA Compliance MCP server
-cd fca_compliance_mcp
-poetry run python -m fca_compliance.server
+cd mcp-server-fca-compliance
+poetry run python -m mcp_server_fca_compliance.server
 
 # Test FCA Compliance MCP server
-poetry run python -m fca_compliance.test_client
+poetry run python -m mcp_server_fca_compliance.test_client
 ```
 
 ## Architecture
 
 The Universal_FSCompliance_MCP Project follows an AI Agent Oriented multi-server architecture as the first MCP-integrated compliance platform:
 
-1. **Multi-Server MCP Layer**: Standard-specific protocol-compliant JSON-RPC 2.0 servers (FCA_Compliance_MCP, MiFID_Compliance_MCP, etc.)
+1. **Multi-Server MCP Layer**: Standard-specific protocol-compliant JSON-RPC 2.0 servers (mcp-server-fca-compliance, mcp-server-mifid-compliance, etc.)
 2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
 3. **Compliance Intelligence Layer**: 7 focused tools for daily compliance officer work with standard-specific prefixing
 4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure (table prefix approach)
@@ -166,8 +166,8 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 
 ### From StandardImplementMCP.md:
 - **Systematic Standard Implementation**: Follow 4-phase methodology (Standard Assessment → Technical Implementation → Data Infrastructure → Validation & Deployment) for all new regulatory frameworks
-- **AI Agent Oriented Design**: Each standard gets dedicated MCP server with semantic anchoring (FCA_Compliance_MCP, MiFID_Compliance_MCP, etc.)
-- **Template-Based Expansion**: Use FCA_Compliance_MCP as proven template for new standard implementations
+- **AI Agent Oriented Design**: Each standard gets dedicated MCP server with semantic anchoring (mcp-server-fca-compliance, mcp-server-mifid-compliance, etc.)
+- **Template-Based Expansion**: Use mcp-server-fca-compliance as proven template for new standard implementations
 - **Database Table Prefixes**: Implement standard-specific tables within unified database (fca_documents, mifid_documents, etc.)
 - **Two-Layer Semantic Matching**: Apply semantic anchors + vector similarity search for structured regulatory content
 - **Unified but Efficient Ingestion**: Full content for high-value sections, heading-only for comprehensive coverage with boundary messaging

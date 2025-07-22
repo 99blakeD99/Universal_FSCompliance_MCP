@@ -40,7 +40,7 @@ The Universal Standards Engine implements multiple standard-specific MCP servers
 
 ### Architecture Principles
 
-**AI Agent Oriented Design**: Each regulatory standard receives a dedicated MCP server with semantic anchors that match AI agent query patterns (e.g., "Does this comply with **FCA** requirements?" → `FCA_Compliance_MCP`)
+**AI Agent Oriented Design**: Each regulatory standard receives a dedicated MCP server with semantic anchors that match AI agent query patterns (e.g., "Does this comply with **FCA** requirements?" → `mcp-server-fca-compliance`)
 
 **Standard-by-Standard Expansion**: Universal in potential, implemented standard-by-standard following systematic methodology outlined in StandardImplementMCP.md
 
@@ -110,7 +110,7 @@ Each standard-specific MCP server implements these tools with appropriate prefix
 6. **`[STANDARD]_validate_ground_truth`**: Enterprise-grade validation and benchmarking
 7. **`[STANDARD]_status_of_standard_ingestion`**: System status and coverage visibility
 
-**Example: FCA_Compliance_MCP Tools:**
+**Example: mcp-server-fca-compliance Tools:**
 - `FCA_quickly_check_compliance`
 - `FCA_identify_compliance_requirements_in_specific_case`
 - `FCA_systematically_analyse_compliance_implications`

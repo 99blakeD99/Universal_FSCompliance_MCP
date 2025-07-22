@@ -24,7 +24,7 @@ The roadmap may change in light of emerging priorities and this document will re
 
 ### Architecture Pattern
 
-- **Multiple MCP Servers**: Each standard gets a dedicated server (`FCA_Compliance_MCP`, `MiFID_Compliance_MCP`, `SEC_Compliance_MCP`)
+- **Multiple MCP Servers**: Each standard gets a dedicated server (`mcp-server-fca-compliance`, `mcp-server-mifid-compliance`, `mcp-server-sec-compliance`)
 - **Universal Implementation**: Same 7 core tools implemented across all standards with appropriate prefixing
 - **Database Isolation**: Standard-specific database tables with unified infrastructure
 - **Systematic Expansion**: New standards follow methodology outlined in StandardImplementMCP.md
@@ -84,7 +84,7 @@ Each standard-specific MCP server implements these tools with appropriate prefix
 
 ## Tool Implementation Status
 
-### **Current Production Status (FCA_Compliance_MCP)**
+### **Current Production Status (mcp-server-fca-compliance)**
 ✅ **Completed with Real FCA Handbook Integration:**
 1. `FCA_quickly_check_compliance` - Two-layer semantic matching operational
 2. `FCA_identify_compliance_requirements_in_specific_case` - Context-specific requirement extraction

@@ -16,7 +16,7 @@ Consider the prompt: "Does [situation] comply with the requirements of the FCA?"
 
 ### As Initially Designed.
 
-Our original MCP Server was called universal-fscompliance-mcp (now renamed to fca_compliance_mcp), with the vague starting intention that it would contain all Implemented Standards. 
+Our original MCP Server was called universal-fscompliance-mcp (now renamed to mcp-server-fca-compliance), with the vague starting intention that it would contain all Implemented Standards. 
 
 It contains tools called quickly_check_compliance, identify_compliance_requirements_in_specific_case, systematically_analyse_compliance_implications, suggest_remediation, prepare_draft_compliance_audit_report, validate_ground_truth, status_of_standard_ingestion. 
 
@@ -24,7 +24,7 @@ These names are good semantic anchors but it feels unlikely that the AI Agent wi
 
 ### Proposed New Design.
 
-It is proposed that each new Implemented Standard is structured as a separate MCP server with the name [Standard_Tag]_Compliance_MCP. Our first one would thus be FCA_Compliance_MCP.
+It is proposed that each new Implemented Standard is structured as a separate MCP server with the name mcp-server-[standard]-compliance. Our first one would thus be mcp-server-fca-compliance.
 
 Inside it the tools need to include the [Standard_Tag] prepend, eg FCA_quickly_check_compliance, FCA_identify_compliance_requirements_in_specific_case etc.
 
@@ -59,9 +59,9 @@ This suggests an optimum approach: make the same decision identifying the import
    - Update frequency and notification procedures
 
 ### Phase 2: Technical Implementation
-3. **MCP Server Creation**: Establish new MCP server following naming convention `[Standard_Tag]_Compliance_MCP` (e.g., `MiFID_Compliance_MCP`, `SEC_Compliance_MCP`).
+3. **MCP Server Creation**: Establish new MCP server following naming convention `mcp-server-[standard]-compliance` (e.g., `mcp-server-mifid-compliance`, `mcp-server-sec-compliance`).
 
-4. **Codebase Duplication**: Create new server by copying existing `FCA_Compliance_MCP` implementation, providing proven foundation with established two-layer semantic matching architecture.
+4. **Codebase Duplication**: Create new server by copying existing `mcp-server-fca-compliance` implementation, providing proven foundation with established two-layer semantic matching architecture.
 
 5. **Tool Customization**: Update all tool names to include standard-specific prefixes:
    - `[Standard_Tag]_quickly_check_compliance`

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cobs_4_5",
+    "title": "FCA COBS 4.5 - Risk Disclosure",
+    "section": "COBS",
+    "subsection": "4.5",
+    "content": "A firm must provide appropriate risk disclosures to retail clients before providing investment services. The risk disclosure must be presented in a clear, fair and not misleading manner and must include information about the nature of the risks associated with the investment.",
+    "keywords": ["risk disclosure", "retail clients", "investment services", "clear", "fair", "not misleading"],
+    "effective_date": "2023-01-01",
+    "source_url": "https://www.handbook.fca.org.uk/handbook/COBS/4/5.html",
+    "category": "conduct_of_business"
+  },
+  {
+    "id": "cobs_9_2",
+    "title": "FCA COBS 9.2 - Suitability Assessment",
+    "section": "COBS",
+    "subsection": "9.2",
+    "content": "A firm must obtain the necessary information regarding the client's knowledge and experience, financial situation and investment objectives to enable the firm to make a suitable recommendation or to take a suitable investment decision on behalf of the client.",
+    "keywords": ["suitability assessment", "client knowledge", "experience", "financial situation", "investment objectives", "suitable recommendation"],
+    "effective_date": "2023-01-01",
+    "source_url": "https://www.handbook.fca.org.uk/handbook/COBS/9/2.html",
+    "category": "conduct_of_business"
+  },
+  {
+    "id": "prin_1",
+    "title": "FCA PRIN 1 - Integrity",
+    "section": "PRIN",
+    "subsection": "1",
+    "content": "A firm must conduct its business with integrity. This means being honest and fair in all dealings with customers, treating them with respect and not taking advantage of their lack of knowledge or experience.",
+    "keywords": ["integrity", "honest", "fair", "customers", "respect", "knowledge", "experience"],
+    "effective_date": "2023-01-01",
+    "source_url": "https://www.handbook.fca.org.uk/handbook/PRIN/1.html",
+    "category": "principles"
+  },
+  {
+    "id": "cobs_6_2",
+    "title": "FCA COBS 6.2 - Product Governance",
+    "section": "COBS",
+    "subsection": "6.2",
+    "content": "A firm must have adequate product governance arrangements in place to ensure that products are designed to meet the needs of an identified target market and that the strategy for distribution is consistent with the identified target market.",
+    "keywords": ["product governance", "target market", "distribution strategy", "product design", "customer needs"],
+    "effective_date": "2023-01-01",
+    "source_url": "https://www.handbook.fca.org.uk/handbook/COBS/6/2.html",
+    "category": "conduct_of_business"
+  },
+  {
+    "id": "sysc_3_2",
+    "title": "FCA SYSC 3.2 - Risk Management",
+    "section": "SYSC",
+    "subsection": "3.2",
+    "content": "A firm must have robust governance arrangements which include a clear organisational structure with well-defined, transparent and consistent lines of responsibility and effective processes to identify, manage, monitor and report the risks to which it is or might be exposed.",
+    "keywords": ["risk management", "governance", "organisational structure", "responsibility", "risk identification", "risk monitoring"],
+    "effective_date": "2023-01-01",
+    "source_url": "https://www.handbook.fca.org.uk/handbook/SYSC/3/2.html",
+    "category": "systems_and_controls"
+  }
+]

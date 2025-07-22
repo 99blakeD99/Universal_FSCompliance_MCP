@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-**Key Deliverable**: Production-ready AI Agent Oriented multi-server MCP architecture with FCA_Compliance_MCP as first implementation and systematic expansion methodology
+**Key Deliverable**: Production-ready AI Agent Oriented multi-server MCP architecture with mcp-server-fca-compliance as first implementation and systematic expansion methodology
 
 ## Technical Constraints
 
@@ -15,7 +15,7 @@ Critical constraints for financial services regulatory compliance platform:
 
 ### Included:
 - AI Agent Oriented multi-server MCP architecture with JSON-RPC 2.0 compliance
-- FCA_Compliance_MCP as first standard-specific server with FCA Handbook integration
+- mcp-server-fca-compliance as first standard-specific server with FCA Handbook integration
 - Universal Standards Engine methodology for systematic expansion to new regulatory frameworks
 - 7 core compliance analysis tools with standard-specific prefixing (FCA_quickly_check_compliance, etc.)
 - Two-layer semantic matching optimized for structured regulatory content
