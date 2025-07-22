@@ -221,6 +221,17 @@ All MCP tools must implement automatic interaction logging per `DatabaseStrategy
 - **Data Retention**: Automated deletion (7yr compliance audit, 3yr operational, 1yr research)
 - **GDPR Compliance**: Data subject rights API endpoints (export, rectify, erase)
 
+## Usage Metering and Billing Architecture
+
+All MCP tools must include usage tracking infrastructure aligned with `ChargingModels.md` specifications:
+
+- **Billing Tool Categories**: Map tools to categories ('basic_query', 'analysis', 'report', 'validation')
+- **Complexity Tiers**: Classify queries ('simple', 'medium', 'complex') for tiered pricing
+- **Pricing Alignment**: Record applicable rates (currently 0.00) and subscription tiers
+- **Allowance Tracking**: Monitor usage against subscription allowances and overages
+- **Rate Limiting**: Configurable quotas per organization with hourly rate limits
+- **Configuration-Driven**: External pricing config without code deployment (pricing_config.yaml)
+
 ## Document Quality
 
 Follow MDqualityCheck.md methodology for systematic document reviews. Update this file when strategic documents change coding requirements.

@@ -22,6 +22,7 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 - **[OurMCPdifferentiators.md](OurMCPdifferentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
 - **[Touchstones.md](Touchstones.md)**: Strategic principles, architectural decisions, and consistency framework for project governance
 - **[BusinessDevelopment.md](BusinessDevelopment.md)**: Enterprise sales strategy, pricing model, market research, and partnership development
+- **[ChargingModels.md](ChargingModels.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing models
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
 - **[Planning.md](Planning.md)**: Project timeline, resource allocation, risk management, and delivery milestones
 - **[Tasks.md](Tasks.md)**: Development phases, technical deliverables, and completion tracking with success criteria

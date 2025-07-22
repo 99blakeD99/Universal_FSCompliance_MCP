@@ -242,6 +242,30 @@ Continuing rapid pace! We researched API costs and other costs. Created OurStory
 
 This 8-Day Sprint has expanded our worlds.  My #1 lesson?  Most people think of intelligence as providing good answers to hard questions. LLMs are certainly good at that. But there's another angle: coming up with the right question, hard or not – humans can do that. Perhaps that's how to think of the new Human-Intelligence Artificial Intelligence interaction. It certainly captures the Blake and Claude Code experience.  We'll see.
 
+## Bulletins
+
+### AI-Friendly Target of Appraisal
+
+*Thinking more about Document Development Delivery and about being AI-Nativeness* 
+
+The AI-friendly markdown format has been used throughout. That helps our Document Driven Delivery methodology. So far so good, it's a good internal discipline.
+
+But there's an external angle too. It's not just that we have an edge because we use AI effectively, other enterprises will also have an edge if they use AI. And one way they would do this is to use AI for appraisal. Of us!
+
+Who would appraise us? Potential Users for a start, using AI Appraisal Agents to evaluate whether our MCP server is well-founded. Potential investors too.
+
+What would they be looking for. Well organised and comprehensive AI-friendly markdown files, that's what. Exactly what we were looking to achieve anyway. So now apart from all the internal advantages, we have outward facing ones too. Advertising ourselves with our markdown files!
+
+How would they find us? At a central technological hub. GitHub! Where would they look? At the README.md. That would be a change in practice, but AI is changing anything anyway, GitHub README.mds will be a natural gravitational point in an AI world. A prime enterprise shopping location, in which we can turn our README.md a very attractive shop window.
+
+How can we make our README.md attractive as a shop window to AI Appraisal Agents? By organising it in a semantically coherent set of topics. Organized on a hub-and-spokes basis. Each topic linking to a subordinate .md containing relevant information, such as TechnicalArchitecture.md or DatabaseStrategy.md. Each one free of links, which would otherwise send the AI Appraisal Agent into a tangle. 
+
+Looking at our .mds, we seem to have around 15-20 of them, totalling around 30,000 words. Daunting for a human, trivial for AI.
+
+How would we be judged by an AI Appraisal Agent? Against criteria set by the Enterprise running it. How many criteria? Dozens, maybe hundreds. What would the criteria be? We have no way of knowing. Some we could guess, like good organization, relevant topics comprehensively covered, etc. Others we don't know, like whether our specialist subject is something they are interested in, but even then, if we're excluded then we know we haven't wasted their or our time.
+
+Quite an exciting thought, both for potential Users and for us. This is what business development is: the match between internal capability and external need. All analysed in great depth by an AI Appraisal Agent in less than a second. As compared to months of human due diligence. No more .pdfs, no more powerpoint presentations, no more pitchdecks, no more website management, no more human salesforce: all these are legacy technologies.
+
 ---
 
 ## About This Document

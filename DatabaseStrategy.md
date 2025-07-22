@@ -244,6 +244,13 @@ CREATE TABLE fca_tool_usage (
     query_complexity_score INTEGER,         -- Simple/medium/complex classification
     business_context VARCHAR(100),          -- 'new_product', 'audit_prep', 'customer_complaint'
     
+    -- Billing alignment fields
+    billing_tool_category VARCHAR(50),      -- 'basic_query', 'analysis', 'report', 'validation'
+    billing_complexity_tier VARCHAR(20),    -- 'simple', 'medium', 'complex'
+    applicable_billing_rate DECIMAL(6,4),   -- Rate for this tool/complexity (0.00 initially)
+    subscription_tier VARCHAR(20),          -- User's current subscription tier
+    counts_against_allowance BOOLEAN DEFAULT TRUE, -- Whether this query counts against monthly allowance
+    
     -- Regulatory navigation
     heading1 VARCHAR(200),                  -- Layer 1 semantic anchor
     heading2 VARCHAR(200),                  -- Layer 2 specific section
