@@ -266,6 +266,26 @@ How would we be judged by an AI Appraisal Agent? Against criteria set by the Ent
 
 Quite an exciting thought, both for potential Users and for us. This is what business development is: the match between internal capability and external need. All analysed in great depth by an AI Appraisal Agent in less than a second. As compared to months of human due diligence. No more .pdfs, no more powerpoint presentations, no more pitchdecks, no more website management, no more human salesforce: all these are legacy technologies.
 
+### How To Use AI
+
+*It boils down to "Logos"* 
+
+Early on in my professional career I was involved in litigation. We carefully briefed Counsel. After a month's work and a bill that would have paid my annual salary several times over we got Counsel's response. Accurate, reasoned, sharp. And completely useless. One careless word in our briefing sent Counsel veering off in a direction in which we had no interest whatever. We decided we had learned enough about the perils of litigation, and the counterparty, knowing that Counsel had been briefed, had improved their offer. So the fact that we had briefed Counsel had achieved an extraneous tactical goal, despite being useless in itself. An experience not uncommon in litigation, I understand.
+
+This is more than just about litigation, though. It is fundamental. For anything to have meaning it has to be in response to a context. And the context has to be expressed with some precision.
+
+So much so that none other than Richard Feynman was dismissive of any non-mathematical formulation. Mathematics allows things to be tightly defined. The language of the universe is mathematics, said Feynman.
+
+That may have changed. You don't need to be quite so rigorous in a problem definition because it no longer costs a fortune to ask a single question, as it did with our Counsel. Now you can ask an LLM and use the answer to tighten the discussion, and proceed that way. LLMs' roots in *Language* have changed the debate. Instead of mathematical symbols we can now think of returning to ancient Greek philosophy: *logos* meant *word* in the sense that words expressed *logic*.
+
+Based on my very extensive work with Claude Code, that's a very useful starting point. Sure you don't need mathematically accurate terms so much, but it sure pays off if you can keep your prompts tightly logical. Other than for minor corrections and suggestions, that means tightly and logically providing context. 
+
+I have found that before broaching a new topic it is worth sketching out a 200 word overview, condensing it, making the wording tighter, taking the dog for a walk so I can come back and look at it afresh, maybe testing it out on Perplexity, and only then use the wording as a prompt for Claude Code.
+
+Even then, before doing anything quote the carefully constructed wording and then ask Claude Code, can you let me know what you think of this, and how should we plan to implement it, for now do not take any further action. 
+
+That approach protects the big Project from any wanton enthusiasm from Claude Code and allows steps to be taken one by one in line with my rather more plodding deliberation.
+
 ---
 
 ## About This Document
