@@ -1,22 +1,18 @@
-# Early Stage Development Project
-
-This project is still in its early stages, but it has taken a sufficiently well-delineated form for it to be appropriate for it to be set out in this GitHub repository. Many of the capabilities described are still under development. However the pace of development to date, assisted by AI, is such as to support a firm belief that the capabilities will quickly be implemented.
-
 # Universal_FSCompliance_MCP Project
 
-## Vision and Mission.
+## Vision and Mission
 
-The Universal_FSCompliance_MCP Project's mission to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application like The Universal_FSCompliance_MCP Project. 
+The Universal_FSCompliance_MCP Project's mission is to enable Financial Institutions to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application. 
 
-## Identity.
+## Identity
 
-We set out to be **The open-source universal compliance intelligence platform built exclusively for financial services.** Structured as a suite of specialist MCP servers, we will rapidly ingest any Standard to create Implemented Standards that make the appropriate Tools accessible to any AI agent. This will free up significant time for users, typically compliance officers and other professionals working in financial institutions, to carry out senior executive tasks rather than get entangled in small-print. 
+We will be comprised of a suite of specialist MCP servers for Financial Institutions that is universal in the sense of being capable of ingesting any codified Standard and making the appropriate Tools accessible to any AI agent. Users, typically compliance officers and other professionals working in Financial Institutions, will thus be able to focus on senior executive tasks rather than get entangled in small-print. Our first Implemented Standard is the FCA Handbook.
 
 ## Market Opportunity
 
 The "RegTech" market in financial services is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) *- Allied Market Research, 2025*. The Universal_FSCompliance_MCP Project is positioning to be an essential support for this market.
 
-# Key Documents. 
+# Key Documents 
 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
 - **[OurMCPdifferentiators.md](OurMCPdifferentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
@@ -41,11 +37,9 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 
 # Contact and Support.
 
-**Business Inquiries**: UniversalFSComplianceMCP_Enquiries@jbmd.co.uk  
-**Technical Questions**: [GitHub Issues](https://github.com/99blakeD99/fscompliance/issues)  
-**Security Reports**: security@jbmd.co.uk *(to be activated)*
+UniversalFSComplianceMCP_Enquiries@jbmd.co.uk  
 
-# Notes.
+# Notes
 
 **License**: The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT License. The MIT License is a permissive license that allows free use, copy, modification, and distribution of software without restriction.
 

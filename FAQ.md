@@ -2,17 +2,25 @@
 
 ## What is Universal_FSCompliance_MCP' vision and mission?
 
-The mission is to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application.
+The vision and mission is to enable Financial Institutions to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application.
 
 ## What is the Universal_FSCompliance_MCP Project?
 
 ### Overview
 
-The Universal_FSCompliance_MCP Project is a suite of MCP servers available to any AI agent through Model Context Protocol (MCP) integration. It starts with the FCA Handbook to create the FCA_Compliance_MCP server, containing tools such as FCA_quickly_check_compliance. Other MCP servers will follow, using similar methods and using similar architectures. 
+The Universal_FSCompliance_MCP Project is a suite of MCP servers available to any AI agent through Model Context Protocol (MCP) integration. It starts with the FCA Handbook to create mcp-server-fca-compliance, containing tools such as FCA_quickly_check_compliance and others. Other MCP servers will follow, using similar methods and using similar architectures. 
 
-The Project is structured in this way because AI Agents will use MCP servers and Tools which are semantically weighted in accordance with the originating prompt, which in this example would feature both "FCA" and "Compliance", e.g. "Does the attached policy wording comply with FCA requirements?".
+The Project is structured and denominated in this way because of the way that semantics underpin the operation of AI, AI Agents, and Tools. AI Agents will use MCP servers and Tools which are semantically weighted in accordance with usage and the originating prompt. In our example the expected behaviour of the LLM being used by the AI Agent would be, as an example:
 
-The MCP servers will transform Compliance from a heavy burden into routine hygiene. 
+- I am being prompted: "Does the attached policy wording comply with FCA requirements?"
+  
+- Look, when I was constructed I was given access to an MCP server called mcp-server-fca-compliance - that looks very relevant
+  
+- Look, there is a Tool called FCA_quickly_check_compliance, that looks like a semantic match, it contains "FCA", it contains "Compliance" and I think from the prompt that the User wants a quick check, I'll use that Tool.
+  
+- Here is what the Tool returned, I'll use that to frame a response to the User, take it from there.
+
+Because of the quality and accuracy of our specialist Tools, Compliance will be converted from a heavy burden into routine hygiene. 
 
 ### What does "Universal" mean?
 
