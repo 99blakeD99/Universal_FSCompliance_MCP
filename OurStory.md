@@ -286,6 +286,51 @@ Even then, before doing anything quote the carefully constructed wording and the
 
 That approach protects the big Project from any wanton enthusiasm from Claude Code and allows steps to be taken one by one in line with my rather more plodding deliberation.
 
+### AI-Friendly B2B Communication
+
+*Unlearning old methods, learning new ones.* 
+
+Well now, we've spent a lot of time getting our documentation sorted out. Comprehensive. In AI-friendly markdown format. Carefully reviewed. Structured on a hub-and-spokes basis, with README.md as the hub. No links in any documents other than in the README.md, which would send an AI appraiser into tangles.
+
+Ready for anyone asking the right questions.
+
+Let's test it out, imagine ourselves as a potential user, compile a demanding prompt, enter it into the prompt window, see how we do.
+
+Oh look, we need to sort out some things. We need to add some documentation, refine some documents, tidy things up. Oh, and also, our prompt wasn't as good as we thought it was, let's edit that and do it all again. Oh look, better!
+
+Sure, that's fine, but who else will have the time and knowledge to forge the right prompt? We already know that it's hard to ask the right questions. A lightbulb moment. I know, we'll draft the prompt for them!
+
+Most contact initiation is by email, we want to convey all the relevant information but not make the other person feel like they're being controlled, they have to be in charge. We can just say: 
+
+Hello, I understand you have responsibility at [organisation] for [relevant role], our MCP server is very relevant. Rather than exchange emails, can I suggest that you appraise us by using AI: just edit the prompt below as you wish and paste into your prompt window. Kind regards, Blake.
+
+    START OF PROMPT (copy and paste this into your Claude window)
+
+    I am a senior executive responsible for IT and AI Strategy in a major Financial Institution with operations in the UK. We are reviewing the use of AI in Compliance with the FCA Handbook, and are assessing Universal_FS_Compliance_MCP. 
+
+    Can you go to https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/README.md, which we understand is the hub of a hub-and-spokes documentation structure, then read through it and all the linked documents.
+
+    Then specifically answer the following questions:
+
+    - Is the business proposition powerful?
+  
+    - Is it well documented?
+  
+    - Is it technically feasible?
+  
+    - Is it technologically well-grounded?
+  
+    - Does its market have sufficient scale, such that we may be reasonably assured that it will still be around in future?  
+  
+    - Is it important that the Project's MCP server has been submitted to Anthropic's community MCP ecosystem (currently PR 2400 on https://github.com/modelcontextprotocol/servers/pulls)?
+  
+    - Given that the FCA Handbook is only the first Implemented Standard and is intended as a proof of concept (as well as being useful in itself), and that the intention is to follow this with other Standards that apply to Financial Institutions, it may be useful to us to use this ourselves as a proof of concept prior to applying it to other Standards as they are implemented: do you agree?
+
+    END OF PROMPT
+
+It is still early days but this new AI-native sales approach feels right. We cover all the bases, we leave the appraiser in control, we cover a lot of ground very quickly. We solve the one-hand-clapping problem: it's not just about us, it's about you too, and how we connect.
+
+Ready to roll.
 ---
 
 ## About This Document
