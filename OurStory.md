@@ -14,7 +14,7 @@ Claude Code paused for a while. Then said, Sure.
 
 The touchpaper was lit.
 
-## The Beginning: 25 December 2024
+## The Beginning: 21 June 2025
 
 The Project was ambitious. We did not know what would happen next. What did happen next turned out to be a demonstration of how human-AI collaboration can concertina development timelines in ways that redefine what is possible in the AI era.
 
