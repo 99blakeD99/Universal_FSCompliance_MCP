@@ -246,7 +246,7 @@ This 8-Day Sprint has expanded our worlds.  My #1 lesson?  Most people think of 
 
 ### AI-Friendly Target of Appraisal
 
-*Thinking more about Document Development Delivery and about being AI-Nativeness* 
+*Thinking more about Document Driven Development and about being AI-Native* 
 
 The AI-friendly markdown format has been used throughout. That helps our Document Driven Delivery methodology. So far so good, it's a good internal discipline.
 
@@ -331,6 +331,29 @@ Hello, I understand you have responsibility at [organisation] for [relevant role
 It is still early days but this new AI-native sales approach feels right. We cover all the bases, we leave the appraiser in control, we cover a lot of ground very quickly. We solve the one-hand-clapping problem: it's not just about us, it's about you too, and how we connect.
 
 Ready to roll.
+
+### Engineering Principles Don't Go Away
+
+*"Adding Lightness..."* 
+
+In motoring folklore, the thought at the forefront of Colin Chapman's mind when he designed Lotus cars was *adding lightness*. The emphasis at the time being generally on ever more powerful engines, don't worry about the weight. Fine in a straight line, not so fine going round corners. The faster, heavier cars would speed by on the straights, then at the corners Chapman's Lotuses would zip by.
+
+Same with code development. It's amazing, a new paradigm that we are all adapting to, you can specify in words what you want, Claude Code delivers the code. All controlled by Claude.md, Planning.md and Rules.md. All three of them created and honed with care, Claude Code doing the drafting and human doing the reviewing.
+
+But what's also needed from the human is reflection and reconsideration, a counterpart to Claude Code's blistering execution speed. 
+
+One fine morning, asking Claude Code: 
+
+    Our three control documents. We've reviewed them from every angle. Except one. I want to add lightness. Can you look at them again and let me know, which bits can we get rid of? Not to slim down each document in itself, rather, taken together, which bits are deadweight? Which bits, if we leave them there, will strangulate our future coding? 
+
+In the end 70% of our control documents were excised and discarded, leaving only 30%. Previously, over-specification. Now, lean and nimble. Lightness: added.
+
+A salutary lesson. If after so short a time we could already have accreted so much flab, what would have happened if we hadn't sliced it out?
+
+And we got there through such good intentions! Each document a creation to be proud of. Yet a good part of them counterproductive. There must be a life lesson there somewhere.
+
+And, it's relevant to our overall business focus, Compliance. Rules invariably start with good intentions. Then hypertrophy sets in. Then strangulation. Well, then you need a solution, and that's what we want to provide.
+
 ---
 
 ## About This Document
