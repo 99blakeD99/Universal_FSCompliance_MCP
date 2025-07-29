@@ -62,6 +62,7 @@ Read the .md being reviewed in complete sweeps beginning-to-end sweeps from each
 - **About section requirement** - Check if the .md has an About section at the end, if not add it
 - **Formal review tracking** - Add "Date last reviewed formally by MDqualityCheck.md: [date]" to the About section
 - **Document changes** - Significant changes should be noted and justified
+- **Date handling** - Follow Date Handling Protocol in CLAUDE.md: never add "Created" fields, use current date for "Last Updated", preserve external research citations
 - **Date format standard** - Use UK date format "DD Month YYYY" (e.g., "9 July 2025") for Last Updated dates
 
 ---
@@ -70,7 +71,7 @@ Read the .md being reviewed in complete sweeps beginning-to-end sweeps from each
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 3 July 2025  
+**Last Updated**: 29 July 2025  
 **Date last reviewed formally by MDqualityCheck.md**: 8 July 2025  
 **Purpose**: Systematic methodology for reviewing MCP Project documentation to ensure consistency, quality, and strategic alignment.
 

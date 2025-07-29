@@ -14,7 +14,7 @@ The Project is structured and denominated in this way because of the way that se
 
 - I am being prompted: "Does the attached policy wording comply with FCA requirements?"
   
-- Look, when I was constructed I was given access to an MCP server called mcp-server-fca-compliance - that looks very relevant
+- Look, when I was constructed I was given access to an MCP server called mcp-server-fca-compliance - that looks very relevant.
   
 - Look, there is a Tool called FCA_quickly_check_compliance, that looks like a semantic match, it contains "FCA", it contains "Compliance" and I think from the prompt that the User wants a quick check, I'll use that Tool.
   
@@ -320,8 +320,7 @@ For complete development narrative and strategic insights, see OurStory.md.
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 25 December 2024  
-**Last Updated**: 15 July 2025  
+**Last Updated**: 29 July 2025  
 **Date last reviewed formally by MDqualityCheck.md**: 15 July 2025  
 **Status**: (okay)  
 **Purpose**: Comprehensive FAQ for the Universal_FSCompliance_MCP Project

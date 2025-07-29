@@ -100,6 +100,17 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 
 This universal approach enables the Universal_FSCompliance_MCP Project to serve as a comprehensive compliance intelligence platform across multiple regulatory contexts.
 
+## Date Handling Protocol
+
+**CRITICAL DATE RULE**: Before using any date, check if the current date is being referred to: if it is, check the actual date and use that (beware of December 2024); if not, do not correct it.
+
+- **For current dates**: Always check system reminder for today's date
+- **For project timeline**: Project began 20 June 2025, never December 2024
+- **For review dates**: Use actual current date, not historical placeholders
+- **For external references**: Do not modify (e.g., "Deloitte's RegTech Report 2024" stays as 2024)
+- **When updating documents**: Check "Last Updated" fields and use current date
+- **Default assumption**: December 2024 is always wrong for this project
+
 ## Development Guidelines
 
 **This document provides comprehensive implementation guidance. Also consult `Rules.md` for granular coding conventions, `Planning.md` for essential constraints, and `StandardImplementMCP.md` for new standard methodology.** Document hierarchy: 1) CLAUDE.md (primary), 2) Rules.md (coding), 3) Planning.md (constraints), 4) StandardImplementMCP.md (expansion), 5) Other strategic documents.
@@ -242,8 +253,7 @@ Follow MDqualityCheck.md methodology for systematic document reviews. Update thi
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 25 December 2024  
-**Last Updated**: 15 July 2025  
+**Last Updated**: 29 July 2025  
 **Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
 **Status**: (okay)
 **Purpose**: Guidance for Claude Code when working with the Universal_FSCompliance_MCP Project code, including strategic-to-implementation translation and systematic review processes.
