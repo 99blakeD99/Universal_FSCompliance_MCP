@@ -6,7 +6,7 @@
 
 ## The Backstory
 
-One upon a time, 25 December 2024 to be exact, Blake Dempster, a UK actuary with wide experience of financial services projects, was playing around with Claude Code and thought, let's really test this AI companion out, make it jump through some hoops. He entered the prompt:
+One upon a time, 20 June 2025 to be exact, Blake Dempster, a UK actuary with wide experience of financial services projects, was playing around with Claude Code and thought, let's really test this AI companion out, make it jump through some hoops. He entered the prompt:
 
     Can you help me build the first open-source, LLM-open, AI-native, Compliance platform structured as an MCP server? The objective is to allow financial institutions to comply with any identified Standard, of which the FCA Handbook is a good representation. In order to slice through red tape, radically shrink costs, and cut out unnecessary friction. All whilst radically enhancing agility and ability to bring the right financial products safely to consumers. All while allowing freedom for the financial institution's choice of AI agent structure and choice of LLM. I want to use Pydantic AI, LightRAG, and github. I don't want to mess about with prototypes, want to go straight for a full production deployment on the Cloud using Azure or one of its peers.
 
@@ -337,8 +337,7 @@ Ready to roll.
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 25 December 2024  
-**Last Updated**: 9 July 2025  
+**Last Updated**: 29 July 2025  
 **Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
 **Status**: (okay)
 **Purpose**: Narrative documentation of the Universal_FSCompliance_MCP server Project development sprint, providing authentic Project experience for strategic positioning and investor communication.
