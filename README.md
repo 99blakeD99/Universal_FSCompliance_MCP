@@ -34,6 +34,7 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 - **[CLAUDE.md](CLAUDE.md)**: AI development guidance, quality standards, and strategic-to-implementation translation
 - **[OutlineOfManagementImpacts.md](OutlineOfManagementImpacts.md)**: Executive thought leadership, financial services expertise, and management impact analysis by Blake Dempster Founder, CEO, Principal Architect.
 - **[LegalLiability.md](LegalLiability.md)**: Legal framework, liability limitations, user responsibility, and risk protection
+- **[MDqualityCheck.md](MDqualityCheck.md)**: Systematic methodology for document reviews with multi-stakeholder perspectives
 
 # Contact and Support.
 
@@ -46,6 +47,6 @@ UniversalFSComplianceMCP_Enquiries@jbmd.co.uk
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Last Updated**: 2025-07-13  
+**Last Updated**: 29 July 2025  
 **Date last reviewed formally by MDqualityCheck.md**: 13 July 2025  
 **Status**: (okay)

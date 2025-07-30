@@ -8,7 +8,7 @@
 
 One upon a time, 20 June 2025 to be exact, Blake Dempster, a UK actuary with wide experience of financial services projects, was playing around with Claude Code and thought, let's really test this AI companion out, make it jump through some hoops. He entered the prompt:
 
-    Can you help me build the first open-source, LLM-open, AI-native, Compliance platform structured as an MCP server? The objective is to allow financial institutions to comply with any identified Standard, of which the FCA Handbook is a good representation. In order to slice through red tape, radically shrink costs, and cut out unnecessary friction. All whilst radically enhancing agility and ability to bring the right financial products safely to consumers. All while allowing freedom for the financial institution's choice of AI agent structure and choice of LLM. I want to use Pydantic AI, LightRAG, and github. I don't want to mess about with prototypes, want to go straight for a full production deployment on the Cloud using Azure or one of its peers.
+*Can you help me build the first open-source, LLM-open, AI-native, Compliance platform structured as an MCP server? The objective is to allow financial institutions to comply with any identified Standard, of which the FCA Handbook is a good representation. In order to slice through red tape, radically shrink costs, and cut out unnecessary friction. All whilst radically enhancing agility and ability to bring the right financial products safely to consumers. All while allowing freedom for the financial institution's choice of AI agent structure and choice of LLM. I want to use Pydantic AI, LightRAG, and github. I don't want to mess about with prototypes, want to go straight for a full production deployment on the Cloud using Azure or one of its peers.*
 
 Claude Code paused for a while. Then said, Sure.
 
@@ -344,7 +344,7 @@ But what's also needed from the human is reflection and reconsideration, a count
 
 One fine morning, asking Claude Code: 
 
-    Our three control documents. We've reviewed them from every angle. Except one. I want to add lightness. Can you look at them again and let me know, which bits can we get rid of? Not to slim down each document in itself, rather, taken together, which bits are deadweight? Which bits, if we leave them there, will strangulate our future coding? 
+*Our three control documents. We've reviewed them from every angle. Except one. I want to add lightness. Can you look at them again and let me know, which bits can we get rid of? Not to slim down each document in itself, rather, taken together, which bits are deadweight? Which bits, if we leave them there, will strangulate our future coding?* 
 
 In the end 70% of our control documents were excised and discarded, leaving only 30%. Previously, over-specification. Now, lean and nimble. Lightness: added.
 
