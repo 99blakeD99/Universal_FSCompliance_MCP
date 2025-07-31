@@ -8,10 +8,6 @@ The Universal_FSCompliance_MCP Project's mission is to enable Financial Institut
 
 We will be comprised of a suite of specialist MCP servers for Financial Institutions that is universal in the sense of being capable of ingesting any codified Standard and making the appropriate Tools accessible to any AI agent. Users, typically compliance officers and other professionals working in Financial Institutions, will thus be able to focus on senior executive tasks rather than get entangled in small-print. Our first Implemented Standard is the FCA Handbook.
 
-## Market Opportunity
-
-The "RegTech" market in financial services is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) *- Allied Market Research, 2025*. The Universal_FSCompliance_MCP Project is positioning to be an essential support for this market.
-
 # Key Documents 
 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
@@ -38,7 +34,7 @@ The "RegTech" market in financial services is projected to grow from $11.7B to $
 
 # Contact and Support.
 
-UniversalFSComplianceMCP_Enquiries@jbmd.co.uk  
+jill.adams@jbmd.co.uk  
 
 # Notes
 
