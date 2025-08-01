@@ -24,7 +24,7 @@ We will be comprised of a suite of specialist MCP servers for Financial Institut
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture
 - **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization
 - **[StandardImplementMCP.md](StandardImplementMCP.md)**: Systematic methodology for implementing new regulatory standards as standard-specific MCP servers with proven template approach
-- **[LLMChoice.md](LLMChoice.md)**: AI model selection, Claude 3.5 Sonnet rationale, and multi-model strategy
+- **[LLMChoice.md](LLMChoice.md)**: AI model selection, multi-provider architecture rationale, and enterprise flexibility strategy
 - **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
 - **[Rules.md](Rules.md)**: Development standards, coding conventions, and quality assurance requirements
 - **[CLAUDE.md](CLAUDE.md)**: AI development guidance, quality standards, and strategic-to-implementation translation
@@ -44,5 +44,5 @@ jill.adams@jbmd.co.uk
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Last Updated**: 29 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 13 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)

@@ -78,21 +78,17 @@ Also, foundational framework created: Rules.md, CLAUDE.md Planning.md. (It later
 
 #### The Technical Architect Voice
 
-I have started to understand that our current Project work involves cognitive processing very analogous to the work we want our MCP server to do.
+What has been truly startling is the effectiveness of Claude Code at getting through the work. This is partly a validation of the model it is using, Claude 3.5 Sonnet.
 
-This is a potent validation of Claude Code's LLM, Claude 3.5 Sonnet, positioning it front runner as choice of LLM for our MCP server. Also, its privacy protections are very strong.
+It is also noticeable that the work is very analagous to the Compliance work Users will want from our Tools. 
 
-Claude 3.5 Sonnet is expensive. But for our MCP server, with its professional user market, the difference is trivial, the cost of our MCP server is a tiny cost compared with the work it saves and the risk it reduces.
+We want to be LLM-open. But it doesn't help us if someone chooses another LLM, it performs poorly, and our MCP server is discredited. Maybe bundle Claude 3.5 Sonnet into the core of the MCP server, simplify our Project, eliminate buyers' choice conundrum.
 
-But we want to be LLM-open. How strong are our current feelings that Claude 3.5 Sonnet is the best choice? Very strong. Okay then, LLM Open but with very strong recommendation to use Claude 3.5 Sonnet.
-
-Maybe we should make Claude 3.5 Sonnet mandatory. It doesn't help us if someone chooses another LLM, it performs poorly, and our MCP server is discredited. Maybe bundle Claude 3.5 Sonnet into the core of the MCP server, simplify our Project, eliminate buyers' choice conundrum.
-
-But then what happens if a future day dawns in which a new hot LLM comes on stream and our market wants an LLM-choice override.
+But our experience can't possibly outweigh the experience of Users. If they want to use a particular LLM, who are we to profess superior knowledge? And what happens if a future day dawns in which a new hot LLM comes on stream and our market wants to use it.
 
 And what happens if the enterprise is committed to another LLM. Actually that's fine. Just make it clear that the MCP server is self-contained and will work with any LLM inside the agent accessing the MCP server. So an enterprise can use GPT-4, Gemini, LLaMA, custom models or any LLM it wants, calling our MCP server which uses a different LLM. Actually that's a big advantage in the MCP server structure.
 
-Okay for now, decided: LLM-open, strong recommendation for Claude 3.5 Sonnet, make sure the foundational MCP server architecture allows relatively easy switch to another LLM if needed.
+Okay for now, decided: LLM-open, User decides.
 
 #### The Factual Recorder Voice
 
@@ -108,13 +104,13 @@ Putting these practices into effect, it's clear they work very well.
 
 #### The Technical Architect Voice
 
-Fine-tuning of LLMs is a very topical issue. I think the value of doing so is overstated. It might have been necessary in pre-agentic days, but now AI agents handle specialist knowledge well for text-based application. Besides we have been doing a lot of work in our Project which is very analogous with the work that our MCP server will do, and Claude 3.5 Sonnet has performed startlingly well.
+Fine-tuning of LLMs is a very topical issue. It is a complex topic. The emergence of AI agents to handle specialist knowledge, particularly with specialist Tools available through the MCP protocol, changes the calculus. 
 
-Why struggle with expensive retraining cycles when Retrieval Augmented Generation (RAG) provides superior advantages? Regulations change constantly, RAG data updates immediately while fine-tuned models become stale. Plus RAG sources are transparent and auditable, crucial for Compliance contexts. The same model can access multiple Standards without retraining.
+And now "Context Engineering" is gaining traction as a concept. Retrieval Augmented Generation (RAG) and Prompt Engineering are now seen as subsets of a bigger picture. I would guess that big improvements can be expected even with standard LLMs.
 
-Also, we want to retain the potential for LLM-openness. What are we supposed to do -train every model?
+But who are we to make a judgement on this? If an Enterprise decides that a fine-tuned LLM plus Context Engineering gives the best of both worlds, that is their decision, not ours.
 
-In short I am a strong advocate of a no-Fine-Tuning policy.
+In short our commitment to LLM-openness looks smart.
 
 #### The CEO Voice
 
@@ -361,7 +357,7 @@ And, it's relevant to our overall business focus, Compliance. Rules invariably s
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Last Updated**: 29 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)
 **Purpose**: Narrative documentation of the Universal_FSCompliance_MCP server Project development sprint, providing authentic Project experience for strategic positioning and investor communication.
 

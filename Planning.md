@@ -38,7 +38,7 @@ Critical constraints for financial services regulatory compliance platform:
 
 ## Key Technical Constraints
 
-- **Dependencies**: MCP protocol stability, Claude 3.5 Sonnet API
+- **Dependencies**: MCP protocol stability, configurable LLM provider APIs
 - **Architecture Risk**: Multi-server complexity (fallback: single-server if needed)
 - **Performance Risk**: Cross-server bottlenecks (mitigation: per-server optimization)
 

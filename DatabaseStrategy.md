@@ -45,42 +45,7 @@ Rather than creating separate databases for each standard, we adopt a unified da
 
 Each standard-specific document table supports the two-layer semantic matching architecture:
 
-```sql
--- Example: FCA documents table
-CREATE TABLE fca_documents (
-    id UUID PRIMARY KEY,
-    section_reference TEXT NOT NULL,  -- Layer 1: Semantic anchor (e.g., "COBS")
-    title TEXT NOT NULL,
-    content TEXT,
-    embedding VECTOR(768),            -- Layer 2: Vector similarity search
-    metadata JSONB,
-    ingestion_level TEXT,            -- 'full' or 'heading_only' for unified approach
-    created_at TIMESTAMP DEFAULT NOW(),
-    updated_at TIMESTAMP DEFAULT NOW()
-);
-
--- Ground truth table for enterprise validation
-CREATE TABLE fca_ground_truth (
-    id UUID PRIMARY KEY,
-    question TEXT NOT NULL,
-    answer TEXT NOT NULL,
-    regulatory_reference TEXT,
-    confidence_level TEXT,
-    owner_organization TEXT,        -- Data ownership and access control
-    public_access BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT NOW()
-);
-
--- Ingestion status tracking for AI agent visibility
-CREATE TABLE fca_ingestion_status (
-    section_reference TEXT PRIMARY KEY,
-    status TEXT NOT NULL,           -- 'completed', 'pending', 'partial'
-    word_count INTEGER,
-    chunk_count INTEGER,
-    coverage_level TEXT,            -- 'full', 'heading_only', 'not_ingested'
-    last_updated TIMESTAMP DEFAULT NOW()
-);
-```
+Each standard-specific document table supports the two-layer semantic matching architecture with fields for ID, section reference (Layer 1 semantic anchor like "COBS"), title, content, vector embedding (Layer 2 similarity search), metadata, and ingestion level tracking. Ground truth tables capture enterprise validation data with questions, answers, regulatory references, confidence levels, and organization ownership controls. Ingestion status tables track section coverage with completion status, word counts, chunk counts, and coverage levels.
 
 ---
 
@@ -116,74 +81,27 @@ Adding new standards requires only creating new table sets following the establi
 ### Query Isolation Strategy
 Each MCP server connects to the same database but queries only its prefixed tables, maintaining logical separation:
 
-```python
-# Example: FCA_Compliance_MCP server query pattern
-class FCAComplianceAnalyzer:
-    def __init__(self):
-        self.table_prefix = "fca_"
-        
-    async def search_documents(self, query: str):
-        # Only queries fca_documents table
-        return await self.db.query(
-            f"SELECT * FROM {self.table_prefix}documents WHERE ..."
-        )
-```
+Each MCP server connects to the same database but queries only its prefixed tables, maintaining logical separation. For example, the FCA_Compliance_MCP server uses "fca_" prefix and only queries FCA-specific tables, ensuring clean semantic boundaries.
 
 ### Schema Evolution and Standards Management
 Table schema changes can be applied per standard, allowing different regulatory frameworks to have specialized fields while sharing common patterns. The `standards_registry` table maintains metadata about each implemented standard:
 
-```sql
-CREATE TABLE standards_registry (
-    standard_tag TEXT PRIMARY KEY,        -- 'fca', 'mifid', 'sec'
-    standard_name TEXT NOT NULL,          -- 'FCA Handbook', 'MiFID II'
-    mcp_server_name TEXT NOT NULL,        -- 'FCA_Compliance_MCP'
-    database_tables TEXT[],               -- ['fca_documents', 'fca_ground_truth']
-    ingestion_status TEXT,                -- 'active', 'planned', 'deprecated'
-    last_updated TIMESTAMP DEFAULT NOW()
-);
-```
+The standards_registry table maintains metadata about each implemented standard including standard tag, name, MCP server name, associated database tables, ingestion status, and last updated timestamps.
 
 ### Access Control and Security
 User permissions can be managed at the table level, enabling fine-grained access to specific standards or ground truth datasets. Row-level security policies can be applied per standard:
 
-```sql
--- Example: Row-level security for FCA ground truth
-ALTER TABLE fca_ground_truth ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY fca_ground_truth_access ON fca_ground_truth
-FOR SELECT USING (
-    public_access = true OR 
-    owner_organization = current_user_organization()
-);
-```
+Row-level security can be implemented for ground truth tables, enabling access control based on public availability or organization ownership. This ensures data isolation while maintaining appropriate access controls.
 
 ---
 
 ## Performance Optimization
 
 ### Indexing Strategy for Two-Layer Matching
-```sql
--- Layer 1: Semantic anchor indexing
-CREATE INDEX fca_documents_section_idx ON fca_documents (section_reference);
-
--- Layer 2: Vector similarity indexing
-CREATE INDEX fca_documents_embedding_idx ON fca_documents 
-USING ivfflat (embedding vector_cosine_ops);
-
--- Combined performance optimization
-CREATE INDEX fca_documents_section_embedding_idx ON fca_documents 
-(section_reference, embedding);
-```
+Indexing strategy supports two-layer matching with Layer 1 semantic anchor indexing on section references, Layer 2 vector similarity indexing using ivfflat for embedding vectors, and combined indexes for optimized performance across both layers.
 
 ### Query Patterns for AI Agent Tools
-```sql
--- Typical AI agent query: Layer 1 + Layer 2 semantic matching
-SELECT d.*, d.embedding <=> %s::vector AS similarity
-FROM fca_documents d
-WHERE d.section_reference = %s  -- Layer 1: Semantic anchor
-ORDER BY d.embedding <=> %s::vector  -- Layer 2: Vector similarity
-LIMIT 10;
-```
+Typical AI agent queries combine Layer 1 semantic anchor filtering with Layer 2 vector similarity search, selecting documents with section reference matching and ordering by embedding similarity scores.
 
 ---
 
@@ -200,17 +118,7 @@ When implementing new regulatory standards, the database structure follows a con
 ### Cross-Standard Analysis Capabilities
 While AI agents operate within standard-specific boundaries, the unified database enables cross-standard analysis for advanced use cases:
 
-```sql
--- Example: Cross-standard regulatory overlap analysis
-SELECT 
-    f.section_reference AS fca_section,
-    m.section_reference AS mifid_section,
-    f.embedding <=> m.embedding AS similarity
-FROM fca_documents f
-CROSS JOIN mifid_documents m
-WHERE f.embedding <=> m.embedding < 0.3  -- High similarity threshold
-ORDER BY similarity;
-```
+Cross-standard analysis capabilities enable regulatory overlap analysis by comparing embeddings between different standards, identifying high similarity regulatory concepts across frameworks like FCA and MiFID.
 
 ---
 
@@ -224,63 +132,7 @@ The Universal Standards Engine database architecture includes comprehensive inte
 
 The interaction logging system captures granular usage data through standard-specific analytics tables:
 
-```sql
--- Usage analytics table (per standard)
-CREATE TABLE fca_tool_usage (
-    id UUID PRIMARY KEY,
-    timestamp TIMESTAMPTZ DEFAULT NOW(),
-    
-    -- User and organizational context
-    user_id VARCHAR(100) NOT NULL,
-    organization_id VARCHAR(100),
-    org_size_category VARCHAR(20),           -- 'startup', 'mid_tier', 'systemically_important'
-    org_business_model VARCHAR(50),          -- 'challenger_bank', 'wealth_manager'
-    industry_sector VARCHAR(50),             -- 'retail_banking', 'asset_management'
-    
-    -- Tool usage patterns
-    tool_used VARCHAR(100) NOT NULL,        -- 'FCA_quickly_check_compliance'
-    session_id VARCHAR(100),
-    query_text TEXT,
-    query_complexity_score INTEGER,         -- Simple/medium/complex classification
-    business_context VARCHAR(100),          -- 'new_product', 'audit_prep', 'customer_complaint'
-    
-    -- Billing alignment fields
-    billing_tool_category VARCHAR(50),      -- 'basic_query', 'analysis', 'report', 'validation'
-    billing_complexity_tier VARCHAR(20),    -- 'simple', 'medium', 'complex'
-    applicable_billing_rate DECIMAL(6,4),   -- Rate for this tool/complexity (0.00 initially)
-    subscription_tier VARCHAR(20),          -- User's current subscription tier
-    counts_against_allowance BOOLEAN DEFAULT TRUE, -- Whether this query counts against monthly allowance
-    
-    -- Regulatory navigation
-    heading1 VARCHAR(200),                  -- Layer 1 semantic anchor
-    heading2 VARCHAR(200),                  -- Layer 2 specific section
-    content_type VARCHAR(20),               -- 'full_content', 'heading_only', 'boundary_message'
-    boundary_messages_triggered INTEGER,    -- Count of incomplete coverage responses
-    
-    -- Response characteristics
-    response_confidence DECIMAL(3,2),
-    processing_time_ms INTEGER,
-    follow_up_queries_in_session INTEGER,
-    confidence_distribution JSONB,          -- Multiple confidence scores across matches
-    
-    -- Temporal and regulatory context
-    business_hours_flag BOOLEAN,            -- Working hours vs after-hours usage
-    regulatory_calendar_context VARCHAR(50) -- 'consultation_period', 'reporting_deadline'
-);
-
--- Cross-standard analytics view for strategic insights
-CREATE VIEW regulatory_usage_analytics AS
-SELECT 
-    SUBSTRING(tool_used FROM '^([A-Z]+)_') AS regulatory_standard,
-    tool_used,
-    heading1,
-    COUNT(*) as usage_count,
-    AVG(response_confidence) as avg_confidence,
-    AVG(processing_time_ms) as avg_processing_time,
-    COUNT(CASE WHEN content_type = 'boundary_message' THEN 1 END) as boundary_messages
-FROM fca_tool_usage  -- Union with other standard tables
-GROUP BY regulatory_standard, tool_used, heading1;
-```
+Usage analytics tables capture comprehensive interaction data per standard including user and organizational context, tool usage patterns, billing alignment fields, regulatory navigation patterns, response characteristics, and temporal context. Cross-standard analytics views provide strategic insights by aggregating usage patterns, confidence metrics, processing times, and boundary message frequencies across regulatory standards.
 
 ### Multi-Stakeholder Value Generation
 
@@ -315,16 +167,7 @@ GROUP BY regulatory_standard, tool_used, heading1;
 ### Data Privacy and Access Control
 
 #### Multi-Tenant Security Architecture
-```sql
--- Row-level security for user-specific data access
-ALTER TABLE fca_tool_usage ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY user_usage_access ON fca_tool_usage
-FOR SELECT USING (user_id = current_user_id());
-
-CREATE POLICY org_usage_access ON fca_tool_usage  
-FOR SELECT USING (organization_id = current_user_organization());
-```
+Row-level security policies ensure user-specific and organization-specific data access controls for usage analytics, preventing unauthorized access to interaction data while maintaining appropriate visibility for organizational analytics.
 
 #### Data Retention and Compliance Framework
 **GDPR and Financial Services Compliance:**
@@ -399,7 +242,7 @@ The architecture supports the Universal Standards Engine vision of systematic, s
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 19 July 2025  
 **Last Updated**: 19 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Definitive database architecture for AI Agent Oriented Universal Standards Engine implementation.
 

@@ -15,7 +15,7 @@ It is intended to be helpful to financial institutions interested in using the U
 
 - The Universal_FSCompliance_MCP Product adopts the MCP protocol (hence its working name), on the basis of suitability and increasing use as a standard that enterprises are happy with.
 
-- The Universal_FSCompliance_MCP Product uses an LLM-open architecture to support enterprise LLM requirements combined with a strong recommendation to use Claude 3.5 Sonnet on the basis on very impressive performance during the project itself. 
+- The Universal_FSCompliance_MCP Product uses an LLM-open architecture to support enterprise LLM requirements with configurable provider selection based on organizational preferences and performance requirements. 
 
 - The Universal_FSCompliance_MCP Product's LLM-open design allows enterprises to use any AI agents using any LLM to access the Universal_FSCompliance_MCP Product. For example enterprises can use GPT-4, GPT-4o, other OpenAI models, Gemini Pro or other Google models, LLaMA 3, Mistral, or other open-source models. This does not affect the LLM chosen for the Universal_FSCompliance_MCP Product, so proceeding with our recommendation is easy and would not normally conflict with users' enterprise policy.
 
@@ -64,7 +64,7 @@ It is intended to be helpful to financial institutions interested in using the U
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 9 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Summary of MCP product and project differentiators for financial institutions and investment appraisal AI.
 

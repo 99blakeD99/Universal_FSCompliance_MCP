@@ -16,6 +16,10 @@ When reviewing any .md file, follow this systematic approach:
   may differ from standard corporate style. Also pay special attention to whether any "Voice" part substantively repeats a previous "Voice" part, this document is being drafted on the fly and repetition is difficult for the author to monitor.
 - **Special for "Outline of Management Impacts"** - If reviewing content relating to "Outline of Management Impacts" emailshots, use internal/MgmtImpactRules.md methodology instead of this MDqualityCheck.md process. 
 - **Special for reviewing Touchstones.md** - To avoid circular reasoning, omit the Touchstones alignment requirements when reviewing Touchstones.md.
+- **Code block restrictions** - Strategic documentation should not contain code blocks (``` markers) except for:
+  - **CLAUDE.md**: Development setup commands and essential technical instructions
+  - **Rules.md**: Git commit templates and coding convention examples
+  - **Any other code blocks should be removed** - Strategic documents focus on business decisions, not implementation details
 
 ### 2. Touchstones Alignment
 - **Check against Touchstones.md** - verify no inconsistencies with Touchstones.md

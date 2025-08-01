@@ -13,7 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **`Rules.md`**: Development guidelines, coding standards, and project-specific conventions
 - **`Tasks.md`**: Current and completed development tasks organized by development phases
 - **`ComplianceTools.md`**: Strategic market analysis and comprehensive MCP tool roadmap
-- **`LLMChoice.md`**: LLM selection strategy and Claude 3.5 Sonnet decision rationale
+- **`LLMChoice.md`**: LLM selection strategy and multi-provider architecture rationale
 - **`MDqualityCheck.md`**: Systematic methodology for document reviews with multi-stakeholder perspectives
 - **`Touchstones.md`**: Core project principles and strategic consistency framework
 
@@ -69,12 +69,12 @@ The Universal_FSCompliance_MCP Project follows an AI Agent Oriented multi-server
 2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
 3. **Compliance Intelligence Layer**: 7 focused tools for daily compliance officer work with standard-specific prefixing
 4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure (table prefix approach)
-5. **LLM Integration Layer**: Multi-model support with Claude 3.5 Sonnet default. **Architectural Independence**: Our MCP servers operate independently from enterprise AI agent LLM choices
+5. **LLM Integration Layer**: Multi-model support with configurable default LLM. **Architectural Independence**: Our MCP servers operate independently from enterprise AI agent LLM choices
 
 ### Strategic Architecture Decisions
-- **LLM Strategy**: Claude 3.5 Sonnet selected as default based on extensive real-world validation through the Universal_FSCompliance_MCP Project development; no fine-tuning architectural decision per `LLMChoice.md`
+- **LLM Strategy**: Default LLM configurable based on enterprise requirements and real-world validation through the Universal_FSCompliance_MCP Project development; no fine-tuning architectural decision per `LLMChoice.md`
 - **LLM Independence**: Our MCP server runs its own LLM completely separately from enterprise AI agent LLM choices, eliminating adoption barriers from corporate LLM standardization decisions  
-- **LLM-Open Architecture**: Phased implementation with Claude-first optimization while maintaining abstract interfaces for future multi-LLM expansion per `LLMChoice.md`
+- **LLM-Open Architecture**: Phased implementation with enterprise-preferred LLM optimization while maintaining abstract interfaces for multi-LLM expansion per `LLMChoice.md`
 - **Database Architecture**: Unified Supabase (PostgreSQL + PGVector) with standard-specific table prefixes per `DatabaseStrategy.md` for simplified architecture and real-time capabilities
 - **MCP Tool Priority**: 7 core tools identified in `ComplianceTools.md` with standard-specific prefixing (removed map_relationships as not aligned with daily compliance work)
 - **Brand Positioning**: Positioned as first MCP-integrated compliance platform per `Brand.md` competitive analysis
@@ -154,12 +154,12 @@ This universal approach enables the Universal_FSCompliance_MCP Project to serve 
 **Key Implementation Requirements from Strategic Documents:**
 
 ### From LLMChoice.md:
-- **Default LLM Configuration**: Claude 3.5 Sonnet must be default in config files/environment variables
-- **Multi-Model Architecture**: Code must support configurable LLM providers (Claude, LLaMA 3, Mistral, user-defined)
+- **Default LLM Configuration**: Enterprise-preferred LLM configurable in config files/environment variables
+- **Multi-Model Architecture**: Code must support configurable LLM providers (Claude, OpenAI, LLaMA, Mistral, user-defined)
 - **Architectural Independence**: The MCP server LLM choice operates completely independently from AI agent LLM choices
-- **Abstract Interface Design**: Implement LLMProvider class with future-ready interface even if only Claude path implemented initially
-- **Configuration-Driven LLM Selection**: Environment variables `LLM_PROVIDER="claude-3.5-sonnet"` with provider-specific API keys
-- **Phased Implementation**: Claude-first implementation with abstract architecture ready for multi-LLM expansion
+- **Abstract Interface Design**: Implement LLMProvider class with provider-agnostic interface
+- **Configuration-Driven LLM Selection**: Environment variables `LLM_PROVIDER` with provider-specific API keys
+- **Flexible Implementation**: Enterprise-configurable implementation with abstract architecture for multi-LLM support
 
 ### From Touchstones.md:
 - **Universal Standards Engine**: Code must support rapid ingestion of new regulatory frameworks beyond FCA Handbook

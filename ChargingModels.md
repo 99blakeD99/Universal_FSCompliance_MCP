@@ -87,15 +87,7 @@ volume_discounts:
 
 A potential future approach could combine subscription bases with usage components:
 
-```yaml
-# Recommended enterprise model (future indicative rates)
-hybrid_enterprise:
-  base_subscription: £500/month    # Platform access, support  # Currently £0.00
-  included_queries: 1000           # Generous baseline allowance
-  overage_pricing: £0.04/query     # Competitive overage rate  # Currently £0.00
-  audit_reports: £5.00/report      # Premium feature pricing   # Currently £0.00
-  ground_truth_access: £200/month  # Enterprise validation     # Currently £0.00
-```
+A recommended hybrid enterprise model would combine £500/month base subscription for platform access and support, 1000 included queries baseline allowance, £0.04/query overage pricing, £5.00/report for audit reports, and £200/month for ground truth access. All pricing is currently set to £0.00 during market validation.
 
 ---
 
@@ -338,7 +330,7 @@ Key metric categories will likely encompass financial performance indicators, us
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 21 July 2025  
 **Last Updated**: 21 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 21 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Comprehensive charging models and billing architecture strategy for the Universal_FSCompliance_MCP Project, enabling professional monetization while maintaining market validation flexibility.
 

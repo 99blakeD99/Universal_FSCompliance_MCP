@@ -106,7 +106,7 @@ A firm pricing basis will be set out after further research, including how compa
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Created**: 9 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 14 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)
 **Purpose**: Business development strategy including potential funding approaches and partnership opportunities.
 

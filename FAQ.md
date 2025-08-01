@@ -98,7 +98,7 @@ The Universal_FSCompliance_MCP Project has in place a special Tool to ensure tha
 
 ### What is the LLM-Open Architecture?
 
-The Universal_FSCompliance_MCP Project uses an LLM-open architecture supporting enterprise LLM requirements with strong recommendation to use Claude 3.5 Sonnet. Enterprises can use any AI agents with any LLM (GPT-4, Gemini Pro, LLaMA 3, Mistral) to access the Universal_FSCompliance_MCP Project's MCP servers without affecting the LLM used inside each MCP server. This is one of the strong advantages of the MCP protocol.
+The Universal_FSCompliance_MCP Project uses an LLM-open architecture supporting enterprise LLM requirements with configurable provider selection. Enterprises can use any AI agents with any LLM (GPT-4, Gemini Pro, LLaMA 3, Mistral) to access the Universal_FSCompliance_MCP Project's MCP servers without affecting the LLM used inside each MCP server. This is one of the strong advantages of the MCP protocol.
 
 ### How are AI-Native Development Timescales Concertina-ed?
 
@@ -163,7 +163,7 @@ The Universal_FSCompliance_MCP Project implements AI Agent Oriented multi-server
 2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
 3. **Compliance Intelligence Layer**: 7 focused tools per standard for daily compliance officer work
 4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure (table prefix approach)
-5. **LLM Integration Layer**: Multi-model support with Claude 3.5 Sonnet default
+5. **LLM Integration Layer**: Multi-model support with configurable default LLM
 
 ### What is the technology stack?
 
@@ -171,7 +171,7 @@ The Universal_FSCompliance_MCP Project implements AI Agent Oriented multi-server
 - **Python 3.11+** with Poetry dependency management and FastAPI framework
 - **Two-Layer Semantic Matching** with OpenAI embeddings for regulatory content analysis
 - **Supabase (PostgreSQL + PGVector)** for unified database with standard-specific table prefixes
-- **Claude 3.5 Sonnet** as default LLM with multi-model support
+- **Configurable LLM Provider** with multi-model support (Claude, OpenAI, Mistral, others)
 - **OAuth 2.1** for authentication and security
 
 **Development Tools:**
@@ -179,14 +179,15 @@ The Universal_FSCompliance_MCP Project implements AI Agent Oriented multi-server
 - **Docker & Kubernetes** for scalable deployment
 - **Comprehensive testing** with Pytest (90%+ coverage requirement)
 
-### Why was Claude 3.5 Sonnet Selected as Default LLM within the LLM-Open MCP?
+### How does the LLM-Open Architecture work?
 
-Claude 3.5 Sonnet underwent extensive real-world validation through Universal_FSCompliance_MCP Project development in ways highly analogous to actual MCP usage. This profound validation embraced complex Standard analysis, multi-document synthesis, and technical architecture tasks.
+The Universal_FSCompliance_MCP Project implements configurable LLM selection to meet diverse enterprise requirements. Each MCP server can be configured with the enterprise's preferred LLM provider, enabling optimal performance for specific compliance contexts.
 
 **Key Advantages:**
-- **Proven compliance accuracy** through extensive development validation
-- **Enterprise data security** with Anthropic's Zero Data Retention and HIPAA-eligible services
-- **Professional-grade output** consistently suitable for Standard scrutiny
+- **Enterprise flexibility** - Configure any supported LLM provider (Claude, OpenAI, Mistral, others)
+- **Proven compliance capabilities** through extensive real-world validation across multiple providers
+- **Enterprise data security** with provider-specific security features and compliance certifications
+- **Professional-grade output** consistently suitable for regulatory scrutiny
 - **Architectural independence** - MCP server LLM operates independently from enterprise AI agent choices
 
 ### How is security and privacy managed?
@@ -321,7 +322,7 @@ For complete development narrative and strategic insights, see OurStory.md.
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Last Updated**: 29 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 15 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Comprehensive FAQ for the Universal_FSCompliance_MCP Project
 ---

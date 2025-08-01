@@ -14,29 +14,7 @@ For comprehensive project planning and resource allocation, see Planning.md. For
 
 The Universal Standards Engine implements multiple standard-specific MCP servers to optimize AI agent tool discovery and semantic matching:
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────────┐
-│   AI Agents     │    │ FCA_Compliance   │    │    Database         │
-│  (MCP Clients)  │◄──►│   MCP Server     │◄──►│  (fca_ tables)      │
-└─────────────────┘    └──────────────────┘    └─────────────────────┘
-                              │                        │
-                       ┌──────────────────┐            │
-                       │ MiFID_Compliance │            │
-                       │   MCP Server     │◄───────────┤
-                       └──────────────────┘            │
-                              │                        │
-                       ┌──────────────────┐            │
-                       │  SEC_Compliance  │            │
-                       │   MCP Server     │◄───────────┤
-                       └──────────────────┘            │
-                              │                        │
-                              ▼                        ▼
-                       ┌──────────────┐         ┌─────────────┐
-                       │ LLM Gateway  │         │  Two-Layer  │
-                       │(Claude 3.5)  │         │  Semantic   │
-                       └──────────────┘         │  Matching   │
-                                               └─────────────┘
-```
+The Universal Standards Engine implements multiple standard-specific MCP servers with AI Agents connecting to FCA_Compliance MCP Server, MiFID_Compliance MCP Server, and SEC_Compliance MCP Server, all accessing a unified Database with standard-specific tables. Each server connects through an LLM Gateway (Claude 3.5) with Two-Layer Semantic Matching capabilities.
 
 ### Architecture Principles
 
@@ -54,7 +32,7 @@ The Universal Standards Engine implements multiple standard-specific MCP servers
 2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
 3. **Compliance Intelligence Layer**: 7 focused tools for daily compliance officer work
 4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure
-5. **LLM Integration Layer**: Multi-model support with Claude 3.5 Sonnet default (see LLMChoice.md)
+5. **LLM Integration Layer**: Multi-model support with configurable default LLM (see LLMChoice.md)
 
 ### Strategic Architecture Decisions
 
@@ -81,7 +59,7 @@ The Universal Standards Engine implements multiple standard-specific MCP servers
 **AI/ML Stack:**
 - **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search
 - **OpenAI Embeddings**: text-embedding-3-small for vector generation
-- **Multiple LLM Support**: Claude 3.5 Sonnet (default), configurable alternatives
+- **Multiple LLM Support**: Configurable default provider, enterprise-flexible alternatives
 - **Semantic Anchoring**: Regulatory context optimization for AI agents
 
 **Database and Storage:**
@@ -123,21 +101,8 @@ Each standard-specific MCP server implements these tools with appropriate prefix
 For comprehensive database architecture details, see DatabaseStrategy.md.
 
 **Table Structure:**
-```sql
--- FCA Tables
-fca_documents (id, section_reference, content, embedding, ingestion_level)
-fca_ground_truth (id, question, answer, owner_organization)
-fca_ingestion_status (section_reference, status, coverage_level)
 
--- MiFID Tables  
-mifid_documents (id, section_reference, content, embedding, ingestion_level)
-mifid_ground_truth (id, question, answer, owner_organization)
-mifid_ingestion_status (section_reference, status, coverage_level)
-
--- Shared Infrastructure
-standards_registry (standard_tag, standard_name, mcp_server_name)
-user_access_control (user_id, standard_access, permissions)
-```
+FCA Tables include documents with section references, content, embeddings and ingestion levels; ground truth with questions, answers and organization ownership; and ingestion status tracking. MiFID Tables follow the same pattern with mifid_ prefixes. Shared Infrastructure includes standards registry and user access control tables.
 
 ### Two-Layer Semantic Matching Implementation
 
@@ -158,23 +123,8 @@ user_access_control (user_id, standard_access, permissions)
 ### Azure-First Cloud Architecture
 
 **Azure Container Instances (ACI) Deployment:**
-```yaml
-# Multi-container deployment
-services:
-  fca-compliance-mcp:
-    image: universal-fscompliance/fca-compliance-mcp:latest
-    ports: ["8001:8000"]
-    environment:
-      - STANDARD_TAG=FCA
-      - DATABASE_URL=${SUPABASE_URL}
-    
-  mifid-compliance-mcp:
-    image: universal-fscompliance/mifid-compliance-mcp:latest
-    ports: ["8002:8000"] 
-    environment:
-      - STANDARD_TAG=MiFID
-      - DATABASE_URL=${SUPABASE_URL}
-```
+
+Multi-container deployment with separate services for FCA and MiFID compliance MCP servers, each configured with their respective standard tags and database connections. FCA compliance runs on port 8001 and MiFID compliance on port 8002.
 
 **Azure Kubernetes Service (AKS) for Production:**
 - **Multi-server orchestration** with service mesh for load balancing
@@ -260,28 +210,14 @@ services:
 - **Error Handling**: Graceful degradation with fallback to demonstration mode
 
 **AI Agent Integration Pattern:**
-```python
-# AI Agent discovers and connects to appropriate MCP server
-if "FCA" in compliance_query:
-    mcp_server = connect_to_mcp("FCA_Compliance_MCP")
-    tools = ["FCA_quickly_check_compliance", "FCA_analyse_implications"]
-elif "MiFID" in compliance_query:
-    mcp_server = connect_to_mcp("MiFID_Compliance_MCP") 
-    tools = ["MiFID_quickly_check_compliance", "MiFID_analyse_implications"]
-```
+
+AI Agents discover and connect to appropriate MCP servers based on regulatory context in queries. When FCA-related queries are detected, agents connect to FCA_Compliance_MCP with FCA-specific tools. Similarly, MiFID queries route to MiFID_Compliance_MCP with corresponding MiFID tools.
 
 ### API Architecture
 
 **RESTful API per Standard:**
-```
-# Standard-specific endpoints
-GET  /fca/health              # FCA server health check
-POST /fca/tools/quick-check   # FCA quick compliance check
-POST /fca/tools/analyse       # FCA systematic analysis
 
-GET  /mifid/health            # MiFID server health check  
-POST /mifid/tools/quick-check # MiFID quick compliance check
-```
+Standard-specific endpoints provide health checks and tool access. FCA endpoints include health monitoring, quick compliance checks, and systematic analysis tools. MiFID endpoints follow the same pattern with MiFID-specific implementations.
 
 **Cross-Standard Coordination:**
 - **Standards Registry API**: Discover available regulatory frameworks
@@ -294,49 +230,7 @@ POST /mifid/tools/quick-check # MiFID quick compliance check
 
 **Core Data Structures per Standard:**
 
-```python
-class StandardDocument(BaseModel):
-    id: str
-    standard_tag: str  # "fca", "mifid", "sec"
-    section_reference: str
-    title: str
-    content: str
-    embedding: List[float]
-    ingestion_level: Literal["full", "heading_only"]
-    metadata: Dict[str, Any]
-    created_at: datetime
-
-class GroundTruthEntry(BaseModel):
-    id: str
-    standard_tag: str
-    question: str
-    answer: str
-    regulatory_reference: str
-    confidence_level: str
-    owner_organization: Optional[str]
-    public_access: bool
-    created_at: datetime
-
-class ComplianceQuery(BaseModel):
-    query_id: str
-    standard_tag: str
-    user_id: str
-    tool_name: str  # e.g., "FCA_quickly_check_compliance"
-    content: str
-    context: Optional[Dict[str, Any]]
-    timestamp: datetime
-
-class ComplianceResponse(BaseModel):
-    query_id: str
-    standard_tag: str
-    tool_used: str
-    requirements: List[str]
-    compliance_status: ComplianceStatus
-    gaps_identified: List[Dict[str, Any]]
-    recommendations: List[str]
-    confidence_score: float
-    database_mode: bool  # True if using real regulatory data
-```
+StandardDocument models include ID, standard tag (fca, mifid, sec), section reference, title, content, embedding vector, ingestion level (full or heading_only), metadata, and timestamps. GroundTruthEntry models capture questions, answers, regulatory references, confidence levels, and ownership information. ComplianceQuery models track query details, user context, and tool usage. ComplianceResponse models provide structured compliance analysis results with requirements, status, gaps, recommendations, and confidence scores.
 
 ### Knowledge Management by Standard
 
@@ -358,34 +252,12 @@ class ComplianceResponse(BaseModel):
 ### Multi-Server Development Environment
 
 **Development Setup:**
-```bash
-# Clone and setup Universal_FSCompliance_MCP Project
-git clone https://github.com/99blakeD99/Universal_FSCompliance_MCP.git
-cd Universal_FSCompliance_MCP/fca_compliance_mcp
 
-# Install dependencies
-poetry install
-
-# Start FCA compliance server
-poetry run python -m fca_compliance.server
-
-# Start MiFID compliance server (when implemented)
-cd ../mifid_compliance_mcp
-poetry run python -m mifid_compliance.server
-```
+Clone the Universal_FSCompliance_MCP repository and navigate to the FCA compliance MCP directory. Install dependencies using Poetry package manager. Start the FCA compliance server, and when implemented, start additional standard-specific servers like MiFID compliance from their respective directories.
 
 **Testing Strategy:**
-```bash
-# Test individual MCP servers
-poetry run pytest tests/fca_compliance/
-poetry run pytest tests/mifid_compliance/
 
-# Integration testing across standards
-poetry run pytest tests/integration/
-
-# AI Agent simulation testing
-poetry run pytest tests/ai_agent_behavior/
-```
+Test individual MCP servers with standard-specific test suites for FCA and MiFID compliance. Run integration testing across standards to validate cross-server functionality. Execute AI Agent simulation testing to verify agent behavior and tool discovery patterns.
 
 ### Quality Standards per Standard
 
@@ -434,7 +306,7 @@ poetry run pytest tests/ai_agent_behavior/
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 9 July 2025  
 **Last Updated**: 19 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
+**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Comprehensive technical architecture guide for enterprise evaluation, deployment planning, and development implementation of the Universal Standards Engine with AI Agent Oriented design principles.
 
