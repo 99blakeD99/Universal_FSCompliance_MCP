@@ -10,13 +10,14 @@ We will be comprised of a suite of specialist MCP servers for Financial Institut
 
 # Key Documents 
 
+- **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
+- **[LLMChoice.md](LLMChoice.md)**: AI model selection, multi-provider architecture rationale, and enterprise flexibility strategy
 - **[OurMCPdifferentiators.md](OurMCPdifferentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
 - **[Touchstones.md](Touchstones.md)**: Strategic principles, architectural decisions, and consistency framework for project governance
 - **[BusinessDevelopment.md](BusinessDevelopment.md)**: Enterprise sales strategy, pricing model, market research, and partnership development
 - **[ChargingModels.md](ChargingModels.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing models
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
-- **[FolderOrganization.md](FolderOrganization.md)**: Repository structure guide, multi-server architecture overview, and development navigation for contributors and enterprise evaluators
 - **[MinimumViableProposition.md](MinimumViableProposition.md)**: Strategic deployment approach for maximum ecosystem impact with minimal resource commitment through staged development model
 - **[Planning.md](Planning.md)**: Project timeline, resource allocation, risk management, and delivery milestones
 - **[Tasks.md](Tasks.md)**: Development phases, technical deliverables, and completion tracking with success criteria
@@ -24,8 +25,6 @@ We will be comprised of a suite of specialist MCP servers for Financial Institut
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture
 - **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization
 - **[StandardImplementMCP.md](StandardImplementMCP.md)**: Systematic methodology for implementing new regulatory standards as standard-specific MCP servers with proven template approach
-- **[LLMChoice.md](LLMChoice.md)**: AI model selection, multi-provider architecture rationale, and enterprise flexibility strategy
-- **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
 - **[Rules.md](Rules.md)**: Development standards, coding conventions, and quality assurance requirements
 - **[CLAUDE.md](CLAUDE.md)**: AI development guidance, quality standards, and strategic-to-implementation translation
 - **[OutlineOfManagementImpacts.md](OutlineOfManagementImpacts.md)**: Executive thought leadership, financial services expertise, and management impact analysis by Blake Dempster Founder, CEO, Principal Architect.

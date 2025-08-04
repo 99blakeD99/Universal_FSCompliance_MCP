@@ -49,7 +49,7 @@ This Project is in its early stages but has quickly taken well-delineated form. 
   
 - Stage 1. Complete. mcp-server-fca-compliance submitted to Anthropic's MCP ecosystem Official Integrations, awaiting review. This is a skeletal implementation designed to secure semantic positioning ready for Users' AI Agents, and provide a tested framework which we can then use to deploy full Tool functionality.
   
-- Stage 2 In progress. Development of full tool functionality. Strategic organization completed. Basic Tool coding well advanced. Dashboard statistics structure completed. LLM-open capability structure completed. Charging framework structure completed.
+- Stage 2 In progress. Development of full Tool functionality. Strategic organization completed. Basic Tool coding well advanced. Dashboard statistics structure completed. LLM-open capability structure completed. Charging framework structure completed.
   
 - Subsequent Stages. As per rollout set out in MinimumViableProposition.md.
 
@@ -82,15 +82,22 @@ All of our markdown documents have been separately and specifically screened to 
 ### What is the benefit of this README.md-centric approach?
 
 - We are easily discoverable.
+  
 - We are easily appraised.
+  
 - We don't waste time with protracted discussions with enterprises (which essentially cover the same ground, but much more slowly and much more painfully). A win for them and a win for us.
+  
 - No more .pdfs, no more powerpoint presentations, no more pitchdecks, no more website management, no more human salesforce: all these are legacy technologies.
-- Rapid weeding out of unsuitable matches
+  
+- Rapid weeding out of unsuitable matches.
+  
 - For suitable partners, a sharp concertina-ing of the sales process - the buyer already has all the needed information.
+  
 - Internally, this context means that we have a serious interest in maintaining document quality. The .mds referred to in README.md no longer represent a back-office chore, they are a front-line priority. (We have put in place a permanent rolling .md cleansing human-eyeball system.)
+
 - Using AI coding techniques, the coding itself (ie the coding that underlies the Universal_FSCompliance_MCP Project) stays consistent with the .mds. This happens because when any .md changes, or a new one added, we always check whether the master coding coordinator (CLAUDE.md when working with Claude Code) needs to be modified. The result is that if the .mds say something, the code will take it into account. This can be described as a documentation-driven development architecture.
 
-## What are the Universal_FSCompliance_MCP's competitive advantages?
+## What are other factors to take into account?
 
 ### How do automatic updates work?
 
@@ -102,31 +109,35 @@ The Universal_FSCompliance_MCP Project uses an LLM-open architecture supporting 
 
 ### How are AI-Native Development Timescales Concertina-ed?
 
-In this Project, Human Architect doing the specifying, plus Claude Code doing the implementation, plus the collaborative exchanges between them, has achieved in days what otherwise would have taken months. Further, it has been easy to ensure that the large number of component sub-projects stay in tune with the overall "Touchstones" that were identified.
+In this Project, Human Architect doing the specifying, plus Claude Code doing the implementation, plus the collaborative exchanges between them, has achieved in days what otherwise would have taken many months. Further, it has been easy to ensure that the large number of component sub-projects stay in tune with the overall "Touchstones" that were identified.
 
-## MCP Tools - Transforming AI Agents into Compliance Experts
+### How do Tools work?
 
-### How do MCP tools turbocharge AI effectiveness?
+Using standard MCP architecture, each MCP server articulates its capabilities (using a .json file), so that outside AI Agents can choose to use the appropriate MCP server. Then the LLM inside each MCP server intelligently uses appropriate Tools based on context.
 
-The Universal_FSCompliance_MCP Project consists of specialist MCP servers which taken together transform general AI agents into Compliance experts. Using standard MCP architecture, each MCP server articulates its capabilities (using a .json file), so that outside AI Agents can choose to use the appropriate MCP server. Then the LLM inside each MCP server intelligently uses appropriate tools based on context.
+## What are the core MCP Tools?
 
-### What are the core MCP tools?
-
-Each standard-specific MCP server implements these tools with regulatory prefixing (e.g., FCA_quickly_check_compliance):
+Each standard-specific MCP server implements these Tools with regulatory prefixing (e.g., FCA_quickly_check_compliance):
 
 **1. [STANDARD]_quickly_check_compliance** - Rapid compliance assessment for policy conceptualization
+
 **2. [STANDARD]_identify_compliance_requirements_in_specific_case** - Context-specific regulatory requirement extraction  
+
 **3. [STANDARD]_systematically_analyse_compliance_implications** - Comprehensive strategic compliance analysis
+
 **4. [STANDARD]_suggest_remediation** - AI-powered gap-specific remediation recommendations
+
 **5. [STANDARD]_prepare_draft_compliance_audit_report** - Professional audit documentation preparation
+
 **6. [STANDARD]_validate_ground_truth** - Enterprise-grade validation and benchmarking
+
 **7. [STANDARD]_status_of_standard_ingestion** - System status and regulatory content coverage visibility
 
-**Future Tools (Postponed):**
-- **ingest_new_identified_standard** - Enable user-driven standard ingestion (pending regulatory framework stabilization)
-- **update_identified_standard** - Monitor and apply changes to maintain system currency
+**Future MCP Tools**
 
----
+- **ingest_new_identified_standard** - Enable user-driven standard ingestion (pending regulatory framework stabilization)
+
+- **update_implemented_standard** - Monitor and apply changes to maintain system currency
 
 ## What is the legal liability framework?
 
@@ -136,22 +147,11 @@ Each standard-specific MCP server implements these tools with regulatory prefixi
 
 **Professional Requirements:**
 - All Compliance activities must be supervised by appropriately qualified professionals
-- Users must validate all tool outputs against specific regulatory context and current requirements
 - AI-generated content may contain errors and requires human review and validation
-- Users should ensure IT systems maintain permanent records of tool usage and professional review
+- Users should ensure IT systems maintain permanent records of Tool usage and professional review
 
 **Technology Platform Disclaimer:**
 The Universal_FSCompliance_MCP Project's MCP servers provide information and analysis but do not constitute legal advice, regulatory guidance, or Compliance recommendations. Users must ensure Compliance with data protection regulations and obtain necessary permissions for data processing activities.
-
-### What are the standard ingestion liability requirements?
-
-When using the `ingest_new_identified_standard` tool, users accept responsibility for:
-- Ensuring legal authority to ingest the specified Standard
-- Verifying accuracy and completeness of source materials
-- Confirming Standard applicability to specific circumstances
-- Managing intellectual property or licensing considerations
-
----
 
 ## What is the technical architecture?
 
@@ -159,7 +159,7 @@ When using the `ingest_new_identified_standard` tool, users accept responsibilit
 
 The Universal_FSCompliance_MCP Project implements AI Agent Oriented multi-server architecture:
 
-1. **Standard-Specific MCP Servers**: Each regulatory standard receives dedicated MCP server (FCA_Compliance_MCP, MiFID_Compliance_MCP)
+1. **Standard-Specific MCP Servers**: Each regulatory standard receives dedicated MCP server (FCA_Compliance_MCP, MiFID_Compliance_MCP...)
 2. **Two-Layer Semantic Matching**: Semantic anchors + vector similarity search optimized for structured regulatory content
 3. **Compliance Intelligence Layer**: 7 focused tools per standard for daily compliance officer work
 4. **Database Abstraction Layer**: Standard-specific data access with unified infrastructure (table prefix approach)
@@ -185,7 +185,7 @@ The Universal_FSCompliance_MCP Project implements configurable LLM selection to 
 
 **Key Advantages:**
 - **Enterprise flexibility** - Configure any supported LLM provider (Claude, OpenAI, Mistral, others)
-- **Proven compliance capabilities** through extensive real-world validation across multiple providers
+- **Proven compliance capabilities** through evolving real-world validation across multiple providers
 - **Enterprise data security** with provider-specific security features and compliance certifications
 - **Professional-grade output** consistently suitable for regulatory scrutiny
 - **Architectural independence** - MCP server LLM operates independently from enterprise AI agent choices
@@ -204,27 +204,23 @@ The Universal_FSCompliance_MCP Project implements configurable LLM selection to 
 - **Data anonymization** - Automatic PII detection and protection
 - **Self-hosted options** - Complete data sovereignty available
 
----
-
 ## How are quality assurance and validation managed?
 
 ### What is Ground Truth Validation?
 
-The Universal_FSCompliance_MCP Project implements comprehensive quality assurance through the `validate_ground_truth` tool, enabling:
+The Universal_FSCompliance_MCP Project implements comprehensive quality assurance through the planned `validate_ground_truth` Tool, enabling:
 
 - **Enterprise accuracy benchmarking** with confidential testing environment
 - **Performance reports** on system accuracy using real compliance data
 - **Continuous improvement** through optional industry service contribution
 - **Zero-knowledge testing** with automatic data deletion and audit trails
 
-### What are the Quality Targets?
+### What are planned Quality Targets?
 
 - **Test Coverage**: 90%+ code coverage requirement
 - **Response Time**: <2 seconds for standard queries, <10 seconds for complex analysis
 - **Accuracy**: 95%+ compliance analysis accuracy validated through Ground Truth benchmarking
 - **Uptime**: 99.9% system availability target
-
----
 
 ## What are the deployment and business model options?
 
@@ -256,26 +252,6 @@ Currently a freemium structure is envisaged:
 
 The MCP server costs represents a tiny part of Users' overall Compliance costs, so demand will be price-inelastic. Token-based charging structure at level to be determined through market research.
 
----
-
-## How will we expand in the future?
-
-### What is the Universal Standards Roadmap?
-
-The universal Standards MCP will rapidly ingest any well-articulated Standard:
-
-**Near-term Expansion (6-18 months):**
-- **MiFID II** (EU investment services)
-- **SEC Rules** (US securities)
-- **Basel III** (International banking)
-- **CFTC Regulations** (Derivatives)
-
-**Global Frameworks:**
-- **Asia-Pacific**: MAS Guidelines, JFSA Regulations, APRA Standards
-- **Specialized Areas**: AML/CTF, ESG Reporting, Cybersecurity
-
----
-
 ## What is Document Parsing, Chunking and Embedding?
 
 Document parsing, chunking, and embedding are fundamental AI technologies that transform Standards into searchable, analyzable intelligence:
@@ -297,7 +273,6 @@ The Universal_FSCompliance_MCP Project implements a sophisticated **layered arch
 **Advanced Document Processing Pipeline** handles the Standard's 100,000 or so chunks through:
 - **Intelligent Chunking**: Preserves Standard context and cross-references
 - **Entity Extraction**: Identifies Standard relationships, obligations, and applicability conditions
-- **Knowledge Graph Construction**: Maps complex Standard interconnections for comprehensive analysis
 - **Vector Embeddings**: Enables semantic search across Standard requirements with contextual understanding
 
 **Unified Database Architecture** (migrating to Supabase with PGVector) eliminates complexity by providing:
@@ -307,15 +282,11 @@ The Universal_FSCompliance_MCP Project implements a sophisticated **layered arch
 
 This systematic approach transforms the traditional challenges of document parsing, chunking, and embedding into competitive advantages, enabling AI agents to perform sophisticated Compliance analysis that understands Standard complexity rather than simply matching keywords.
 
----
-
 ## About
 
 The Universal_FSCompliance_MCP Project was founded by Blake Dempster, a UK actuary with extensive financial services experience and thought leader in AI and financial services intersection. The Project demonstrates Human-AI collaboration, showing how AI can transform Standard Compliance through extreme development speed and professional-grade output.
 
 For complete development narrative and strategic insights, see OurStory.md.
-
----
 
 ## About This Document
 
@@ -325,4 +296,3 @@ For complete development narrative and strategic insights, see OurStory.md.
 **Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
 **Status**: (okay)  
 **Purpose**: Comprehensive FAQ for the Universal_FSCompliance_MCP Project
----
