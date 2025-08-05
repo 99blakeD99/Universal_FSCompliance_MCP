@@ -58,7 +58,8 @@ Touchstones must be
 - A formal process is regularly applied to ensure that Implemented Standards are updated as needed.
 
 ### Development Methodology
-- Prompt engineering for ultra-rapid ultra-strong product development
+- Context Engineering (including RAG and Prompt Engineering) is adopted for ultra-rapid ultra-strong product development
+- The Context Engineering is achieved through the Project's .md documents, which achieve public inspectability and over-arching system integrity.
 - Human-AI collaboration concertinas development timelines - achieves in days what otherwise takes months
 
 ---

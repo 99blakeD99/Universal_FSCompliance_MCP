@@ -16,11 +16,10 @@ We will be comprised of a suite of specialist MCP servers for Financial Institut
 - **[OurMCPdifferentiators.md](OurMCPdifferentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
 - **[Touchstones.md](Touchstones.md)**: Strategic principles, architectural decisions, and consistency framework for project governance
 - **[BusinessDevelopment.md](BusinessDevelopment.md)**: Enterprise sales strategy, pricing model, market research, and partnership development
-- **[ChargingModels.md](ChargingModels.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing models
+- **[Charging.md](Charging.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing, initially set at zero.
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
 - **[MinimumViableProposition.md](MinimumViableProposition.md)**: Strategic deployment approach for maximum ecosystem impact with minimal resource commitment through staged development model
 - **[Planning.md](Planning.md)**: Project timeline, resource allocation, risk management, and delivery milestones
-- **[Tasks.md](Tasks.md)**: Development phases, technical deliverables, and completion tracking with success criteria
 - **[OurStory.md](OurStory.md)**: Founder narrative, development journey, and strategic insights from 8-day sprint
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture
 - **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization
