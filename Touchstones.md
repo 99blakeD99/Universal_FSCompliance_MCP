@@ -33,9 +33,7 @@ Touchstones must be
 - Other standards will be processed using the architectures established through the FCA Handbook exercise
 
 ### Value Proposition  
-- Using the MCP will achieve slicing through red tape
 - Using the MCP will make it easier to bring the right product safely to consumers
-- Using the MCP will help deal with the knotweed nature of rules and regulations.
 - Using the MCP will enable compliance professionals to carry out senior executive tasks rather than get entangled in small-print
 - Compliance with Implemented Standards is impossible without AI tools.
 - Human effectiveness is transformationally enhanced

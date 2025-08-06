@@ -1,10 +1,18 @@
 # Vision, Mission, Identity
 
-The Universal_FSCompliance_MCP Project's mission is to enable Financial Institutions to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application. 
+The Universal_FSCompliance_MCP Project's mission is to enable Financial Institutions to make it easier to bring the right financial products safely to consumers. This necessarily involves Compliance with Standards, which have grown to be compendious. 
 
-We will be comprised of a suite of specialist MCP servers for Financial Institutions that is universal in the sense of being capable of ingesting any codified Standard and making the appropriate Tools accessible to any AI agent. Users, typically compliance officers and other professionals working in Financial Institutions, will thus be able to focus on senior executive tasks rather than get entangled in small-print. Our first Implemented Standard is the FCA Handbook.
+With pre-AI tools, Compliance operations can be cumbersome and expensive, leading to higher costs and a drag on innovation, leading ultimately to poorer outcomes for consumers. 
 
-# Overview. 
+Our AI-agentic Tools, available in an open-source repository on GitHub and a permissive MIT license, will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers. 
+
+We will be comprised of a suite of specialist MCP servers that contain the Tools. Each MCP server will cover an Implemented Standard. The ambition is universal in the sense of being capable of being applied to any codified Standard.
+
+Users, typically compliance officers and other professionals working in Financial Institutions, will thus be able to focus on senior executive tasks rather than get entangled in small-print. 
+
+Our first Implemented Standard is the FCA Handbook.
+
+# Overview
 
 - **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
 
@@ -42,15 +50,15 @@ We will be comprised of a suite of specialist MCP servers for Financial Institut
 
 - **[Planning.md](Planning.md)**: Feeds into Claude.md: Project timeline, resource allocation, risk management, and delivery milestones.
 
-# Contact and Support.
+# Contact and Support
 
 jill.adams@jbmd.co.uk  
 
-# Notes
+# License
 
-**License**: The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT License. The MIT License is a permissive license that allows free use, copy, modification, and distribution of software without restriction.
+The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT License. The MIT License is a permissive license that allows free use, copy, modification, and distribution of software without restriction.
 
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 29 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
+**Last Updated**: 6 August 2025  
+ 

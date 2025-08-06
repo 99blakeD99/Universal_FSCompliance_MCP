@@ -2,7 +2,11 @@
 
 ## What is Universal_FSCompliance_MCP' vision and mission?
 
-The vision and mission is to enable Financial Institutions to slice through red tape and make it easier to bring the right financial products safely to consumers. The red tape is spawned by the worldwide compulsive urge to make rules, combined with the real-life knotweed nature of the rules. Compliance with the rules is simply impossible without an AI-native application.
+The Universal_FSCompliance_MCP Project's mission is to enable Financial Institutions to make it easier to bring the right financial products safely to consumers. This necessarily involves Compliance with Standards, which have grown to be compendious. 
+
+With pre-AI tools, Compliance operations can be cumbersome and expensive, leading to higher costs and a drag on innovation, leading ultimately to poorer outcomes for consumers. 
+
+Our AI-agentic Tools, available in an open-source repository on GitHub and a permissive MIT license, will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers. 
 
 ## What is the Universal_FSCompliance_MCP Project?
 
@@ -267,8 +271,6 @@ These technologies are essential for AI-native compliance platforms because Stan
 ## How does the Universal_FSCompliance_MCP Project address these challenges?
 
 The Universal_FSCompliance_MCP Project implements a sophisticated **layered architecture** specifically designed to handle the inherent complexity of Standards:
-
-**Knowledge Management Layer** uses LightRAG-powered processing that goes beyond traditional parsing to create comprehensive knowledge graphs. This enables relationship-aware compliance analysis that understands interconnections beyond simple text matching - essential for navigating the "real-life knotweed nature" of Standards.
 
 **Advanced Document Processing Pipeline** handles the Standard's 100,000 or so chunks through:
 - **Intelligent Chunking**: Preserves Standard context and cross-references
