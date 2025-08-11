@@ -10,7 +10,7 @@ This is a summary of The Universal_FSCompliance_MCP Project ("UFSCMCP") differen
 
 - UFSCMCP has in place a special Tool set out in ComplianceTools.md to ensure that the Implemented Standards in UFSCMCP are kept up to date. Traditional non-AI native compliance tools and services typically find this very difficult to do, the AI-native Universal_FSCompliance_MCP Project makes it very achievable. The Tool will be invoked systematically as a hygiene measure. From the User's viewpoint the updating will be invisible and automatic.
 
-- UFSCMCP adopts the MCP protocol (hence its name), on the basis of suitability and increasing use as a standard that enterprises are happy with.
+- UFSCMCP adopts the MCP protocol (hence its name), on the basis of suitability and increasing use as a standard that enterprises are happy with. This means that no lengthy integrations are required, the MCP approach enables immediate deployment within existing AI workflows.
 
 - UFSCMCP uses an LLM-open architecture to support enterprise LLM requirements with configurable provider selection based on organizational preferences and performance requirements. 
 

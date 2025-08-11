@@ -18,6 +18,8 @@ Our first Implemented Standard is the FCA Handbook.
 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
 
+- **[BeneathTheHood.md](BeneathTheHood.md)**: AI Agents, Tools, MCP Architecture, Standards, Ground Truth.
+  
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
 
 - **[LLMChoice.md](LLMChoice.md)**: AI model selection, multi-provider architecture rationale, and enterprise flexibility strategy
@@ -37,8 +39,6 @@ Our first Implemented Standard is the FCA Handbook.
 - **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
 
 - **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization.
-
-- **[StandardImplementMCP.md](StandardImplementMCP.md)**: Systematic methodology for implementing new regulatory standards as standard-specific MCP servers with proven template approach.
 
 # Coding Control
 
