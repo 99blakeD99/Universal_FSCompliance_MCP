@@ -76,11 +76,15 @@ In this way feedback loops will be put in place which continuously enhance capab
 
 ## Ground Truth
 
+### Extending beyond the Standard Wording
+
 At present the heart of the UniversalFSCompliance Project's tools is semantic matching between Prompt and Implemented Standard. This is powerful in itself. 
 
 Access to Ground Truth data has the potential to enhance results through exposure to real-life experienced problems. This Ground Truth data will often be available from regulators and from Financial Institutions, normally held in Q&A form. 
 
-Some Users may view Ground Truth as a source of competitive advantage, in which case the database will not make it available to other Users. Many Users however are motivated to maintain the reputation of the industry they work in, and Regulators similarly, so may well make public som Ground Truth databases.
+Some Users may view Ground Truth as a source of competitive advantage, in which case the database will not make it available to other Users. Many Users however are motivated to maintain the reputation of the industry they work in, and Regulators similarly, so may well make public some Ground Truth databases.
+
+### Making use of Ground Truth Data
 
 In addition to carrying out the 2-layer semantic matching our Tools will go through the following Ground_Truth process:
 
@@ -90,6 +94,10 @@ In addition to carrying out the 2-layer semantic matching our Tools will go thro
 4. If there is a match, modify reply accordingly.
 
 The Ground Truth can additionally be used as a test of our MCP Server, by running it against the Qs in the Ground Truth (without the Ground_Truth process), and semantically score the results against the As in the Ground Truth.
+
+### Terminology
+
+In AI, the term "Ground Truth" is often used to describe how the parameters in LLMs are refined such as to improve the LLM's answers to the Qs in the Ground Truth data, scored against the As in the Ground Truth data. This is not how Ground Truth data is used in the Universal_FSComplianceMCP Project, where Ground Truth data is used not for LLM parameter refinement, but rather is used as described above.
 
 ---
 
