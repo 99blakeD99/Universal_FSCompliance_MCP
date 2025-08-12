@@ -36,9 +36,9 @@ Our first Implemented Standard is the FCA Handbook.
 
 - **[Charging.md](Charging.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing, initially set at zero.
 
-- **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
+- **[DatabaseArchitecture.md](DatabaseArchitecture.md)**: Database architecture for holding Standards and MI in a way suited to AI Tool use.
 
-- **[DatabaseStrategy.md](DatabaseStrategy.md)**: AI Agent Oriented database architecture with standard-specific table prefixes and two-layer semantic matching optimization.
+- **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
 
 # Coding Control
 
