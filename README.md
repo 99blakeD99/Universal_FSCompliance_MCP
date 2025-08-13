@@ -32,7 +32,7 @@ Our first Implemented Standard is the FCA Handbook.
  
 # Details
 
-- **[LegalLiability.md](LegalLiability.md)**: Legal framework, liability limitations, user responsibility, and risk protection.
+- **[LegalLiability.md](LegalLiability.md)**: Legal framework, liability limitations, user responsibility.
 
 - **[Charging.md](Charging.md)**: Enterprise-grade monetization framework with configuration-driven billing architecture and transparent value-based pricing, initially set at zero.
 
@@ -60,5 +60,5 @@ The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT Lic
 
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 6 August 2025  
+**Last Updated**: 13 August 2025  
  
