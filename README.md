@@ -4,7 +4,9 @@ The Universal_FSCompliance_MCP Project's mission is to enable Financial Institut
 
 With pre-AI tools, Compliance operations can be cumbersome and expensive, leading to higher costs and a drag on innovation, leading ultimately to poorer outcomes for consumers. 
 
-Our AI-agentic Tools, available in an open-source repository on GitHub and a permissive MIT license, will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers. 
+Standards are words-based, and therefore native to LLMs (whose middle initial is "Language"). AI-native Standards Compliance Tools thus have an inherent advantage.
+
+Our AI-agentic Tools are AI-native. They are available in an open-source repository on GitHub and a permissive MIT license, will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers. 
 
 We will be comprised of a suite of specialist MCP servers that contain the Tools. Each MCP server will cover an Implemented Standard. The ambition is universal in the sense of being capable of being applied to any codified Standard.
 
@@ -42,13 +44,13 @@ Our first Implemented Standard is the FCA Handbook.
 
 # Coding Control
 
-- **[Touchstones.md](Touchstones.md)**: Strategic principles, architectural decisions, and consistency framework for project governance: Underpins Claude.md.
+- **[Touchstones.md](Touchstones.md)**: List of factors that bind the documentation together.
   
-- **[CLAUDE.md](CLAUDE.md)**: Main coding controller: AI development guidance, quality standards, and strategic-to-implementation translation.
+- **[CLAUDE.md](CLAUDE.md)**: Coding controller.
  
-- **[Rules.md](Rules.md)**: Feeds into Claude.md: Development standards, coding conventions, and quality assurance requirements.
+- **[Rules.md](Rules.md)**: Coding rules.
 
-- **[Planning.md](Planning.md)**: Feeds into Claude.md: Project timeline, resource allocation, risk management, and delivery milestones.
+- **[Planning.md](Planning.md)**: Coding constraints.
 
 # Contact and Support
 
@@ -60,5 +62,5 @@ The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT Lic
 
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 13 August 2025  
+**Last Updated**: 14 August 2025  
  
