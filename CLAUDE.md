@@ -33,6 +33,9 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 2. Rules.md - coding
 3. Planning.md - constraints
 4. LLMChoice.md, Touchstones.md, ComplianceTools.md - lynchpins
+5. SpecialFactors.md - 2-layer sematic matching and use of Ground Truth, no graph databases for now.
+6. DatabaseArchitecture.md - organisation of knowledge base and records
+7. TechnologyStack.md - technologies adopted.
 
 ## Architecture
 
@@ -73,7 +76,7 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 
 ## Strategy-to-Implementation Translation
 
-Implementation should be guided by ComplianceTools.md, Database Architecture.md, LLMChoice.md, Technical Architecture.md and Touchstones.md.
+Implementation should be guided by the documents set out in ## Strategic & Planning Document Hierarchy.
 
 ## Quality Standards
 
@@ -130,6 +133,7 @@ All MCP tools must include usage tracking infrastructure aligned with `Charging.
 ## Development Commands
 
 ### Setup
+
 ```bash
 # Install Poetry (dependency management)
 curl -sSL https://install.python-poetry.org | python3 -

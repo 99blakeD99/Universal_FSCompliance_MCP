@@ -1,4 +1,4 @@
-# Beneath The Hood
+# Special Factors
 
 ## AI Optimization.
 
@@ -65,6 +65,14 @@ Our vector database has therefore been designed to hold all headings, to include
 Where the Tool's semantic search leads to a Heading where content has been omitted, it will respond along the lines of (depending on context): "It looks like a relevant point is covered under [x.x.x HeadingN] - I do not have its contents but can get more information. Would you like me to do that?"
 
 As part of routine dashboard management, our database will collect user statistics for which Tools are used, and which parts of the Implemented Standard are used in the Prompt response. Where the semantic search leads to a Heading where content has been omitted, and where there is significant traffic to this Heading, the content can be restored. 
+
+### No Need for Graph Database
+
+The highly structured nature of Standards is such that vectorization is a sufficiently powerful technology. Graph databases appear currently to be more suited to environments where discovery of new relationships, rather than application of existing structured text. Graph databases have thus not been implemented. 
+
+The benefits of this are: avoids over-engineering; maintains simplicity; avoids unnecessary overhead and complexity; focuses resources on core 2-layer semantic matching; easier maintenance and scaling.
+
+This approach will be reviewed periodically.
 
 ### Implementation of Standards
 

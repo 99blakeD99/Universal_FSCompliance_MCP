@@ -20,15 +20,13 @@ Our first Implemented Standard is the FCA Handbook.
 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
 
-- **[BeneathTheHood.md](BeneathTheHood.md)**: AI Agents, Tools, MCP Architecture, Standards, Ground Truth.
+- **[SpecialFactors.md](SpecialFactors.md)**: AI Agents, Tools, MCP Architecture, Standards, Ground Truth.
   
 - **[ComplianceTools.md](ComplianceTools.md)**: MCP tool specifications, implementation roadmap, and Ground Truth validation system
 
 - **[LLMChoice.md](LLMChoice.md)**: AI model selection, multi-provider architecture rationale, and enterprise flexibility strategy
 
-- **[OurMCPdifferentiators.md](OurMCPdifferentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
-
-- **[BusinessDevelopment.md](BusinessDevelopment.md)**: Enterprise sales strategy, market research, and partnership development
+- **[Differentiators.md](Differentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
 
 - **[OurStory.md](OurStory.md)**: Founder narrative, development journey, and strategic insights.
  
@@ -40,7 +38,7 @@ Our first Implemented Standard is the FCA Handbook.
 
 - **[DatabaseArchitecture.md](DatabaseArchitecture.md)**: Database architecture for holding Standards and MI in a way suited to AI Tool use.
 
-- **[TechnicalArchitecture.md](TechnicalArchitecture.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
+- **[TechnologyStack.md](TechnologyStack.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
 
 # Coding Control
 
@@ -62,5 +60,5 @@ The Universal_FSCompliance_MCP Project is opensource, licensed under the MIT Lic
 
 **About This Document**  
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 14 August 2025  
+**Last Updated**: 15 August 2025  
  

@@ -1,9 +1,5 @@
 # Universal_FSCompliance_MCP Differentiators
 
-## Audience
-
-This is a summary of The Universal_FSCompliance_MCP Project ("UFSCMCP") differentiators. It is intended to be helpful to financial institutions interested in using UFSCMCP, and to investment appraisal AI.
-
 ## Positioning 
 
 - UFSCMCP when mature will be a UNIVERSAL compliance engine, ie be capable of covering ANY identified Standard. Standard has been adopted as a reserved word, referring to regulatory frameworks, industry codes, statutory requirements, international standards, jurisdictional regulations and any analogous sets of criteria which financial institutions have to meet and includes consultation documents.
@@ -52,11 +48,5 @@ This is a summary of The Universal_FSCompliance_MCP Project ("UFSCMCP") differen
 
 ## About This Document
 
-**Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 9 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
-**Status**: (okay)  
-**Purpose**: Summary of MCP Project and project differentiators for financial institutions and investment appraisal AI.
-
----
+Author: Blake Dempster, Founder, CEO, Principal Architect  
+Date updated: 15 August 2025  
