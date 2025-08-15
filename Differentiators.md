@@ -20,9 +20,9 @@
 
 - UFSCMCP showcases very powerful context engineering techniques, a major management preoccupation as enterprises grapple with AI. The context engineering takes the form of multiple .md files, working in formation and held together through Touchstones.md. Context engineering embraces Retrieval Augmented Generation (RAG), Prompt Engineering and more.
 
-- UFSCMCP is designed to achieve permanent integrity, through a formal review process set out in MDqualityCheck.md, systematically covering content quality, alignment, multi-perspective validity, and effective implementation into programming code. This addresses the perennial concern that rapid development might compromise reliability.
+- UFSCMCP is designed to achieve permanent integrity, through a formal review process systematically covering content quality, alignment, multi-perspective validity, and effective implementation into programming code. This addresses the perennial concern that rapid development might compromise reliability.
 
-- UFSCMCP's costs have been vanishingly low, reflecting AI capabilities.
+- UFSCMCP's development costs have been extremely low, reflecting AI capabilities.
 
 - UFSCMCP has already proven itself different from many other AI projects in financial services where the use-case is nebulous and project management fails to use the new generation of AI companions.
 
@@ -30,11 +30,9 @@
 
 ## Market and Marketing for UFSCMCP 
 
-- UFSCMCP's "slice through red tape" headline and "making it easier to bring the right financial products safely to consumers" byline can be presented as a major societal good. This is highly marketable.
+- UFSCMCP's "making it easier to bring the right financial products safely to consumers" headline can be presented as a major societal good. This is highly marketable.
 
-- UFSCMCP's market is large. It is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) *- Allied Market Research, 2025*.
-
-- UFSCMCP's ultimate Universal capabilities, driven by AI, make it perfectly fit-for-market. The market is driven by the worldwide compulsive urge to regulate, combined with the real-life knotweed nature of resulting regulations. Arguably, compliance is simply impossible without an AI-native application like our MCP Project.
+- UFSCMCP's serves a Financial Services Compliance market which is large. It is projected to grow from $11.7B to $83.8B by 2033 (21.6% CAGR) *- Allied Market Research, 2025*.
 
 - UFSCMCP represents a trophy AI B2B use-case.
 
