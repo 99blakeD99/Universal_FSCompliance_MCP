@@ -10,6 +10,8 @@ Our AI-agentic Tools are AI-native. They are available in an open-source reposit
 
 We will be comprised of a suite of specialist MCP servers that contain the Tools. Each MCP server will cover an Implemented Standard. The ambition is universal in the sense of being capable of being applied to any codified Standard.
 
+The MCP servers are designed for enterprise self-hosting.
+
 Users, typically compliance officers and other professionals working in Financial Institutions, will thus be able to focus on senior executive tasks rather than get entangled in small-print. 
 
 Our first Implemented Standard is the FCA Handbook.

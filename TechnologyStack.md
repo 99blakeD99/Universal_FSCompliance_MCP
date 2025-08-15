@@ -30,24 +30,29 @@
 - OAuth 2.1: Authentication and authorization for enterprise deployments
 - Container Orchestration: Docker/Kubernetes for multi-server deployment
 
-## Cloud Architecture
+## Enterprise Self-Hosting
 
-### Provisional Plan for Azure Deployment
+The MCP servers are designed for enterprise self-hosting, and accommodate:
 
-Currently it is envisaged that the MCP servers will be deployed to Azure. Whilst this decision is provisional, this context is important now to ensure that the right structures are engineered in, and there is no need to retrofit later. 
+**On-Premise Deployment**:
+- Deploy within your secure enterprise perimeter
+- Complete data sovereignty and regulatory compliance control
+- No external dependencies or third-party cloud risks
+- Full integration with existing enterprise security policies
+- Regulatory data never leaves your infrastructure
 
-If a decision is made to deploy to a different Cloud, adaptations will be relatively simple.
+**Container-Based Architecture**:
+Docker/Kubernetes deployment provides:
+- Standardized deployment across enterprise environments
+- Seamless scaling within existing infrastructure
+- Integration with enterprise container orchestration platforms
+- Consistent, repeatable deployment process
 
-### Azure Container Instances (ACI) Deployment
-
-Multi-container deployment with separate services for each MCP servers, each configured with their respective standard tags and database connections. mcp-server-fca-compliance runs on port 8001, the next mcp-server-[standard]-compliance will run on port 8002.
-
-### Azure Kubernetes Service (AKS) for Production
-
-- Multi-server orchestration with service mesh for load balancing
-- Horizontal pod autoscaling based on query volume
-- Azure Database for PostgreSQL with managed Supabase integration
-- Azure Key Vault integration for secrets management
+**Enterprise IT Requirements**:
+- Standard enterprise containerization capabilities
+- Kubernetes or Docker Swarm orchestration
+- Enterprise-grade networking and security controls
+- Integration with existing authentication systems (OAuth 2.1, LDAP, Active Directory)
 
 ## Infrastructure Requirements
 

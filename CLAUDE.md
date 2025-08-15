@@ -35,7 +35,7 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 4. LLMChoice.md, Touchstones.md, ComplianceTools.md - lynchpins
 5. SpecialFactors.md - 2-layer sematic matching and use of Ground Truth, no graph databases for now.
 6. DatabaseArchitecture.md - organisation of knowledge base and records
-7. TechnologyStack.md - technologies adopted.
+7. TechnologyStack.md - technologies adopted, enterprise self hosting.
 
 ## Architecture
 
