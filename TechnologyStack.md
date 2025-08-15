@@ -30,29 +30,63 @@
 - OAuth 2.1: Authentication and authorization for enterprise deployments
 - Container Orchestration: Docker/Kubernetes for multi-server deployment
 
-## Enterprise Self-Hosting
+## Deployment Architecture
+
+### Enterprise Self-Hosting
 
 The MCP servers are designed for enterprise self-hosting, and accommodate:
 
-**On-Premise Deployment**:
+On-Premise Deployment:
 - Deploy within your secure enterprise perimeter
 - Complete data sovereignty and regulatory compliance control
 - No external dependencies or third-party cloud risks
 - Full integration with existing enterprise security policies
 - Regulatory data never leaves your infrastructure
 
-**Container-Based Architecture**:
+Container-Based Architecture:
 Docker/Kubernetes deployment provides:
 - Standardized deployment across enterprise environments
 - Seamless scaling within existing infrastructure
 - Integration with enterprise container orchestration platforms
 - Consistent, repeatable deployment process
 
-**Enterprise IT Requirements**:
+Enterprise IT Requirements:
 - Standard enterprise containerization capabilities
 - Kubernetes or Docker Swarm orchestration
 - Enterprise-grade networking and security controls
 - Integration with existing authentication systems (OAuth 2.1, LDAP, Active Directory)
+
+### Implementation
+
+#### Dockerfile (Essential):
+
+FROM python:3.11-slim
+COPY . /app
+WORKDIR /app
+RUN pip install poetry && poetry install
+EXPOSE 8001
+CMD ["poetry", "run", "python", "-m", "mcp_server_fca_compliance.server"]
+
+#### Docker-compose.yml (Development/Testing) 
+
+Under development. To easily test locally before full deployment.
+
+#### Kubernetes Manifests (Production)
+
+Under development, including:
+
+- Deployment configs
+- Service definitions
+- ConfigMaps for environment variables
+- Secrets for API keys
+
+### Installation Documentation
+
+Under development, including:
+
+- Simple deployment instructions
+- Configuration guide
+- Troubleshooting steps
 
 ## Infrastructure Requirements
 
