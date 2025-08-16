@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="UFSCMCPlogo.svg" alt="Universal FSCompliance MCP" width="300"/>
+</div>
+
 # Vision, Mission, Identity
 
 The Universal_FSCompliance_MCP Project's mission is to enable Financial Institutions to make it easier to bring the right financial products to consumers safely and cost-effectively. 
