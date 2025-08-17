@@ -18,13 +18,15 @@ The Tools are not intended to be autonomous, and human judgement will still be r
 
 The Tools will be held in a suite of specialist MCP servers. (MCP, or Model Context Protocol, is an open framework published by Anthropic, and is widely used in the construction of AI Agents). Each MCP server will cover an Implemented Standard. The ambition is universal in the sense of being capable of being applied to any codified Standard. Our first Implemented Standard is the FCA Handbook.
 
-Accuracy and reliability have been engineered into Tool specification and operation. Financial Institutions' security and risk management requirements are embedded at the core. Scaling and performance have been designed in.
+The MCP architecture is important. MCP servers can easily be built into AI agents, without lengthy integration work. AI agents are set to become increasingly prevalent in process management in Financial Institutions, so MCP architecture will ease implementation and allow easy changes to processes. This is a significant advantage over custom APIs.
 
-The MCP servers are available in an open-source repository on GitHub and a permissive MIT license. They are designed for enterprise self-hosting. 
+The MCP servers are available in an open-source repository on GitHub and a permissive MIT license. They are designed for enterprise self-hosting.
+
+Accuracy and reliability have been engineered into Tool specification and operation. Financial Institutions' security and risk management requirements are embedded at the core. Scaling and performance have been designed in.
 
 # Overview
 
-- **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Professional interface mockup showcasing the Universal FSCompliance MCP's broad capabilities. 
+- **[Visualisation](https://htmlpreview.github.io/?https://github.com/99blakeD99/Universal_FSCompliance_MCP/blob/main/index.html)**: Interface mockup showing the Universal FSCompliance MCP's broad capabilities. 
 
 - **[FAQ.md](FAQ.md)**: User questions, platform capabilities, implementation timelines, and enterprise adoption requirements
 
