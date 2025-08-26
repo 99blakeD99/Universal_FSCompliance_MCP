@@ -36,6 +36,8 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 5. SpecialFactors.md - 2-layer sematic matching and use of Ground Truth, no graph databases for now.
 6. DatabaseArchitecture.md - organisation of knowledge base and records
 7. TechnologyStack.md - technologies adopted, enterprise self hosting.
+8. LegalLiability.md - liability framework, audit trails, user responsibility.
+9. Charging.md - billing architecture, usage metering, pricing models.
 
 ## Architecture
 

@@ -12,7 +12,7 @@ Standards are words-based, and therefore native to LLMs (whose middle initial is
 
 With only pre-AI tools, or where AI is added later rather than being core to the architecture, compliance operations can be cumbersome and expensive, leading to higher costs and a drag on innovation, leading ultimately to poorer outcomes for consumers. 
 
-Our AI-agentic Tools are AI-native. Using them will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers.
+Our AI-agentic Tools are AI-native. Accessing them from their AI agents will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers.
 
 The Tools are not intended to be autonomous, and human judgement will still be required. But the Tools will do much of the heavy lifting. Users, typically compliance officers and other professionals working in Financial Institutions, will be able to focus on senior executive tasks. 
 
