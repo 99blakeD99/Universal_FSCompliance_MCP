@@ -56,6 +56,18 @@ The Universal_FSCompliance_MCP Project uses "Standard" widely to include:
 - **LLM-Open Architecture**: Abstract interfaces maintained for LLM-open support.
 - **Database Architecture**: Currently, unified Supabase (PostgreSQL + PGVector) with standard-specific table prefixes per `DatabaseArchitecture.md`.
 
+### BYOLLM Architecture (Mandatory)
+
+**SECURITY-FIRST CREDENTIAL HANDLING**: All Universal_FSCompliance_MCP components implement zero-trust credential architecture:
+
+- **Zero Server-Side Storage**: No LLM credentials stored in server memory, environment variables, or persistent storage
+- **Radical Anti-Harvesting Design**: Architecture fundamentally excludes any possibility of credential harvesting
+- **Per-Request Authentication**: User credentials provided with each request via user_context or API payload
+- **No Fallback Analysis**: Systems only work with securely provided user LLM credentials - no server defaults or fallback modes
+- **Professional IT Standards**: Architecture designed to pass enterprise security audit requirements
+- **Consistent Implementation**: Identical credential handling across all MCP servers and interfaces
+- **Immediate Credential Discard**: Credentials used for analysis and immediately discarded - never persisted
+
 ### Key Technologies
 - **Python 3.11+** with Poetry for dependency management
 - **Pydantic v2** for data validation and serialization
@@ -121,6 +133,20 @@ All MCP tools must include usage tracking infrastructure aligned with `Charging.
 - **Rate Limiting**: Configurable quotas per organization with hourly rate limits
 - **Configuration-Driven**: External pricing config without code deployment (pricing_config.yaml)
 
+## DirectAccessAgent (Web Interface)
+
+**PURPOSE**: The DirectAccessAgent provides web-based access to MCP server functionality, allowing users to experience Universal_FSCompliance_MCP capabilities before integrating MCP servers into their enterprise AI agents.
+
+**ARCHITECTURAL REQUIREMENTS**:
+- **Perfect MCP Mirroring**: Web interface must faithfully replicate main MCP server functionality via Docker configuration
+- **Identical Tool Behavior**: Same 7 core FCA tools with identical responses and error handling
+- **BYOLLM Consistency**: Web interface uses same zero-trust credential architecture as main MCP servers
+- **Docker Configuration**: Single source of truth maintained through containerized MCP server replication
+- **User Experience**: Seamless transition from web testing to MCP server integration
+- **Security Parity**: Web interface meets same professional IT security standards as MCP servers
+
+**DEPLOYMENT**: Docker-based deployment ensures DirectAccessAgent exactly replicates MCP server behavior without code duplication.
+
 ## Date Handling Protocol
 
 **CRITICAL DATE RULE**: Before using any date, check if the current date is being referred to: if it is, check the actual date and use that (beware of December 2024); if not, do not correct it.
@@ -175,4 +201,4 @@ poetry run python -m mcp_server_fca_compliance.test_client
 ## About This Document
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 14 August 2025  
+**Last Updated**: 28 August 2025  
