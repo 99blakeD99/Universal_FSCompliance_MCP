@@ -31,15 +31,8 @@ This document establishes granular coding conventions for the Universal_FSCompli
 
 ## 📝 Git Commit Guidelines
 
-```
-Brief descriptive title
-
-Detailed description of changes...
-
-🤖 Generated with [Claude Code](https://claude.ai/code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>
-```
+Do not Commit without first seeking confirmation
+Propose a brief Commit message
 
 ## 📎 Style & Conventions
 
@@ -60,6 +53,10 @@ Co-Authored-By: Claude <noreply@anthropic.com>
           type: Description.
       """
   ```
+
+## Emojis
+
+Do not use emojis unless specifically requested, they do not suit our audience.
 
 ## 📚 Documentation Standards
 
@@ -87,10 +84,6 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ## About This Document
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Co-Authored by**: Claude Code (claude.ai/code)  
-**Last Updated**: 29 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 19 July 2025  
-**Status**: (okay) - Streamlined to focus on granular coding conventions  
-**Purpose**: Granular coding conventions and development practices for Universal_FSCompliance_MCP Project. For strategic guidance and architecture, see CLAUDE.md.
+**Date last updated**: 29 August 2025
 
 ---
