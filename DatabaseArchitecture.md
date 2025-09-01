@@ -36,9 +36,9 @@ Rather than creating separate databases for each Standard, a unified database ha
 
 - `user_access_control`: Cross-Standard user permissions and access policies
 
-### Two-Layer Semantic Matching
+## Allowances for Special Factors of Standards
 
-Each Standard-specific document table supports the two-layer semantic matching architecture with fields for Heading ID, Title, vector embedding, and ingestion level. 
+Each Standard-specific document table supports 2-layer semantic matching architecture with fields for Heading ID, Title, vector embedding, and ingestion level, and the Pareto issues set out in [SpecialFactors.md](SpecialFactors.md). 
 
 Ground truth tables capture enterprise validation data with questions, answers, regulatory references, confidence levels, and organization ownership controls. 
 

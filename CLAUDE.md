@@ -144,7 +144,6 @@ All MCP tools must include usage tracking infrastructure aligned with `Charging.
 - **Docker Configuration**: Single source of truth maintained through containerized MCP server replication
 - **User Experience**: Seamless transition from web testing to MCP server integration
 - **Security Parity**: Web interface meets same professional IT security standards as MCP servers
-
 **DEPLOYMENT**: Docker-based deployment ensures DirectAccessAgent exactly replicates MCP server behavior without code duplication.
 
 ## Date Handling Protocol
