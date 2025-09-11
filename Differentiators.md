@@ -1,12 +1,21 @@
 # Universal_FSCompliance_MCP Differentiators
 
+## Executive Summary
+
+This document sets out how the Universal_FSCompliance_MCP Project ("UFSCMCP") is differentiated from other AI applications, and from other software in the Compliance space.
+
+These differentiations are important:
+
+- in allowing enterprises to consider how best to achieve the overarching objective of making it easier for Financial Institutions to bring the right product safely to consumers.
+- how to best support Users (having regard however to the fact that results are still subject to human review and validation, supervised by appropriately qualified professionals)
+
 ## Positioning 
 
 - UFSCMCP when mature will be a UNIVERSAL compliance engine, ie be capable of covering ANY identified Standard. Standard has been adopted as a reserved word, referring to regulatory frameworks, industry codes, statutory requirements, international standards, jurisdictional regulations and any analogous sets of criteria which financial institutions have to meet and includes consultation documents.
 
-- UFSCMCP has in place a special Tool set out in ComplianceTools.md to ensure that the Implemented Standards in UFSCMCP are kept up to date. Traditional non-AI native compliance tools and services typically find this very difficult to do, the AI-native Universal_FSCompliance_MCP Project makes it very achievable. The Tool will be invoked systematically as a hygiene measure. From the User's viewpoint the updating will be invisible and automatic.
+- UFSCMCP has in place a special Tool to ensure that the Implemented Standards in UFSCMCP are kept up to date. Traditional non-AI native compliance tools and services typically find this very difficult to do, the AI-native Universal_FSCompliance_MCP Project makes it very achievable. The Tool will be invoked systematically as a hygiene measure. From the User's viewpoint the updating will be invisible and automatic.
 
-- UFSCMCP adopts the MCP protocol (hence its name), on the basis of suitability and increasing use as a standard that enterprises are happy with. This means that no lengthy integrations are required, the MCP approach enables immediate deployment within existing AI workflows.
+- UFSCMCP adopts the MCP protocol (hence its name), on the basis of suitability and increasing use as a protocol that enterprises are happy with. This means that no lengthy integrations are required, the MCP approach enables immediate deployment within existing AI workflows. Enterprise privacy and security priorities are readily accommodated.
 
 - UFSCMCP uses an LLM-open architecture to support enterprise LLM requirements with configurable provider selection based on organizational preferences and performance requirements. 
 
@@ -46,5 +55,5 @@
 
 ## About This Document
 
-Author: Blake Dempster, Founder, CEO, Principal Architect  
-Date updated: 15 August 2025  
+Author: Blake Dempster, Principal Architect  
+Date updated: 11 September 2025  

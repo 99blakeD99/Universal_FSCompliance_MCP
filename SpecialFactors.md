@@ -1,10 +1,19 @@
 # Special Factors
 
-## AI Optimization.
+## Executive Summary
+
+This document sets out how the Universal_FSCompliance_MCP Project ("UFSCMCP") has special factors which differentiate it from other AI applications.
+
+These special factors need to be taken into account:
+
+- to optimise the MCP servers and their Tools having regard to the overarching objective of making it easier for Financial Institutions to bring the right product safely to consumers.
+- to maximise usefulness to Users, who will be expecting that the Tools will be fit for purpose (having regard however to the fact that results are still subject to human review and validation, supervised by appropriately qualified professionals)
+
+## AI Optimization
 
 ### Prompts
 
-For the UniversalFSCompliance Project, the AI Agent will be responding directly or indirectly to a prompt about Compliance. This implies a structure. The prompt cannot meaningfully just say "Does [situation] comply?". Comply with what? The prompt only becomes meaningful if it says "Does [situation] comply with the requirements of [Standard]?". In this situation the [Standard] assumes maximum semantic significance for AI: it becomes a semantic "anchor".
+For the UFSCMCP, the AI Agent will be responding directly or indirectly to a prompt about Compliance. This implies a structure. The prompt cannot meaningfully just say "Does [situation] comply?". Comply with what? The prompt only becomes meaningful if it says "Does [situation] comply with the requirements of [Standard]?". In this situation the [Standard] assumes maximum semantic significance for AI: it becomes a semantic "anchor".
 
 ### AI Agents, Tools, MCP Architecture
 
@@ -38,37 +47,21 @@ This would then give the AI Agent specific matches on the weightiest Semantic An
 
 ### Tool Design - Bottom Up
 
-Beneath the Naming framework, Tool coding is simple, especially with the aid of AI coding assistants. The process consists of providing a Tool description and examples, and prompting the AI coding assistant to produce the code. Then walking through and testing the results. In fact the amount of code required for each Tool is modest, as would be expected from the modular nature of each Tool. The value of the overall toolbox resides not in the advanced coding, more in the maintenance of good documentation and organization.
+Beneath the Naming framework, Tool coding is simple, especially with the aid of AI coding assistants. The process consists of providing a Tool description and examples, and prompting the AI coding assistant to produce the code. Then walking through and testing the results. 
 
 ## Standards
 
-### Structure of Standards
+### Making Use of the Structure of Standards
 
-Standards are extremely organised under nested headings which have all been clearly given careful consideration. This level of organization is a prerequisite for Implementing any Standard.
+Standards are extremely organised under nested headings which have all been clearly given careful consideration. (This level of organization is a prerequisite for Implementing any Standard.)
 
-Each of the headings can thus be viewed as a Semantic Anchor in its own right. 
+Each of the headings can be viewed as a Semantic Anchor in its own right.
 
-### Layering
-
-The question arises as to whether only Heading1s should be the significant Semantic Anchors, or Heading1s and Heading2s, or Heading1s and Heanding2s and Heading3s. After research and inspection of the FCA Handbook text, it was decided that using only Heading1s left too broad a scope underneath, Heading2s provided convenient scope sizes, but Heading3s had an excessively narrowing effect. 
-
-Thus a 2-layer Semantic Matching pointed at Heading1s and Heading2s was adopted.
-
-### Pareto Issues.
-
-A Standard is generally large. Moreover a lot of the size consists of detail which may not suit vectorising, being abstruse in nature and footnote-like in character. 
-
-It is likely that most of it will never be needed by the User of the AI Agent. Including it will be cumbersome to implement and slow down performance of the Tool. This resembles a Pareto distribution challenge: approximately 90% of the regulatory value is concentrated in 30% of the content. 
-
-Our vector database has therefore been designed to hold all headings, to include all content beneath Heading1 and Heading2 other than what appear semantically to be less important content under Heading3s, Heading4s and lower. In other words, all headings are retained, most of the content, but not the content that seems semantically to be too abstruse.
-
-Where the Tool's semantic search leads to a Heading where content has been omitted, it will respond along the lines of (depending on context): "It looks like a relevant point is covered under [x.x.x HeadingN] - I do not have its contents but can get more information. Would you like me to do that?"
-
-As part of routine dashboard management, our database will collect user statistics for which Tools are used, and which parts of the Implemented Standard are used in the Prompt response. Where the semantic search leads to a Heading where content has been omitted, and where there is significant traffic to this Heading, the content can be restored. 
+This has given rise to a sophisticated multi-stage semantic searching method to optimise matching of content against User prompt and provide relevant responses. 
 
 ### No Need for Graph Database
 
-The highly structured nature of Standards is such that vectorization is a sufficiently powerful technology. Graph databases appear currently to be more suited to environments where discovery of new relationships, rather than application of existing structured text. Graph databases have thus not been implemented. 
+The highly structured nature of Standards is such that vectorization is a sufficiently powerful technology. Graph databases appear currently to be more suited to environments where discovery of new relationships is required, rather than application of existing structured text. Graph databases have thus not been implemented. 
 
 The benefits of this are: avoids over-engineering; maintains simplicity; avoids unnecessary overhead and complexity; focuses resources on core 2-layer semantic matching; easier maintenance and scaling.
 
@@ -82,9 +75,7 @@ The next Standard will be determined by market demand, driven by User feedback. 
 
 In this way feedback loops will be put in place which continuously enhance capability.
 
-## Ground Truth
-
-### Extending beyond the Standard Wording
+### Ground Truth - Extending beyond the Standard Wording
 
 At present the heart of the UniversalFSCompliance Project's tools is semantic matching between Prompt and Implemented Standard. This is powerful in itself. 
 
@@ -105,12 +96,10 @@ The Ground Truth can additionally be used as a test of our MCP Server, by runnin
 
 ### Terminology
 
-In AI, the term "Ground Truth" is often used to describe how the parameters in LLMs are refined such as to improve the LLM's answers to the Qs in the Ground Truth data, scored against the As in the Ground Truth data. This is not how Ground Truth data is used in the Universal_FSComplianceMCP Project, where Ground Truth data is used not for LLM parameter refinement, but rather is used as described above.
-
----
+In AI, the term "Ground Truth" is often used to describe how the parameters in LLMs are refined such as to improve the LLM's answers to the Qs in the Ground Truth data, scored against the As in the Ground Truth data. This is not how Ground Truth data is used in this context: Ground Truth data is here used not for LLM parameter refinement, but rather is used as described above.
 
 ## About This Document
 
 **Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Last Updated**: 11 August 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 11 August 2025  
+**Last Updated**: 11 September 2025  
+

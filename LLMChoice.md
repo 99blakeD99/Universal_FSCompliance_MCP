@@ -1,8 +1,18 @@
-# LLM Selection Strategy for the Universal_FSCompliance_MCP
+# LLM Choice
 
 ## Executive Summary
 
-The following factors have emerged as important during the course of this Project:
+This document defines how LLM-openness is managed in the Universal_FSCompliance_MCP Project ("UFSCMCP"). 
+
+The LLM used by Tools is ultimately responsible for how to apply them. This will be fundamental in achieving the overarching objective of making it easier for Financial Institutions to bring the right product safely to consumers.
+
+The LLM in the Agent using the MCP server is responsible for whether or not to use it and its component Tools. This LLM may be different from the LLM used by the Tools, or it may be the same.
+
+Regardless of which LLMs are used, results are still subject to human review and validation, supervised by appropriately qualified professionals.
+
+## Emerging Factors
+
+The following factors have emerged as important during the course of UFSCMCP work:
 
 - The LLM powering our MCP needs only to deal with text or text equivalents such as voice recordings. Thus multi-modal capability, a main focus of frontier LLMs, is unneeded. 
 
@@ -14,7 +24,7 @@ The following factors have emerged as important during the course of this Projec
 
 - MCP servers run their own LLMs completely independently from whatever LLM the enterprise chooses for their AI agents. This is a fundamental architectural separation. Our MCP enables Users to experiment with whichever LLM suits their needs for specialist Compliance purposes.
    
-- We have therefore engineered in an LLM-open approach, thus preserving enterprise flexibility both when the tools are initially adopted and as experience develops. 
+- We have therefore engineered in an LLM-open approach, thus preserving enterprise flexibility both when the Tools are initially adopted and as experience develops. 
 
 ## Wider Context
 
@@ -22,7 +32,7 @@ The following factors have emerged as important during the course of this Projec
 
 Given compliance executives' time scarcity it may not be an efficient use of resources to use an inferior LLM and then possibly run into quality issues, or expend much time experimenting with alternative LLMs that have not proven themselves in such a well-suited compliance context. 
 
-#### Compliance Accuracy Is Critical
+#### Compliance Is Expensive and Critically Important
 
 In financial services, compliance errors can result in:
 
@@ -31,90 +41,61 @@ In financial services, compliance errors can result in:
 - Legal liability and professional indemnity claims
 - Operational disruption and remediation costs
 
+The burden of Compliance is substantial. Compliance Officers need the most effective AI support they can get.
+
 The cost differential between LLMs is insignificant compared to these compliance failure risks.
 
-#### Strategic Positioning
-
-Our MCP's LLM costs represent a small fraction of total compliance spend while providing significant competitive differentiation through proven quality and expert-level reasoning capabilities that align with our AI-compliance interface expertise-backed positioning.
-
-#### Separate Architectures
+## Separate Architectures
 
 A major advantage of the MCP protocol is that general enterprise LLM use is separated from the use of LLMs inside the MCP, which can therefore use the optimum LLM for its special purpose. For example:
 
-**Enterprise AI Agents** can use:
+Enterprise AI Agents can use:
 
 - GPT-4, GPT-4o, or other OpenAI LLMs
 - Gemini Pro or other Google LLMs  
 - LLaMA 3, Mistral, or other open-source LLMs
 - Any proprietary or fine-tuned enterprise LLMs
 
-**FSCompliance MCP Server** can independently run:
+FSCompliance MCP Server can independently run:
 
 - Configurable default LLM provider 
 - Alternative LLMs if Enterprise chooses
 - Completely separate infrastructure and API calls
 
-#### Different LLMs for Different Tools within the MCP
-
-This is a theoretical possibility which may become important in the future.
-
-For the time being, in order to avoid complexity, we have adopted the simplifying assumption that one LLM will be used throughout each standard-specific MCP server in the Universal_FSCompliance_MCP Project.
-
-This architectural decision can be revisited in future releases if the need arises.
-
-#### Data Security
+## Data Security
 
 Financial Institutions and Financial Services Companies are particularly worried about data security and privacy, and some gravitate towards local LLM deployment. However, powerful non-local LLMs with data protection capabilities are emerging.
 
+The UFSCMCP supports enterprise self-hosting and other deployment methods to ensure data security and privacy. See TechnologyStack.md.
 
 ## In-Use Criteria
 
 Based on our experience it is suggested that Users choose an LLM taking into account the following criteria:
 
-**1. Compliance Reasoning Quality**
+1. Compliance Reasoning Quality
+
 - Complex regulatory interpretation capabilities
 - Multi-document analysis and synthesis
 - Contextual understanding of financial services regulations
 - Nuanced risk assessment and gap detection
 - Professional-grade output suitable for regulatory scrutiny
 
-**2. Enterprise Requirements**
-- Accuracy and reliability for critical compliance decisions
-- Consistency in responses across similar queries
-- Appropriate confidence levels and uncertainty handling
-- Integration with existing enterprise workflows
+1. Business Considerations
 
-**3. Business Considerations**
+- Integration with existing enterprise workflows
 - Cost implications 
 - Competitive differentiation in RegTech
 - Competitive differentiation in Financial Services
 - Brand alignment with "expert-backed" positioning
 - Customer liability and risk management
 
-**4. Technical Architecture**
+1. Technical Architecture
+
 - Scalability and performance characteristics
 - Multi-LLM support and flexibility
 - Integration simplicity and maintenance
 
-## Future Action
-
-AI is changing fast and we will work to keep our decisions current. This work will include:
-
-- Specific competitive analysis in the RegTech space.
-
-- LLM performance validation in operation.
-
-- Assessments of groundbreaking LLMs as they appear.
-
 ## About This Document
 
-**Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Co-Authored by**: Claude Code (claude.ai/code)  
-**Last Updated**: 10 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 9 July 2025  
-**Status**: (okay)
-**Purpose**: Strategic analysis and documentation of LLM selection criteria and decision rationale for the Universal_FSCompliance_MCP Project platform development and enterprise customer communications.
-
-*Next review: Post-Phase 3 implementation and initial customer feedback (Q3 2025)*
-
----
+Author: Blake Dempster, Principal Architect  
+Last Updated: 11 September 2025  

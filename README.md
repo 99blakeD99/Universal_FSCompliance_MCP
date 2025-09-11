@@ -12,7 +12,7 @@ Standards are words-based, and therefore native to LLMs (whose middle initial is
 
 With only pre-AI tools, or where AI is added later rather than being core to the architecture, compliance operations can be cumbersome and expensive, leading to higher costs and a drag on innovation, leading ultimately to poorer outcomes for consumers. 
 
-Our AI-agentic Tools are AI-native. Accessing them from their AI agents will bring about a radical reduction in friction and cost for Financial Institutions, leading ultimately to improved outcomes for consumers.
+Our AI-agentic Tools are AI-native. Accessing them from their AI agents will bring about a radical reduction in friction and cost for Financial Institutions.
 
 The Tools are not intended to be autonomous, and human judgement will still be required. But the Tools will do much of the heavy lifting. Users, typically compliance officers and other professionals working in Financial Institutions, will be able to focus on senior executive tasks. 
 
@@ -23,6 +23,8 @@ The MCP architecture is important. MCP servers can easily be built into AI agent
 The MCP servers are available in an open-source repository on GitHub and a permissive MIT license. They are designed for enterprise self-hosting.
 
 Accuracy and reliability have been engineered into Tool specification and operation. Financial Institutions' security and risk management requirements are embedded at the core. Scaling and performance have been designed in.
+
+This repo contains overarching governance and management documents. Separate repos are maintained for USP Servers for each of the Implemented Standards.
 
 # Overview
 
@@ -39,6 +41,8 @@ Accuracy and reliability have been engineered into Tool specification and operat
 - **[Differentiators.md](Differentiators.md)**: Competitive advantages, market positioning, and investment thesis for funding evaluation
 
 - **[OurStory.md](OurStory.md)**: Founder narrative, development journey, and strategic insights.
+
+- **[Touchstones.md](Touchstones.md)**: List of factors that bind the documentation together.
  
 # Details
 
@@ -49,16 +53,6 @@ Accuracy and reliability have been engineered into Tool specification and operat
 - **[DatabaseArchitecture.md](DatabaseArchitecture.md)**: Database architecture for holding Standards and MI in a way suited to AI Tool use.
 
 - **[TechnologyStack.md](TechnologyStack.md)**: System design, infrastructure requirements, security specifications, and deployment architecture.
-
-# Coding Control
-
-- **[Touchstones.md](Touchstones.md)**: List of factors that bind the documentation together.
-  
-- **[CLAUDE.md](CLAUDE.md)**: Coding controller.
- 
-- **[Rules.md](Rules.md)**: Coding rules.
-
-- **[Planning.md](Planning.md)**: Coding constraints.
 
 # Contact and Support
 

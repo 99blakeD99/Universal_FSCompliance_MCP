@@ -1,5 +1,16 @@
 # Technology Stack
 
+## Executive Summary
+
+This document defines how the technology stack is managed in the Universal_FSCompliance_MCP Project ("UFSCMCP"). 
+
+The technology stack is designed:
+
+- to support UFSCMCP's database and Tools in such a way as to facilitate the overarching objective of making it easier for Financial Institutions to bring the right product safely to consumers.
+- to accommodate enterprises' deployment choices
+- to satisfy enterprises' privacy and security requirements
+- to facilitate human use of the Tools (having regard to the fact that results are still subject to human review and validation, supervised by appropriately qualified professionals)
+
 ## Core Technologies
 
 ## Backend Framework
@@ -11,15 +22,15 @@
 
 ## AI/ML Stack
 
-- Two-Layer Semantic Matching: Semantic anchors + vector similarity search
+- Sophisticated Semantic Matching: Tuned for the data specifics of the Standard
+- Semantic Anchoring: Context optimization for AI agents in analysing Standards
 - OpenAI Embeddings: text-embedding-3-small for vector generation
 - Multiple LLM Support: Configurable default provider, enterprise-flexible alternatives
-- Semantic Anchoring: Context optimization for AI agents in analysing Standards
 
 ## Database and Storage
 
 - Supabase: PostgreSQL with PGVector extension for unified vector and relational data
-- Table Prefix Architecture: Standard-specific tables (`fca_documents`, `mifid_documents`) with shared infrastructure
+- Table Prefix Architecture: Standard-specific tables with shared infrastructure
 - Ground Truth Integration: Designed for future regulatory Q&A datasets
 - Real-time Capabilities: Live updates for regulatory change monitoring
 
@@ -37,7 +48,7 @@
 The MCP servers are designed for enterprise self-hosting, and accommodate:
 
 On-Premise Deployment:
-- Deploy within your secure enterprise perimeter
+- Deploy within secure enterprise perimeter
 - Complete data sovereignty and regulatory compliance control
 - No external dependencies or third-party cloud risks
 - Full integration with existing enterprise security policies
@@ -58,18 +69,9 @@ Enterprise IT Requirements:
 
 ### Implementation
 
-#### Dockerfile (Essential):
+#### Dockerfile
 
-FROM python:3.11-slim
-COPY . /app
-WORKDIR /app
-RUN pip install poetry && poetry install
-EXPOSE 8001
-CMD ["poetry", "run", "python", "-m", "mcp_server_fca_compliance.server"]
-
-#### Docker-compose.yml (Development/Testing) 
-
-Under development. To easily test locally before full deployment.
+Dockerfile instructions will be provided for each separate MCP Server.
 
 #### Kubernetes Manifests (Production)
 
@@ -156,7 +158,7 @@ Multi-Server Monitoring:
 
 Standard-Specific MCP Servers:
 - Transport Methods: WebSocket, HTTP SSE, stdio, HTTP per server
-- Tool Registration: Dynamic tool discovery with standard-specific naming
+- Tool Registration: Dynamic Tool discovery with standard-specific naming
 - Session Management: Stateful connections with compliance context preservation
 - Error Handling: Graceful degradation with fallback to demonstration mode
 
@@ -184,5 +186,5 @@ Migration Safety:
 
 ## About This Document
 
-Author: Blake Dempster, Founder, CEO, Principal Architect  
-15 August 2025  
+Author: Blake Dempster, Principal Architect  
+11 September 2025  

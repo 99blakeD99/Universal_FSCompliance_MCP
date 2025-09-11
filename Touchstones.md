@@ -30,8 +30,8 @@ Touchstones must be
 ### Value Proposition  
 - Using the MCP will make it easier to bring the right product safely to consumers
 - Using the MCP will enable compliance professionals to carry out senior executive tasks rather than get entangled in small-print
-- Compliance with Implemented Standards is impossible without AI tools.
-- Human effectiveness is transformationally enhanced
+- Compliance with Implemented Standards is extremely difficult without AI tools.
+- With the right AI tools, human effectiveness is transformationally enhanced
 - Humans still have final responsibility, the MCP's role is to make that responsibility manageable
   
 ### Use of MCP Protocol
@@ -42,18 +42,18 @@ Touchstones must be
 - The MCP is open-source and transparent for trust and auditability
 - Model Context Protocol (MCP) integration makes the platform AI-agent native
 
-### Project Management
+### Document Management
 - Documentation maintains professional tone suited to corporate financial services audience
 - These Touchstones are systematically applied in reviewing all components to ensure strategic alignment
-- To achieve permanent integrity of the MCP, a review process covers content quality, alignment, multi-perspective validity, and effective implementation into programming code
+- To achieve permanent integrity, a review process covers content quality, alignment, multi-perspective validity, and effective implementation into programming code
 - The standard format for Project documentation is the AI-friendly markdown format.
 - A formal process is regularly applied to ensure that Implemented Standards are updated as needed.
 
 ### Development Methodology
 - Context Engineering (including RAG and Prompt Engineering) is adopted for ultra-rapid ultra-strong product development
-- The Context Engineering is achieved through the Project's .md documents, which achieve public inspectability and over-arching system integrity.
+- The Context Engineering is coordingated through the Project's .md documents, which achieve public inspectability and over-arching system integrity.
 
 ## About This Document
 
-Author: Blake Dempster, Founder, CEO, Principal Architect  
-Date last reviewed: 18 August 2025
+Author: Blake Dempster, Principal Architect  
+Date last reviewed: 11 September 2025

@@ -1,9 +1,5 @@
 # Charging Models and Billing Architecture Strategy
 
-*Enterprise-grade monetization framework for the Universal Standards Engine*
-
----
-
 ## Executive Summary
 
 This document defines charging models and billing architecture for the Universal_FSCompliance_MCP Project ("UFSCMCP"). The intention is to start with charge levels initially set to zero, and evolve pricing based on demonstrated value and usage patterns.
@@ -11,6 +7,8 @@ This document defines charging models and billing architecture for the Universal
 Configuration-driven billing infrastructure is put in place from inception, to save the future need for unwieldy retrofitting.
 
 ## Value Proposition
+
+The value of UFSCMCP lies in its power to make it easier for Financial Institutions to bring the right financial products to consumers safely and cost-effectively.
 
 UFSCMCP transforms compliance from a burden into intelligence, enabling financial institutions to move faster, reduce costs, and maintain confidence in the ability to comply with Standards. Instead of adding complexity to an overwhelming regulatory landscape, our MCP Server cuts through red tape by making compliance intelligence accessible to any AI agent.
 
@@ -36,51 +34,37 @@ UFSCMCP transforms compliance from a burden into intelligence, enabling financia
 
 
 **Per-Query Pricing (Indicative):**
-```yaml
-# Usage-based pricing aligned with compliance value (future indicative rates)
-simple_compliance_check: £0.05     # Currently £0.00
-systematic_analysis: £0.15          # Currently £0.00
-comprehensive_audit_report: £0.25   # Currently £0.00
-ground_truth_validation: £0.05      # Currently £0.00
-remediation_suggestions: £0.10      # Currently £0.00
-requirements_identification: £0.10  # Currently £0.00
-status_ingestion: £0.02             # Currently £0.00
-```
+
+| Tool Type | Future Rate | Current Rate |
+|-----------|-------------|--------------|
+| Simple compliance check | £0.05 | £0.00 |
+| Systematic analysis | £0.15 | £0.00 |
+| Comprehensive audit report | £0.25 | £0.00 |
+| Ground truth validation | £0.05 | £0.00 |
+| Remediation suggestions | £0.10 | £0.00 |
+| Requirements identification | £0.10 | £0.00 |
+| Status ingestion | £0.02 | £0.00 |
 
 **Professional Subscription (Indicative):**
-```yaml
-# Monthly/annual base subscriptions with usage allowances (future indicative rates)
-starter_plan:
-  monthly_fee: £200              # Currently £0.00
-  included_queries: 500
-  overage_rate: £0.08            # Currently £0.00
-  
-professional_plan:
-  monthly_fee: £800              # Currently £0.00
-  included_queries: 2500
-  overage_rate: £0.06            # Currently £0.00
-  
-enterprise_plan:
-  monthly_fee: £2000             # Currently £0.00
-  included_queries: 10000
-  overage_rate: £0.04            # Currently £0.00
-```
+
+| Plan | Monthly Fee | Included Queries | Overage Rate | Current Status |
+|------|-------------|------------------|--------------|----------------|
+| Starter | £200 | 500 | £0.08 | Currently £0.00 |
+| Professional | £800 | 2,500 | £0.06 | Currently £0.00 |
+| Enterprise | £2,000 | 10,000 | £0.04 | Currently £0.00 |
 
 **Enterprise Seat-Based (Indicative):**
-```yaml
-# Per-compliance-officer pricing for large institutions (future indicative rates)
-compliance_officer_seat: £50/month  # Currently £0.00
-unlimited_queries: true
-minimum_seats: 5
-volume_discounts:
-  tier_20_seats: 10%  # £45/month  # Currently £0.00
-  tier_50_seats: 20%  # £40/month  # Currently £0.00
-  tier_100_seats: 30% # £35/month  # Currently £0.00
-```
+
+| Feature | Rate/Terms | Current Status |
+|---------|------------|----------------|
+| Compliance officer seat | £50/month | Currently £0.00 |
+| Queries | Unlimited | - |
+| Minimum seats | 5 | - |
+| Volume discount (20+ seats) | 10% (£45/month) | Currently £0.00 |
+| Volume discount (50+ seats) | 20% (£40/month) | Currently £0.00 |
+| Volume discount (100+ seats) | 30% (£35/month) | Currently £0.00 |
 
 ## About This Document
 
-**Author**: Blake Dempster, Founder, CEO, Principal Architect  
-**Co-Authored by**: Claude Code (claude.ai/code)  
-**Last Updated**: 21 July 2025  
-**Date last reviewed formally by MDqualityCheck.md**: 1 August 2025  
+**Author**: Blake Dempster, Founder, Principal Architect  
+**Last Updated**: 11 September 2025 

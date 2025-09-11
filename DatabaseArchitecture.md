@@ -2,9 +2,21 @@
 
 ## Executive Summary
 
-A database is required to hold Standards, and for usage statistics. 
+This document defines how data is organised in the Universal_FSCompliance_MCP Project ("UFSCMCP"). 
 
-Database architecture is designed to optimize AI Agent discovery and interaction. Foundationally, it achieves this with Standard-specific semantic boundaries.
+A database is required:
+
+- to hold Standards and for usage statistics. 
+
+- to provide optimal support for the Tools, which are used to achieve the overarching objective of making it easier for Financial Institutions to bring the right product safely to consumers
+  
+- to make the Tools efficient (without however changing the fact that results are still subject to human review and validation, supervised by appropriately qualified professionals
+- 
+- to support and optimize AI Agent discovery and interaction, through Standard-specific semantic boundaries
+  
+- to manage ancillary functions such as usage statistics
+
+## Single Database
 
 A single database with Standard-specific table prefixes has been adopted, facilitating:
 
@@ -16,7 +28,7 @@ A single database with Standard-specific table prefixes has been adopted, facili
 
 - Discoverability (database structure that reinforces the semantic anchoring principle)
 
-- Efficient querying, with two-layer semantic matching
+- Efficient querying
 
 ## Core Structure
 
@@ -36,17 +48,11 @@ Rather than creating separate databases for each Standard, a unified database ha
 
 - `user_access_control`: Cross-Standard user permissions and access policies
 
-## Allowances for Special Factors of Standards
-
-Each Standard-specific document table supports 2-layer semantic matching architecture with fields for Heading ID, Title, vector embedding, and ingestion level, and the Pareto issues set out in [SpecialFactors.md](SpecialFactors.md). 
+## Ground Truth
 
 Ground truth tables capture enterprise validation data with questions, answers, regulatory references, confidence levels, and organization ownership controls. 
 
-For each Standard, ingestion status tables capture word counts, chunk counts, and coverage levels.
-
-### Ground Truth Integration
-
-A natural pattern is thus implemented for Standard-specific ground truth tables, with appropriate access controls per User requirements. Supports both public ground truth (industry consensus) and private ground truth (organization-specific Q&A).
+A natural pattern is implemented for Standard-specific ground truth tables, with appropriate access controls per User requirements. Supports both public ground truth (industry consensus) and private ground truth (organization-specific Q&A).
 
 ## Implementation Considerations
 
@@ -62,9 +68,7 @@ The standards_registry table maintains metadata about each implemented Standard 
 
 User permissions can be managed at the table level, enabling fine-grained access to specific Standards or ground truth datasets. Row-level security policies can be applied per Standard.
 
-## Future Standards Integration
-
-### Template Approach for New Standards
+## Template Approach for New Standards
 
 When implementing new regulatory Standards, the database structure follows a consistent pattern:
 
@@ -72,12 +76,6 @@ When implementing new regulatory Standards, the database structure follows a con
 2. Update Standards_registry with new Standard metadata
 3. Implement Standard-specific ground truth tables if available
 4. Configure access controls appropriate to regulatory requirements
-
-### Cross-Standard Analysis Capabilities
-
-While AI agents operate within Standard-specific boundaries, the unified database enables cross-Standard analysis for advanced use cases:
-
-Cross-Standard analysis capabilities enable regulatory overlap analysis by comparing embeddings between different Standards, identifying high similarity regulatory concepts across frameworks like FCA and SEC.
 
 ## Operational Analytics and Management Information
 
@@ -94,7 +92,6 @@ Interaction analytics enables multiple visualization and analytics platforms:
 - Native Dashboard: Built-in analytics with real-time capabilities
 
 - Enterprise BI Integration: Power BI, Tableau, Grafana connectivity
-
 
 - Custom Analytics Applications: Direct database access for specialized insights
 
@@ -213,6 +210,5 @@ The following information is available but out of scope of this document:
 
 ## About This Document
 
-Author: Blake Dempster, Founder, CEO, Principal Architect  
-Last Updated: 12 August 2025  
-Date last reviewed formally by MDqualityCheck.md: 12 August 2025  
+Author: Blake Dempster, Principal Architect  
+Last Updated: 10 September 2025  
