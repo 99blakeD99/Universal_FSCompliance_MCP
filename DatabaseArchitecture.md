@@ -36,7 +36,7 @@ Rather than creating separate databases for each Standard, a unified database ha
 
 ### Standard-Specific Tables, Examples
 
-- FCA Tables: `fca_documents`, `fca_ground_truth`, `fca_ingestion_status`
+- FCA Tables: `fca_instruments`, `fca_handbook`, `fca_glossary`, `fca_forms`, `fca_technical_standards`, `fca_level3_materials`, `fca_ground_truth`, `fca_ingestion_status`
 
 - SEC Tables: `sec_documents`, `sec_ground_truth`, `sec_ingestion_status`
 
@@ -72,10 +72,39 @@ User permissions can be managed at the table level, enabling fine-grained access
 
 When implementing new regulatory Standards, the database structure follows a consistent pattern:
 
-1. Create Standard-specific tables following naming convention
+1. Create Standard-specific tables following naming convention (`[standard]_[piece]` pattern)
 2. Update Standards_registry with new Standard metadata
 3. Implement Standard-specific ground truth tables if available
 4. Configure access controls appropriate to regulatory requirements
+
+### FCA Data Structure Example
+
+Based on actual implementation, FCA tables follow this schema pattern:
+
+```sql
+CREATE TABLE fca_instruments (
+    id INTEGER PRIMARY KEY,
+    header TEXT,
+    regulatory_content TEXT,
+    level INTEGER,
+    url TEXT,
+    piece TEXT,
+    fca_id TEXT,
+    title TEXT,
+    module TEXT,
+    published_date TEXT,
+    effective_date TEXT,
+    regulatory_score INTEGER,
+    content_length_original INTEGER,
+    content_length_cleaned INTEGER,
+    year INTEGER,
+    number INTEGER,
+    agency TEXT,
+    links JSONB,
+    extraction_timestamp TIMESTAMP,
+    source_page INTEGER
+);
+```
 
 ## Operational Analytics and Management Information
 
@@ -211,4 +240,4 @@ The following information is available but out of scope of this document:
 ## About This Document
 
 Author: Blake Dempster, Principal Architect  
-Last Updated: 10 September 2025  
+Last Updated: 12 September 2025  
