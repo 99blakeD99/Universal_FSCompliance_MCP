@@ -318,7 +318,7 @@ Hello, I understand you have responsibility at [organisation] for [relevant role
   
     - Does its market have sufficient scale, such that we may be reasonably assured that it will still be around in future?  
   
-    - Is it important that the Project's MCP server has been submitted to Anthropic's community MCP ecosystem (currently PR 2400 on https://github.com/modelcontextprotocol/servers/pulls)?
+    - Does the Project align with emerging standards in the MCP ecosystem?
   
     - Given that the FCA Handbook is only the first Implemented Standard and is intended as a proof of concept (as well as being useful in itself), and that the intention is to follow this with other Standards that apply to Financial Institutions, it may be useful to us to use this ourselves as a proof of concept prior to applying it to other Standards as they are implemented: do you agree?
 
